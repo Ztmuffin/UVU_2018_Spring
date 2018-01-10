@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff05 scene
 //Name: Lamp.ma
-//Last modified: Tue, Jan 09, 2018 09:28:02 PM
+//Last modified: Tue, Jan 09, 2018 09:42:49 PM
 //Codeset: 1252
 requires maya "2017ff05";
 currentUnit -l centimeter -a degree -t film;
@@ -12,13 +12,13 @@ fileInfo "osv" "Microsoft Windows 8 Home Premium Edition, 64-bit  (Build 9200)\n
 createNode transform -s -n "persp";
 	rename -uid "47F511A9-49F4-0326-B9AB-DF96712ADA65";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -5.3620946786343211 47.639627662151113 -12.862312158509443 ;
-	setAttr ".r" -type "double3" -70.538352728617127 211.00000000001288 0 ;
+	setAttr ".t" -type "double3" 70.662157583599679 36.867393551439278 0.46392525451869915 ;
+	setAttr ".r" -type "double3" -17.138352728513105 86.999999999982023 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "16892395-4B52-23C5-4F94-75B516908FC8";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 30.109466674428791;
+	setAttr ".coi" 72.141252509513834;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
