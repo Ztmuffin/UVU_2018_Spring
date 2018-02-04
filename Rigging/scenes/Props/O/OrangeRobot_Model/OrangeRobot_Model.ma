@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff05 scene
 //Name: OrangeRobot_Model.ma
-//Last modified: Sat, Feb 03, 2018 04:50:17 PM
+//Last modified: Sat, Feb 03, 2018 05:42:39 PM
 //Codeset: 1252
 requires maya "2017ff05";
 requires "stereoCamera" "10.0";
@@ -14,8 +14,8 @@ fileInfo "osv" "Microsoft Windows 8 Home Premium Edition, 64-bit  (Build 9200)\n
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "EBB779B0-44CB-7CFD-F701-378E7642E03F";
-	setAttr ".t" -type "double3" 0.14014841976836767 7.3761160846195786 20.329282613074199 ;
-	setAttr ".r" -type "double3" -9.9383527208794966 -1445.3999999997757 9.983540686523193e-017 ;
+	setAttr ".t" -type "double3" -27.203683953490092 4.6330815589460688 17.337071791400056 ;
+	setAttr ".r" -type "double3" 1.4616472791252229 -1496.1999999996617 0 ;
 	setAttr ".rp" -type "double3" 0 1.7763568394002505e-015 3.5527136788005009e-015 ;
 	setAttr ".rpt" -type "double3" 1.0403588306041429e-016 4.1616380080410248e-016 -2.422382021153208e-016 ;
 	setAttr ".sp" -type "double3" 0 1.7763568394002505e-015 3.5527136788005009e-015 ;
@@ -23,7 +23,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "EC9C5DC4-41EA-2F94-8363-38AE44DE07EA";
 	setAttr -k off ".v";
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 23.412697961038706;
+	setAttr ".coi" 34.766896115961778;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
