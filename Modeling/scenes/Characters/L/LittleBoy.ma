@@ -1,8 +1,9 @@
 //Maya ASCII 2017ff05 scene
 //Name: LittleBoy.ma
-//Last modified: Fri, Feb 09, 2018 09:38:45 PM
+//Last modified: Fri, Feb 09, 2018 09:41:43 PM
 //Codeset: 1252
 requires maya "2017ff05";
+requires -nodeType "gameFbxExporter" "gameFbxExporter" "1.0";
 requires "stereoCamera" "10.0";
 requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
@@ -11259,6 +11260,35 @@ createNode shadingEngine -n "lambert14SG";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo14";
 	rename -uid "ECAFF820-4760-DF07-20DF-2E9EF3F95A7B";
+createNode gameFbxExporter -n "gameExporterPreset1";
+	rename -uid "4B2E8C88-4390-9D3B-2820-35976E45B355";
+	setAttr ".pn" -type "string" "Model Default";
+	setAttr ".ils" yes;
+	setAttr ".ilu" yes;
+	setAttr ".ssn" -type "string" "";
+	setAttr ".ebm" yes;
+	setAttr ".inc" yes;
+	setAttr ".fv" -type "string" "FBX201600";
+	setAttr ".exp" -type "string" "F:/addis/Documents/UVU/UVU_2018_Spring/Modeling/scenes/Characters/L";
+	setAttr ".exf" -type "string" "LittleBoy";
+createNode gameFbxExporter -n "gameExporterPreset2";
+	rename -uid "7A707C38-4FA7-92A9-0242-6C9C44B73D97";
+	setAttr ".pn" -type "string" "Anim Default";
+	setAttr ".ils" yes;
+	setAttr ".eti" 2;
+	setAttr ".ssn" -type "string" "";
+	setAttr ".spt" 2;
+	setAttr ".ic" no;
+	setAttr ".ebm" yes;
+	setAttr ".fv" -type "string" "FBX201600";
+createNode gameFbxExporter -n "gameExporterPreset3";
+	rename -uid "4F13D4BB-447B-0EC3-A6B8-299B3296F93B";
+	setAttr ".pn" -type "string" "TE Anim Default";
+	setAttr ".ils" yes;
+	setAttr ".eti" 3;
+	setAttr ".ssn" -type "string" "";
+	setAttr ".ebm" yes;
+	setAttr ".fv" -type "string" "FBX201600";
 select -ne :time1;
 	setAttr -av -k on ".cch";
 	setAttr -cb on ".ihi";
