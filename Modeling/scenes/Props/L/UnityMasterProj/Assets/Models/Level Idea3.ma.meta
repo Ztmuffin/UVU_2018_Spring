@@ -119,6 +119,14 @@ ModelImporter:
     100222: transform7
     100224: transform8
     100226: transform9
+    100228: polySurface17
+    100230: polySurface18
+    100232: polySurface19
+    100234: polySurface20
+    100236: polySurface21
+    100238: polySurface22
+    100240: polySurface23
+    100242: polySurface24
     400000: Level
     400002: //RootNode
     400004: pCone1
@@ -233,6 +241,14 @@ ModelImporter:
     400222: transform7
     400224: transform8
     400226: transform9
+    400228: polySurface17
+    400230: polySurface18
+    400232: polySurface19
+    400234: polySurface20
+    400236: polySurface21
+    400238: polySurface22
+    400240: polySurface23
+    400242: polySurface24
     2100000: lambert1
     2100002: Default_Material
     2300000: pCone16
@@ -276,6 +292,14 @@ ModelImporter:
     2300076: pSphere6
     2300078: pSphere7
     2300080: pSphere8
+    2300082: polySurface17
+    2300084: polySurface18
+    2300086: polySurface19
+    2300088: polySurface20
+    2300090: polySurface21
+    2300092: polySurface22
+    2300094: polySurface23
+    2300096: polySurface24
     3300000: pCone16
     3300002: pCylinder18
     3300004: pCylinder19
@@ -317,6 +341,14 @@ ModelImporter:
     3300076: pSphere6
     3300078: pSphere7
     3300080: pSphere8
+    3300082: polySurface17
+    3300084: polySurface18
+    3300086: polySurface19
+    3300088: polySurface20
+    3300090: polySurface21
+    3300092: polySurface22
+    3300094: polySurface23
+    3300096: polySurface24
     4300000: polySurface1
     4300002: polySurface2
     4300004: polySurface3
@@ -358,6 +390,14 @@ ModelImporter:
     4300076: pSphere8
     4300078: polySurface14
     4300080: pCone16
+    4300082: polySurface17
+    4300084: polySurface18
+    4300086: polySurface19
+    4300088: polySurface20
+    4300090: polySurface21
+    4300092: polySurface22
+    4300094: polySurface23
+    4300096: polySurface24
     7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
