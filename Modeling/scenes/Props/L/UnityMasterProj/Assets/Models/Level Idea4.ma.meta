@@ -38,6 +38,57 @@ ModelImporter:
     100060: transform7
     100062: transform8
     100064: transform9
+    100066: curve1
+    100068: pCone19
+    100070: pCone20
+    100072: pCone21
+    100074: pCone22
+    100076: pCone23
+    100078: pCone24
+    100080: pCone25
+    100082: pCone26
+    100084: pCone27
+    100086: pCone28
+    100088: pCube1
+    100090: pCube2
+    100092: pCylinder1
+    100094: pCylinder2
+    100096: pCylinder3
+    100098: pCylinder4
+    100100: pCylinder5
+    100102: polySurface3
+    100104: polySurface4
+    100106: pPipe1
+    100108: pPipe2
+    100110: pPipe3
+    100112: transform10
+    100114: transform11
+    100116: transform12
+    100118: transform13
+    100120: transform14
+    100122: transform15
+    100124: transform16
+    100126: transform17
+    100128: transform18
+    100130: transform19
+    100132: transform20
+    100134: transform21
+    100136: transform22
+    100138: transform23
+    100140: transform24
+    100142: transform25
+    100144: transform26
+    100146: transform27
+    100148: transform28
+    100150: transform29
+    100152: transform30
+    100154: pCone29
+    100156: polySurface5
+    100158: polySurface6
+    100160: polySurface7
+    100162: transform31
+    100164: transform32
+    100166: transform33
     400000: //RootNode
     400002: pCone1
     400004: pCone11
@@ -71,6 +122,57 @@ ModelImporter:
     400060: transform7
     400062: transform8
     400064: transform9
+    400066: curve1
+    400068: pCone19
+    400070: pCone20
+    400072: pCone21
+    400074: pCone22
+    400076: pCone23
+    400078: pCone24
+    400080: pCone25
+    400082: pCone26
+    400084: pCone27
+    400086: pCone28
+    400088: pCube1
+    400090: pCube2
+    400092: pCylinder1
+    400094: pCylinder2
+    400096: pCylinder3
+    400098: pCylinder4
+    400100: pCylinder5
+    400102: polySurface3
+    400104: polySurface4
+    400106: pPipe1
+    400108: pPipe2
+    400110: pPipe3
+    400112: transform10
+    400114: transform11
+    400116: transform12
+    400118: transform13
+    400120: transform14
+    400122: transform15
+    400124: transform16
+    400126: transform17
+    400128: transform18
+    400130: transform19
+    400132: transform20
+    400134: transform21
+    400136: transform22
+    400138: transform23
+    400140: transform24
+    400142: transform25
+    400144: transform26
+    400146: transform27
+    400148: transform28
+    400150: transform29
+    400152: transform30
+    400154: pCone29
+    400156: polySurface5
+    400158: polySurface6
+    400160: polySurface7
+    400162: transform31
+    400164: transform32
+    400166: transform33
     2100000: lambert1
     2300000: pCone1
     2300002: pCone11
@@ -86,6 +188,17 @@ ModelImporter:
     2300022: polySurface1
     2300024: polySurface2
     2300026: pPyramid4
+    2300028: pCone22
+    2300030: pCone23
+    2300032: pCone24
+    2300034: pCone28
+    2300036: pCube1
+    2300038: pCube2
+    2300040: polySurface3
+    2300042: polySurface4
+    2300044: pCone29
+    2300046: polySurface5
+    2300048: polySurface6
     3300000: pCone1
     3300002: pCone11
     3300004: pCone17
@@ -100,6 +213,17 @@ ModelImporter:
     3300022: polySurface1
     3300024: polySurface2
     3300026: pPyramid4
+    3300028: pCone22
+    3300030: pCone23
+    3300032: pCone24
+    3300034: pCone28
+    3300036: pCube1
+    3300038: pCube2
+    3300040: polySurface3
+    3300042: polySurface4
+    3300044: pCone29
+    3300046: polySurface5
+    3300048: polySurface6
     4300000: pCone1
     4300002: pCone2
     4300004: pCone3
@@ -114,6 +238,17 @@ ModelImporter:
     4300022: polySurface1
     4300024: polySurface2
     4300026: pPyramid4
+    4300028: polySurface3
+    4300030: polySurface4
+    4300032: pCone22
+    4300034: pCone23
+    4300036: pCone24
+    4300038: pCone28
+    4300040: pCube1
+    4300042: pCube2
+    4300044: polySurface5
+    4300046: polySurface6
+    4300048: pCone29
     9500000: //RootNode
   externalObjects: {}
   materials:
