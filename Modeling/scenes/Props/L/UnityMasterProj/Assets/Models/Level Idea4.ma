@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff05 scene
 //Name: Level Idea4.ma
-//Last modified: Thu, Feb 22, 2018 02:59:47 PM
+//Last modified: Thu, Feb 22, 2018 03:19:12 PM
 //Codeset: 1252
 requires maya "2017ff05";
 requires "stereoCamera" "10.0";
@@ -14,7 +14,7 @@ fileInfo "osv" "Microsoft Windows 8 Enterprise Edition, 64-bit  (Build 9200)\n";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "60A63CCF-4C54-EEC9-B6FD-36BFE0F03690";
-	setAttr ".t" -type "double3" 2.5145338673396997 1.1371111415164927 0.7719440384137809 ;
+	setAttr ".t" -type "double3" 5.154057256291626 2.561055389780047 1.5588201361731098 ;
 	setAttr ".r" -type "double3" 332.66164726901189 1873.399999998484 0 ;
 	setAttr ".s" -type "double3" 1.0000000000000002 1 1.0000000000000002 ;
 	setAttr ".rp" -type "double3" -1.5987211554602259e-016 1.9539925233402755e-016 0 ;
@@ -29,7 +29,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.001;
 	setAttr ".fcp" 100;
 	setAttr ".fd" 0.05;
-	setAttr ".coi" 2.8838743452503532;
+	setAttr ".coi" 5.9844992719727168;
 	setAttr ".ow" 0.1;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
