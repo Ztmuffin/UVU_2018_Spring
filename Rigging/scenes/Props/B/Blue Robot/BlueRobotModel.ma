@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff05 scene
 //Name: BlueRobotModel.ma
-//Last modified: Fri, Feb 23, 2018 08:55:44 PM
+//Last modified: Fri, Feb 23, 2018 10:34:49 PM
 //Codeset: 1252
 requires maya "2017ff05";
 requires "stereoCamera" "10.0";
@@ -15,18 +15,18 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "DB04E300-4D3C-4BB0-DCE5-8192AEF35D23";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -4.440546922680074 2.0669523695895107 5.2518505757114902 ;
-	setAttr ".r" -type "double3" 2.6616471075878456 -2532.1999999994273 -1.0168888635488816e-016 ;
+	setAttr ".t" -type "double3" -4.6683336576695318 4.1398851625680786 7.8077844628996216 ;
+	setAttr ".r" -type "double3" -18.938352894414503 -2544.2000000009198 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "CC0963B7-4FEE-36D0-55E1-6C9298C5A8DA";
 	setAttr -k off ".v" no;
 	setAttr ".pze" yes;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 4.9634659881745948;
+	setAttr ".coi" 9.033728842143983;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 3.6431628136489915 2.5947853725224466 0.74127411245608976 ;
+	setAttr ".tp" -type "double3" -1.1656569569928237 1.2079826829799081 0.01397534449639154 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "A4732479-4EAB-04D7-5BA3-048508BF731B";
@@ -49732,7 +49732,7 @@ createNode nurbsCurve -n "L_Arm_01_CtrlShape" -p "L_Arm_01_Ctrl";
 		4.8446640039337403 11.28447756277278 0.00076747597212505146
 		4.277300287792583 12.120211342764527 0.00086833621246697505
 		;
-createNode transform -n "L_Hand_IK_Ctrl_Grp" -p "Chest_Ctrl";
+createNode transform -n "L_Hand_IK_Ctrl_Grp" -p "L_Arm_01_Ctrl";
 	rename -uid "253E826A-4143-452A-5D8D-34B1A7A1871A";
 	setAttr ".rp" -type "double3" 3.6907368348500014 4.9494153877959208 0.062351454861516942 ;
 	setAttr ".sp" -type "double3" 3.6907368348500014 4.9494153877959208 0.062351454861516942 ;
@@ -49843,6 +49843,7 @@ createNode nurbsCurve -n "L_Finger_01_Point_Orient_CtrlShape" -p "L_Finger_01_Po
 		;
 createNode transform -n "L_Finger_03_Point_Orient_Ctrl_Grp" -p "IK_Ctrl_Grp";
 	rename -uid "6A7395DE-4A60-5E2F-78E1-DEBEF5D27512";
+	setAttr ".t" -type "double3" 0.01067569298284976 0 0 ;
 	setAttr ".rp" -type "double3" 3.6282720620075932 2.614356653149275 -0.49453592857555018 ;
 	setAttr ".sp" -type "double3" 3.6282720620075932 2.614356653149275 -0.49453592857555018 ;
 createNode transform -n "L_Finger_03_Point_Orient_Ctrl" -p "L_Finger_03_Point_Orient_Ctrl_Grp";
@@ -49924,12 +49925,13 @@ createNode nurbsCurve -n "R_Finger_01_Point_Orient_CtrlShape" -p "R_Finger_01_Po
 		;
 createNode transform -n "R_Finger_03_Point_Orient_Ctrl_Grp" -p "IK_Ctrl_Grp";
 	rename -uid "DA39816D-421A-557A-602F-6DABA921C9A5";
-	setAttr ".rp" -type "double3" -3.6074086722187917 2.6150567230921333 -0.49130716379927142 ;
-	setAttr ".sp" -type "double3" -3.6074086722187917 2.6150567230921333 -0.49130716379927142 ;
+	setAttr ".t" -type "double3" -0.019521104504962583 0 0 ;
+	setAttr ".rp" -type "double3" -3.6074057998271165 2.6150569516535001 -0.49130739440000593 ;
+	setAttr ".sp" -type "double3" -3.6074057998271165 2.6150569516535001 -0.49130739440000593 ;
 createNode transform -n "R_Finger_03_Point_Orient_Ctrl" -p "R_Finger_03_Point_Orient_Ctrl_Grp";
 	rename -uid "F192EC39-4C4D-7A16-AED4-BD9246C94A8E";
-	setAttr ".rp" -type "double3" -3.6074086722187917 2.6150567230921333 -0.49130716379927053 ;
-	setAttr ".sp" -type "double3" -3.6074086722187917 2.6150567230921333 -0.49130716379927053 ;
+	setAttr ".rp" -type "double3" -3.6074057998271165 2.6150569516535009 -0.49130739440000593 ;
+	setAttr ".sp" -type "double3" -3.6074057998271165 2.6150569516535009 -0.49130739440000593 ;
 createNode nurbsCurve -n "R_Finger_03_Point_Orient_CtrlShape" -p "R_Finger_03_Point_Orient_Ctrl";
 	rename -uid "C1CBEBE4-4FA7-3FE9-689F-9989341A9027";
 	setAttr -k off ".v";
@@ -49937,17 +49939,17 @@ createNode nurbsCurve -n "R_Finger_03_Point_Orient_CtrlShape" -p "R_Finger_03_Po
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
-		-3.6210800312528635 2.2963776134399718 -0.84839964746427943
-		-3.5755545679642631 2.7860955684356585 -0.47985436172398355
-		-3.7174474189766586 2.2694812838514702 -0.17869332392304688
-		-3.5825950420336135 2.6219822566311426 -0.66374978611728774
-		-3.5937373131847217 2.9337358327442966 -0.13421468013426396
-		-3.639262776473323 2.4440178777486099 -0.50275996587456051
-		-3.4973699254609278 2.9606321623327982 -0.80392100367549524
-		-3.6322223024039708 2.6081311895531258 -0.3188645414812587
-		-3.6210800312528635 2.2963776134399718 -0.84839964746427943
-		-3.5755545679642631 2.7860955684356585 -0.47985436172398355
-		-3.7174474189766586 2.2694812838514702 -0.17869332392304688
+		-3.6568009241660424 2.2606385977789394 -0.17317837182431361
+		-3.5566982896037684 2.6250808021917482 -0.65782588609692327
+		-3.7549407603542311 2.9305462055094051 -0.16273732729059276
+		-3.5821357820428075 2.44256250068731 -0.49399585803823776
+		-3.5580106754881919 2.9694753055280607 -0.80943641697570001
+		-3.6581133100504668 2.6050331011152505 -0.32478890270309035
+		-3.4598708393000046 2.2995676977975958 -0.81987746150942087
+		-3.632675817611426 2.7875514026196866 -0.48861893076177587
+		-3.6568009241660424 2.2606385977789394 -0.17317837182431361
+		-3.5566982896037684 2.6250808021917482 -0.65782588609692327
+		-3.7549407603542311 2.9305462055094051 -0.16273732729059276
 		;
 createNode transform -n "Skeleton" -p "BlueRobot";
 	rename -uid "4F03F076-4204-B80E-8C84-4D8E7C2C51D3";
@@ -50028,7 +50030,7 @@ createNode joint -n "L_Thumb_02_Jnt" -p "L_Thumb_01_Jnt";
 createNode joint -n "L_Finger_01_01_Jnt" -p "L_Hand_Jnt";
 	rename -uid "D5250990-420A-EF71-D318-359D9765E33B";
 	setAttr ".t" -type "double3" 1.6576765890571448 0.57207119829548825 0.060304032575383415 ;
-	setAttr ".r" -type "double3" -1.6305832732040693 2.1342489962547555 0.12693257509231556 ;
+	setAttr ".r" -type "double3" 0.88754598533470264 2.1348677608787701 0.22246711102023695 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".dla" yes;
@@ -50060,7 +50062,7 @@ createNode ikEffector -n "effector5" -p "L_Finger_01_02_Jnt";
 createNode joint -n "L_Finger_02_01_Jnt" -p "L_Hand_Jnt";
 	rename -uid "7A76CA03-421C-02D0-DE76-5894103FF986";
 	setAttr ".t" -type "double3" 1.6661205535967181 0.020488434867551142 -0.067943246284283304 ;
-	setAttr ".r" -type "double3" -1.639879059357009 0.22498076420479093 0.43341302715698982 ;
+	setAttr ".r" -type "double3" -4.9656726044841699 0.22290577612104698 0.36780991731229301 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".dla" yes;
@@ -50093,7 +50095,7 @@ createNode ikEffector -n "effector7" -p "L_Finger_02_02_Jnt";
 createNode joint -n "L_Finger_03_01_Jnt" -p "L_Hand_Jnt";
 	rename -uid "E4F37F7E-4944-862C-AB29-CE801334DAE1";
 	setAttr ".t" -type "double3" 1.7184943931932253 -0.52516828817768779 0.080088444709171341 ;
-	setAttr ".r" -type "double3" -1.6246968694460699 -1.9546525919842999 0.2538967156019778 ;
+	setAttr ".r" -type "double3" 2.152658820913854 -1.95461455196444 0.25391271106577246 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".dla" yes;
@@ -50103,7 +50105,7 @@ createNode joint -n "L_Finger_03_01_Jnt" -p "L_Hand_Jnt";
 createNode joint -n "L_Finger_03_02_Jnt" -p "L_Finger_03_01_Jnt";
 	rename -uid "90DDED27-49D6-D37C-B219-7786F277B316";
 	setAttr ".t" -type "double3" 0.60828281268171303 0 4.163336342344337e-017 ;
-	setAttr ".r" -type "double3" 3.7079837816335969e-015 2.2089461345121517 9.6116603859245989e-014 ;
+	setAttr ".r" -type "double3" 3.7078461784171297e-015 2.2088641605578379 9.6113037233654929e-014 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".dla" yes;
@@ -50138,7 +50140,7 @@ createNode joint -n "Head_Jnt" -p "Chest_Jnt";
 createNode joint -n "R_Arm_01_Jnt" -p "Chest_Jnt";
 	rename -uid "9394A3A6-40E9-FFD7-6582-308FA6098E20";
 	setAttr ".t" -type "double3" 3.466242161179701 6.1358068365511844 0.011102530690439705 ;
-	setAttr ".r" -type "double3" 0.028372416623717547 -0.2392576380663595 -0.031545941985001498 ;
+	setAttr ".r" -type "double3" 0.067357667440777952 -0.23883361046003507 -0.031542680479314487 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".dla" yes;
@@ -50184,7 +50186,7 @@ createNode joint -n "R_Thumb_02_Jnt" -p "R_Thumb_01_Jnt";
 createNode joint -n "R_Finger_01_01_Jnt" -p "R_Hand_Jnt";
 	rename -uid "F019EE45-4150-8DED-C2D2-63B68FDB58DE";
 	setAttr ".t" -type "double3" -1.6576782159888519 -0.5720709308952594 -0.060310190108221917 ;
-	setAttr ".r" -type "double3" -1.6305832732040693 2.1342489962547555 0.12693257509231556 ;
+	setAttr ".r" -type "double3" -1.621871384013466 2.1754089448631668 0.13090978337103323 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".dla" yes;
@@ -50194,7 +50196,7 @@ createNode joint -n "R_Finger_01_01_Jnt" -p "R_Hand_Jnt";
 createNode joint -n "R_Finger_01_02_Jnt" -p "R_Finger_01_01_Jnt";
 	rename -uid "4AA94D49-4200-311B-822C-7486C909B04B";
 	setAttr ".t" -type "double3" -0.71318119259352653 1.1389669873906882e-008 7.4078562395385461e-006 ;
-	setAttr ".r" -type "double3" 4.7800475923202676e-015 -2.8417954372088925 -8.3937025971591183e-006 ;
+	setAttr ".r" -type "double3" -2.3591590700673707e-007 -2.8864784872299341 -1.3309553279059745e-005 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".dla" yes;
@@ -50214,10 +50216,14 @@ createNode ikEffector -n "effector8" -p "R_Finger_01_02_Jnt";
 	setAttr ".v" no;
 	setAttr ".t" -type "double3" -0.52802998602875872 4.3189382514796648e-008 -7.1039518001470014e-006 ;
 	setAttr ".hd" yes;
+createNode ikEffector -n "effector15" -p "R_Finger_01_02_Jnt";
+	rename -uid "49EDAAC0-4E5D-6702-83B4-E781BF37BFAB";
+	setAttr ".v" no;
+	setAttr ".hd" yes;
 createNode joint -n "R_Finger_02_01_Jnt" -p "R_Hand_Jnt";
 	rename -uid "F2219AA1-4463-2FAA-25E4-6C9692EB383A";
 	setAttr ".t" -type "double3" -1.6661204752174377 -0.020488400033577103 0.067940792279200135 ;
-	setAttr ".r" -type "double3" -1.639879059357009 0.22498076420479093 0.43341302715698982 ;
+	setAttr ".r" -type "double3" -1.7526602880080027 0.2285427863533824 0.43208433231890259 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".dla" yes;
@@ -50227,7 +50233,7 @@ createNode joint -n "R_Finger_02_01_Jnt" -p "R_Hand_Jnt";
 createNode joint -n "R_Finger_02_02_Jnt" -p "R_Finger_02_01_Jnt";
 	rename -uid "5335251F-47C9-3333-7017-B18590FDE06C";
 	setAttr ".t" -type "double3" -0.76659008920280991 -4.1225244991338617e-007 -4.45633201406892e-006 ;
-	setAttr ".r" -type "double3" 3.6466100769016321e-016 -0.45800396087472939 -1.0113149511006672 ;
+	setAttr ".r" -type "double3" -2.018903886113236e-007 -0.4646029109206507 -1.0114914615108646 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".dla" yes;
@@ -50249,10 +50255,14 @@ createNode ikEffector -n "effector9" -p "R_Finger_02_02_Jnt";
 	setAttr ".v" no;
 	setAttr ".t" -type "double3" -0.56059211806024711 9.1699542029144432e-008 6.1414543610638361e-006 ;
 	setAttr ".hd" yes;
+createNode ikEffector -n "effector14" -p "R_Finger_02_02_Jnt";
+	rename -uid "236B21E0-420C-45D7-4381-60B964436602";
+	setAttr ".v" no;
+	setAttr ".hd" yes;
 createNode joint -n "R_Finger_03_01_Jnt" -p "R_Hand_Jnt";
 	rename -uid "D713D932-4611-D4E4-9597-CCB689BE83D0";
 	setAttr ".t" -type "double3" -1.7184983819495696 0.52516815858378807 -0.080088075933098857 ;
-	setAttr ".r" -type "double3" -1.6246968694460699 -1.9546525919842999 0.2538967156019778 ;
+	setAttr ".r" -type "double3" 0.059609862348614692 -1.9768864499065242 0.26024876725053969 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".dla" yes;
@@ -50262,7 +50272,7 @@ createNode joint -n "R_Finger_03_01_Jnt" -p "R_Hand_Jnt";
 createNode joint -n "R_Finger_03_02_Jnt" -p "R_Finger_03_01_Jnt";
 	rename -uid "3DDB32C0-49A6-9855-5AD6-71B835B0FE9C";
 	setAttr ".t" -type "double3" -0.60828246113355533 -1.1669454957896619e-007 -1.5140358642362628e-006 ;
-	setAttr ".r" -type "double3" 3.7079837816335969e-015 2.2089461345121517 9.6116603859245989e-014 ;
+	setAttr ".r" -type "double3" 2.1075115088431459e-006 2.2095274762208388 6.5582750696400912e-005 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".dla" yes;
@@ -50282,6 +50292,10 @@ createNode ikEffector -n "effector10" -p "R_Finger_03_02_Jnt";
 	rename -uid "49AE23D7-49C4-54C1-C328-A78BE1571B02";
 	setAttr ".v" no;
 	setAttr ".t" -type "double3" -0.52911006717109776 5.0472190660233451e-007 -1.3931175231185478e-006 ;
+	setAttr ".hd" yes;
+createNode ikEffector -n "effector13" -p "R_Finger_03_02_Jnt";
+	rename -uid "C5C88271-43E3-EB2D-AD3A-069F25D85168";
+	setAttr ".v" no;
 	setAttr ".hd" yes;
 createNode ikEffector -n "effector11" -p "R_Arm_02_Jnt";
 	rename -uid "89F22610-42D5-5C85-166D-E0956658CE52";
@@ -50334,7 +50348,7 @@ createNode ikEffector -n "effector1" -p "L_Leg_02_Jnt";
 createNode joint -n "R_Leg_01_Jnt" -p "Pelvis_Jnt";
 	rename -uid "F7BCA45B-41BB-39EB-5E46-7AB7C1E47D60";
 	setAttr ".t" -type "double3" 0.80209578987307717 -1.8222627911298517 0.050078436071606225 ;
-	setAttr ".r" -type "double3" -0.087152752813468473 -0.31959200315716296 -1.2974506050478847 ;
+	setAttr ".r" -type "double3" -0.087135386772023982 -0.31959210427434231 -1.2974518623442259 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".dla" yes;
@@ -50414,28 +50428,185 @@ createNode poleVectorConstraint -n "L_Arm_IK_Handle_poleVectorConstraint1" -p "L
 createNode ikHandle -n "L_Finger_02_IK_Handle" -p "Deformers";
 	rename -uid "39C85544-456F-CF2A-E27A-758089224DB0";
 	setAttr ".t" -type "double3" 3.7276377386269073 1.9610719803167962 0.11833074750543773 ;
-	setAttr ".pv" -type "double3" 1.996604354304909 -0.10440068114427664 0.051687040419113213 ;
 	setAttr ".roc" yes;
+createNode poleVectorConstraint -n "L_Finger_02_IK_Handle_poleVectorConstraint1" 
+		-p "L_Finger_02_IK_Handle";
+	rename -uid "C6C3E326-4E0E-2BBE-7BCE-CB892C3F8937";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_Finger_02_Point_Orient_CtrlW0" 
+		-dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".rst" -type "double3" -0.024964360378042283 -0.76612744915146802 -0.0027771870537124654 ;
+	setAttr -k on ".w0";
 createNode ikHandle -n "L_Finger_03_IK_Handle" -p "Deformers";
 	rename -uid "20089001-437A-CDD6-B0BD-43A5F1B406AC";
 	setAttr ".t" -type "double3" 3.5889512411370843 2.0902816196150509 -0.55584350356046641 ;
-	setAttr ".pv" -type "double3" 1.9971104663744936 -0.10668116730003352 -0.01299667807385697 ;
 	setAttr ".roc" yes;
+createNode poleVectorConstraint -n "L_Finger_03_IK_Handle_poleVectorConstraint1" 
+		-p "L_Finger_03_IK_Handle";
+	rename -uid "C33746C9-4841-7B6E-4C9B-D4AC0B87243C";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_Finger_03_Point_Orient_CtrlW0" 
+		-dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".rst" -type "double3" -0.025538625577452567 -0.60408271003342984 -0.068551653447757099 ;
+	setAttr -k on ".w0";
 createNode ikHandle -n "L_Finger_01_IK_Handle" -p "Deformers";
 	rename -uid "69A3EFDF-4881-D012-C351-2FBFED04142E";
 	setAttr ".t" -type "double3" 3.603892274617591 2.0707283161737489 0.79266829996906107 ;
-	setAttr ".pv" -type "double3" 1.9973297860818429 -0.10265464475876701 0.011651160444828314 ;
 	setAttr ".roc" yes;
+createNode poleVectorConstraint -n "L_Finger_01_IK_Handle_poleVectorConstraint1" 
+		-p "L_Finger_01_IK_Handle";
+	rename -uid "BC2472EF-48AF-6F6B-5E79-F282DEDF399B";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_Finger_01_Point_Orient_CtrlW0" 
+		-dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".rst" -type "double3" -0.0079301303369812004 -0.70893178935139955 0.071551751733642255 ;
+	setAttr -k on ".w0";
 createNode ikHandle -n "R_Arm_IK_Handle" -p "Deformers";
 	rename -uid "8FC2E065-48ED-4CF9-EB00-08BFFA09BEBB";
 	setAttr ".t" -type "double3" -3.6907398193604175 4.9494279097641858 0.062351418724591323 ;
-	setAttr ".pv" -type "double3" -0.010620611512278402 -0.231546821107489 -1.9865229100733077 ;
 	setAttr ".roc" yes;
+createNode poleVectorConstraint -n "R_Arm_IK_Handle_poleVectorConstraint1" -p "R_Arm_IK_Handle";
+	rename -uid "48A920CD-4A78-8DDC-7B99-4CAA8890D3DB";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "R_Arm_Point_Orient_CtrlW0" -dv 1 
+		-min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".rst" -type "double3" -0.074155816692047072 -3.2419095220264298 -0.0019635745440550745 ;
+	setAttr -k on ".w0";
 createNode ikHandle -n "R_Leg_IK_Handle" -p "Deformers";
 	rename -uid "1077FB11-4412-D722-8F7C-AE8C24162394";
 	setAttr ".t" -type "double3" -1.2304299966764676 0.042403960442913835 -0.027839397389003179 ;
-	setAttr ".pv" -type "double3" -0.16344409421050263 -0.073191610245954525 1.9919661182503365 ;
 	setAttr ".roc" yes;
+createNode poleVectorConstraint -n "R_Leg_IK_Handle_poleVectorConstraint1" -p "R_Leg_IK_Handle";
+	rename -uid "3B4A7F85-4D16-B131-F16C-CEA7C5E7C0CD";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "R_leg_Point_Orient_CtrlW0" -dv 1 
+		-min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".rst" -type "double3" -0.088099256423975758 -1.449580027246026 0.042415213309781458 ;
+	setAttr -k on ".w0";
+createNode ikHandle -n "R_Finger_03_IK_Handle" -p "Deformers";
+	rename -uid "986F8660-4B7C-BF13-E4CE-E19F48204BDA";
+	setAttr ".t" -type "double3" -3.5703977149194031 2.0905400049858782 -0.55021272093282614 ;
+	setAttr ".roc" yes;
+createNode poleVectorConstraint -n "R_Finger_03_IK_Handle_poleVectorConstraint1" 
+		-p "R_Finger_03_IK_Handle";
+	rename -uid "63E82E2C-408D-1560-F3A7-298A6EB5BFCC";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "R_Finger_03_Point_Orient_CtrlW0" 
+		-dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".rst" -type "double3" 0.02302565866700812 -0.6030019851215398 -0.067719505373790956 ;
+	setAttr -k on ".w0";
+createNode ikHandle -n "R_Finger_02_IK_Handle" -p "Deformers";
+	rename -uid "DBA6FC8D-42D6-7238-F738-8EBB10E94275";
+	setAttr ".t" -type "double3" -3.728196463027257 1.9611157018493715 0.119751281424095 ;
+	setAttr ".roc" yes;
+createNode poleVectorConstraint -n "R_Finger_02_IK_Handle_poleVectorConstraint1" 
+		-p "R_Finger_02_IK_Handle";
+	rename -uid "AEA24385-40C4-6FB6-D331-14965BB0BC46";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "R_Finger_02_Point_Orient_CtrlW0" 
+		-dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".rst" -type "double3" 0.024368748743329949 -0.76620243387653497 -0.00059940834226036854 ;
+	setAttr -k on ".w0";
+createNode ikHandle -n "R_Finger_01_IK_Handle" -p "Deformers";
+	rename -uid "649F2485-4473-BA68-859B-97ADCA38C277";
+	setAttr ".t" -type "double3" -3.6238017580297921 2.0713785283927395 0.79725675010951891 ;
+	setAttr ".roc" yes;
+createNode poleVectorConstraint -n "R_Finger_01_IK_Handle_poleVectorConstraint1" 
+		-p "R_Finger_01_IK_Handle";
+	rename -uid "2D76B2E7-447D-72EE-4DE0-1C8AB6E419E6";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "R_Finger_01_Point_Orient_CtrlW0" 
+		-dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".rst" -type "double3" -0.0016983632480092048 -0.70960124312243478 0.071348474723531452 ;
+	setAttr -k on ".w0";
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "28E6B1AA-4BD4-DB85-42C6-F6BB7E8F2242";
 	setAttr -s 6 ".lnk";
@@ -50530,7 +50701,6 @@ createNode materialInfo -n "materialInfo1";
 createNode displayLayer -n "Geo_Layer";
 	rename -uid "98AEE06C-4190-FB19-1447-7E8B9249EF93";
 	setAttr ".dt" 2;
-	setAttr ".v" no;
 	setAttr ".do" 1;
 createNode blinn -n "blue_shader";
 	rename -uid "4EE42FC5-4079-D8C5-4219-7AA4F0A1701A";
@@ -50835,12 +51005,21 @@ connectAttr "R_Thumb_01_Jnt.s" "R_Thumb_02_Jnt.is";
 connectAttr "R_Hand_Jnt.s" "R_Finger_01_01_Jnt.is";
 connectAttr "R_Finger_01_01_Jnt.s" "R_Finger_01_02_Jnt.is";
 connectAttr "R_Finger_01_02_Jnt.s" "R_Finger_01_03_Jnt.is";
+connectAttr "R_Finger_01_03_Jnt.tx" "effector15.tx";
+connectAttr "R_Finger_01_03_Jnt.ty" "effector15.ty";
+connectAttr "R_Finger_01_03_Jnt.tz" "effector15.tz";
 connectAttr "R_Hand_Jnt.s" "R_Finger_02_01_Jnt.is";
 connectAttr "R_Finger_02_01_Jnt.s" "R_Finger_02_02_Jnt.is";
 connectAttr "R_Finger_02_02_Jnt.s" "R_Finger_02_03_Jnt.is";
+connectAttr "R_Finger_02_03_Jnt.tx" "effector14.tx";
+connectAttr "R_Finger_02_03_Jnt.ty" "effector14.ty";
+connectAttr "R_Finger_02_03_Jnt.tz" "effector14.tz";
 connectAttr "R_Hand_Jnt.s" "R_Finger_03_01_Jnt.is";
 connectAttr "R_Finger_03_01_Jnt.s" "R_Finger_03_02_Jnt.is";
 connectAttr "R_Finger_03_02_Jnt.s" "R_Finger_03_03_Jnt.is";
+connectAttr "R_Finger_03_03_Jnt.tx" "effector13.tx";
+connectAttr "R_Finger_03_03_Jnt.ty" "effector13.ty";
+connectAttr "R_Finger_03_03_Jnt.tz" "effector13.tz";
 connectAttr "COG_Jnt.s" "Pelvis_Jnt.is";
 connectAttr "Pelvis_Jnt.s" "L_Leg_01_Jnt.is";
 connectAttr "L_Leg_01_Jnt.s" "L_Leg_02_Jnt.is";
@@ -50892,18 +51071,191 @@ connectAttr "L_Arm_IK_Handle_poleVectorConstraint1.w0" "L_Arm_IK_Handle_poleVect
 connectAttr "L_Finger_02_01_Jnt.msg" "L_Finger_02_IK_Handle.hsj";
 connectAttr "effector7.hp" "L_Finger_02_IK_Handle.hee";
 connectAttr "ikRPsolver.msg" "L_Finger_02_IK_Handle.hsv";
+connectAttr "L_Finger_02_IK_Handle_poleVectorConstraint1.ctx" "L_Finger_02_IK_Handle.pvx"
+		;
+connectAttr "L_Finger_02_IK_Handle_poleVectorConstraint1.cty" "L_Finger_02_IK_Handle.pvy"
+		;
+connectAttr "L_Finger_02_IK_Handle_poleVectorConstraint1.ctz" "L_Finger_02_IK_Handle.pvz"
+		;
+connectAttr "L_Finger_02_IK_Handle.pim" "L_Finger_02_IK_Handle_poleVectorConstraint1.cpim"
+		;
+connectAttr "L_Finger_02_01_Jnt.pm" "L_Finger_02_IK_Handle_poleVectorConstraint1.ps"
+		;
+connectAttr "L_Finger_02_01_Jnt.t" "L_Finger_02_IK_Handle_poleVectorConstraint1.crp"
+		;
+connectAttr "L_Finger_02_Point_Orient_Ctrl.t" "L_Finger_02_IK_Handle_poleVectorConstraint1.tg[0].tt"
+		;
+connectAttr "L_Finger_02_Point_Orient_Ctrl.rp" "L_Finger_02_IK_Handle_poleVectorConstraint1.tg[0].trp"
+		;
+connectAttr "L_Finger_02_Point_Orient_Ctrl.rpt" "L_Finger_02_IK_Handle_poleVectorConstraint1.tg[0].trt"
+		;
+connectAttr "L_Finger_02_Point_Orient_Ctrl.pm" "L_Finger_02_IK_Handle_poleVectorConstraint1.tg[0].tpm"
+		;
+connectAttr "L_Finger_02_IK_Handle_poleVectorConstraint1.w0" "L_Finger_02_IK_Handle_poleVectorConstraint1.tg[0].tw"
+		;
 connectAttr "L_Finger_03_01_Jnt.msg" "L_Finger_03_IK_Handle.hsj";
 connectAttr "effector6.hp" "L_Finger_03_IK_Handle.hee";
 connectAttr "ikRPsolver.msg" "L_Finger_03_IK_Handle.hsv";
+connectAttr "L_Finger_03_IK_Handle_poleVectorConstraint1.ctx" "L_Finger_03_IK_Handle.pvx"
+		;
+connectAttr "L_Finger_03_IK_Handle_poleVectorConstraint1.cty" "L_Finger_03_IK_Handle.pvy"
+		;
+connectAttr "L_Finger_03_IK_Handle_poleVectorConstraint1.ctz" "L_Finger_03_IK_Handle.pvz"
+		;
+connectAttr "L_Finger_03_IK_Handle.pim" "L_Finger_03_IK_Handle_poleVectorConstraint1.cpim"
+		;
+connectAttr "L_Finger_03_01_Jnt.pm" "L_Finger_03_IK_Handle_poleVectorConstraint1.ps"
+		;
+connectAttr "L_Finger_03_01_Jnt.t" "L_Finger_03_IK_Handle_poleVectorConstraint1.crp"
+		;
+connectAttr "L_Finger_03_Point_Orient_Ctrl.t" "L_Finger_03_IK_Handle_poleVectorConstraint1.tg[0].tt"
+		;
+connectAttr "L_Finger_03_Point_Orient_Ctrl.rp" "L_Finger_03_IK_Handle_poleVectorConstraint1.tg[0].trp"
+		;
+connectAttr "L_Finger_03_Point_Orient_Ctrl.rpt" "L_Finger_03_IK_Handle_poleVectorConstraint1.tg[0].trt"
+		;
+connectAttr "L_Finger_03_Point_Orient_Ctrl.pm" "L_Finger_03_IK_Handle_poleVectorConstraint1.tg[0].tpm"
+		;
+connectAttr "L_Finger_03_IK_Handle_poleVectorConstraint1.w0" "L_Finger_03_IK_Handle_poleVectorConstraint1.tg[0].tw"
+		;
 connectAttr "L_Finger_01_01_Jnt.msg" "L_Finger_01_IK_Handle.hsj";
 connectAttr "effector5.hp" "L_Finger_01_IK_Handle.hee";
 connectAttr "ikRPsolver.msg" "L_Finger_01_IK_Handle.hsv";
+connectAttr "L_Finger_01_IK_Handle_poleVectorConstraint1.ctx" "L_Finger_01_IK_Handle.pvx"
+		;
+connectAttr "L_Finger_01_IK_Handle_poleVectorConstraint1.cty" "L_Finger_01_IK_Handle.pvy"
+		;
+connectAttr "L_Finger_01_IK_Handle_poleVectorConstraint1.ctz" "L_Finger_01_IK_Handle.pvz"
+		;
+connectAttr "L_Finger_01_IK_Handle.pim" "L_Finger_01_IK_Handle_poleVectorConstraint1.cpim"
+		;
+connectAttr "L_Finger_01_01_Jnt.pm" "L_Finger_01_IK_Handle_poleVectorConstraint1.ps"
+		;
+connectAttr "L_Finger_01_01_Jnt.t" "L_Finger_01_IK_Handle_poleVectorConstraint1.crp"
+		;
+connectAttr "L_Finger_01_Point_Orient_Ctrl.t" "L_Finger_01_IK_Handle_poleVectorConstraint1.tg[0].tt"
+		;
+connectAttr "L_Finger_01_Point_Orient_Ctrl.rp" "L_Finger_01_IK_Handle_poleVectorConstraint1.tg[0].trp"
+		;
+connectAttr "L_Finger_01_Point_Orient_Ctrl.rpt" "L_Finger_01_IK_Handle_poleVectorConstraint1.tg[0].trt"
+		;
+connectAttr "L_Finger_01_Point_Orient_Ctrl.pm" "L_Finger_01_IK_Handle_poleVectorConstraint1.tg[0].tpm"
+		;
+connectAttr "L_Finger_01_IK_Handle_poleVectorConstraint1.w0" "L_Finger_01_IK_Handle_poleVectorConstraint1.tg[0].tw"
+		;
 connectAttr "R_Arm_01_Jnt.msg" "R_Arm_IK_Handle.hsj";
 connectAttr "effector11.hp" "R_Arm_IK_Handle.hee";
 connectAttr "ikRPsolver.msg" "R_Arm_IK_Handle.hsv";
+connectAttr "R_Arm_IK_Handle_poleVectorConstraint1.ctx" "R_Arm_IK_Handle.pvx";
+connectAttr "R_Arm_IK_Handle_poleVectorConstraint1.cty" "R_Arm_IK_Handle.pvy";
+connectAttr "R_Arm_IK_Handle_poleVectorConstraint1.ctz" "R_Arm_IK_Handle.pvz";
+connectAttr "R_Arm_IK_Handle.pim" "R_Arm_IK_Handle_poleVectorConstraint1.cpim";
+connectAttr "R_Arm_01_Jnt.pm" "R_Arm_IK_Handle_poleVectorConstraint1.ps";
+connectAttr "R_Arm_01_Jnt.t" "R_Arm_IK_Handle_poleVectorConstraint1.crp";
+connectAttr "R_Arm_Point_Orient_Ctrl.t" "R_Arm_IK_Handle_poleVectorConstraint1.tg[0].tt"
+		;
+connectAttr "R_Arm_Point_Orient_Ctrl.rp" "R_Arm_IK_Handle_poleVectorConstraint1.tg[0].trp"
+		;
+connectAttr "R_Arm_Point_Orient_Ctrl.rpt" "R_Arm_IK_Handle_poleVectorConstraint1.tg[0].trt"
+		;
+connectAttr "R_Arm_Point_Orient_Ctrl.pm" "R_Arm_IK_Handle_poleVectorConstraint1.tg[0].tpm"
+		;
+connectAttr "R_Arm_IK_Handle_poleVectorConstraint1.w0" "R_Arm_IK_Handle_poleVectorConstraint1.tg[0].tw"
+		;
 connectAttr "R_Leg_01_Jnt.msg" "R_Leg_IK_Handle.hsj";
 connectAttr "effector12.hp" "R_Leg_IK_Handle.hee";
 connectAttr "ikRPsolver.msg" "R_Leg_IK_Handle.hsv";
+connectAttr "R_Leg_IK_Handle_poleVectorConstraint1.ctx" "R_Leg_IK_Handle.pvx";
+connectAttr "R_Leg_IK_Handle_poleVectorConstraint1.cty" "R_Leg_IK_Handle.pvy";
+connectAttr "R_Leg_IK_Handle_poleVectorConstraint1.ctz" "R_Leg_IK_Handle.pvz";
+connectAttr "R_Leg_IK_Handle.pim" "R_Leg_IK_Handle_poleVectorConstraint1.cpim";
+connectAttr "R_Leg_01_Jnt.pm" "R_Leg_IK_Handle_poleVectorConstraint1.ps";
+connectAttr "R_Leg_01_Jnt.t" "R_Leg_IK_Handle_poleVectorConstraint1.crp";
+connectAttr "R_leg_Point_Orient_Ctrl.t" "R_Leg_IK_Handle_poleVectorConstraint1.tg[0].tt"
+		;
+connectAttr "R_leg_Point_Orient_Ctrl.rp" "R_Leg_IK_Handle_poleVectorConstraint1.tg[0].trp"
+		;
+connectAttr "R_leg_Point_Orient_Ctrl.rpt" "R_Leg_IK_Handle_poleVectorConstraint1.tg[0].trt"
+		;
+connectAttr "R_leg_Point_Orient_Ctrl.pm" "R_Leg_IK_Handle_poleVectorConstraint1.tg[0].tpm"
+		;
+connectAttr "R_Leg_IK_Handle_poleVectorConstraint1.w0" "R_Leg_IK_Handle_poleVectorConstraint1.tg[0].tw"
+		;
+connectAttr "R_Finger_03_01_Jnt.msg" "R_Finger_03_IK_Handle.hsj";
+connectAttr "effector13.hp" "R_Finger_03_IK_Handle.hee";
+connectAttr "ikRPsolver.msg" "R_Finger_03_IK_Handle.hsv";
+connectAttr "R_Finger_03_IK_Handle_poleVectorConstraint1.ctx" "R_Finger_03_IK_Handle.pvx"
+		;
+connectAttr "R_Finger_03_IK_Handle_poleVectorConstraint1.cty" "R_Finger_03_IK_Handle.pvy"
+		;
+connectAttr "R_Finger_03_IK_Handle_poleVectorConstraint1.ctz" "R_Finger_03_IK_Handle.pvz"
+		;
+connectAttr "R_Finger_03_IK_Handle.pim" "R_Finger_03_IK_Handle_poleVectorConstraint1.cpim"
+		;
+connectAttr "R_Finger_03_01_Jnt.pm" "R_Finger_03_IK_Handle_poleVectorConstraint1.ps"
+		;
+connectAttr "R_Finger_03_01_Jnt.t" "R_Finger_03_IK_Handle_poleVectorConstraint1.crp"
+		;
+connectAttr "R_Finger_03_Point_Orient_Ctrl.t" "R_Finger_03_IK_Handle_poleVectorConstraint1.tg[0].tt"
+		;
+connectAttr "R_Finger_03_Point_Orient_Ctrl.rp" "R_Finger_03_IK_Handle_poleVectorConstraint1.tg[0].trp"
+		;
+connectAttr "R_Finger_03_Point_Orient_Ctrl.rpt" "R_Finger_03_IK_Handle_poleVectorConstraint1.tg[0].trt"
+		;
+connectAttr "R_Finger_03_Point_Orient_Ctrl.pm" "R_Finger_03_IK_Handle_poleVectorConstraint1.tg[0].tpm"
+		;
+connectAttr "R_Finger_03_IK_Handle_poleVectorConstraint1.w0" "R_Finger_03_IK_Handle_poleVectorConstraint1.tg[0].tw"
+		;
+connectAttr "R_Finger_02_01_Jnt.msg" "R_Finger_02_IK_Handle.hsj";
+connectAttr "effector14.hp" "R_Finger_02_IK_Handle.hee";
+connectAttr "ikRPsolver.msg" "R_Finger_02_IK_Handle.hsv";
+connectAttr "R_Finger_02_IK_Handle_poleVectorConstraint1.ctx" "R_Finger_02_IK_Handle.pvx"
+		;
+connectAttr "R_Finger_02_IK_Handle_poleVectorConstraint1.cty" "R_Finger_02_IK_Handle.pvy"
+		;
+connectAttr "R_Finger_02_IK_Handle_poleVectorConstraint1.ctz" "R_Finger_02_IK_Handle.pvz"
+		;
+connectAttr "R_Finger_02_IK_Handle.pim" "R_Finger_02_IK_Handle_poleVectorConstraint1.cpim"
+		;
+connectAttr "R_Finger_02_01_Jnt.pm" "R_Finger_02_IK_Handle_poleVectorConstraint1.ps"
+		;
+connectAttr "R_Finger_02_01_Jnt.t" "R_Finger_02_IK_Handle_poleVectorConstraint1.crp"
+		;
+connectAttr "R_Finger_02_Point_Orient_Ctrl.t" "R_Finger_02_IK_Handle_poleVectorConstraint1.tg[0].tt"
+		;
+connectAttr "R_Finger_02_Point_Orient_Ctrl.rp" "R_Finger_02_IK_Handle_poleVectorConstraint1.tg[0].trp"
+		;
+connectAttr "R_Finger_02_Point_Orient_Ctrl.rpt" "R_Finger_02_IK_Handle_poleVectorConstraint1.tg[0].trt"
+		;
+connectAttr "R_Finger_02_Point_Orient_Ctrl.pm" "R_Finger_02_IK_Handle_poleVectorConstraint1.tg[0].tpm"
+		;
+connectAttr "R_Finger_02_IK_Handle_poleVectorConstraint1.w0" "R_Finger_02_IK_Handle_poleVectorConstraint1.tg[0].tw"
+		;
+connectAttr "R_Finger_01_01_Jnt.msg" "R_Finger_01_IK_Handle.hsj";
+connectAttr "effector15.hp" "R_Finger_01_IK_Handle.hee";
+connectAttr "ikRPsolver.msg" "R_Finger_01_IK_Handle.hsv";
+connectAttr "R_Finger_01_IK_Handle_poleVectorConstraint1.ctx" "R_Finger_01_IK_Handle.pvx"
+		;
+connectAttr "R_Finger_01_IK_Handle_poleVectorConstraint1.cty" "R_Finger_01_IK_Handle.pvy"
+		;
+connectAttr "R_Finger_01_IK_Handle_poleVectorConstraint1.ctz" "R_Finger_01_IK_Handle.pvz"
+		;
+connectAttr "R_Finger_01_IK_Handle.pim" "R_Finger_01_IK_Handle_poleVectorConstraint1.cpim"
+		;
+connectAttr "R_Finger_01_01_Jnt.pm" "R_Finger_01_IK_Handle_poleVectorConstraint1.ps"
+		;
+connectAttr "R_Finger_01_01_Jnt.t" "R_Finger_01_IK_Handle_poleVectorConstraint1.crp"
+		;
+connectAttr "R_Finger_01_Point_Orient_Ctrl.t" "R_Finger_01_IK_Handle_poleVectorConstraint1.tg[0].tt"
+		;
+connectAttr "R_Finger_01_Point_Orient_Ctrl.rp" "R_Finger_01_IK_Handle_poleVectorConstraint1.tg[0].trp"
+		;
+connectAttr "R_Finger_01_Point_Orient_Ctrl.rpt" "R_Finger_01_IK_Handle_poleVectorConstraint1.tg[0].trt"
+		;
+connectAttr "R_Finger_01_Point_Orient_Ctrl.pm" "R_Finger_01_IK_Handle_poleVectorConstraint1.tg[0].tpm"
+		;
+connectAttr "R_Finger_01_IK_Handle_poleVectorConstraint1.w0" "R_Finger_01_IK_Handle_poleVectorConstraint1.tg[0].tw"
+		;
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "aqua_shaderSG.message" ":defaultLightSet.message";
