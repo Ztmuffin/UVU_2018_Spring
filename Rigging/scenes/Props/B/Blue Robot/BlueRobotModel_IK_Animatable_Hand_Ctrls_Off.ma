@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff05 scene
-//Name: BlueRobotModel_IK.ma
-//Last modified: Mon, Feb 26, 2018 09:39:37 PM
+//Name: BlueRobotModel_IK_Animatable_Hand_Ctrls_Off.ma
+//Last modified: Mon, Feb 26, 2018 09:51:03 PM
 //Codeset: 1252
 requires maya "2017ff05";
 requires "stereoCamera" "10.0";
@@ -14,18 +14,18 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "DB04E300-4D3C-4BB0-DCE5-8192AEF35D23";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 9.7890892705796944 8.8040172308668563 6.6623711663484357 ;
-	setAttr ".r" -type "double3" -26.73835265496346 -2470.199999987743 -2.4637979706184081e-015 ;
+	setAttr ".t" -type "double3" 42.633408237662529 13.924575336718798 -3.136544811808875 ;
+	setAttr ".r" -type "double3" -12.938352654972803 -2425.3999999876351 -2.5444437451708134e-014 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "CC0963B7-4FEE-36D0-55E1-6C9298C5A8DA";
 	setAttr -k off ".v" no;
 	setAttr ".pze" yes;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 14.596628649294898;
+	setAttr ".coi" 40.086406754078482;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 3.6034938837768977 3.537969091072239 1.3687879259954889 ;
+	setAttr ".tp" -type "double3" 3.6905787026174632 4.949126576074228 -0.0032791347703822749 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "A4732479-4EAB-04D7-5BA3-048508BF731B";
@@ -53845,7 +53845,7 @@ createNode poseInterpolatorManager -n "poseInterpolatorManager";
 	rename -uid "F8248E91-4887-FA1B-32B8-73BD1A29083F";
 createNode displayLayerManager -n "layerManager";
 	rename -uid "79BDD2BF-42E1-03A5-867E-1FB47473802E";
-	setAttr ".cdl" 2;
+	setAttr ".cdl" 1;
 	setAttr -s 6 ".dli[1:5]"  1 2 3 4 5;
 	setAttr -s 6 ".dli";
 createNode displayLayer -n "defaultLayer";
@@ -54058,7 +54058,6 @@ createNode ikRPsolver -n "ikRPsolver";
 	rename -uid "6C2C0629-4A7C-2CA1-5FF9-CA8035FB0F3D";
 createNode displayLayer -n "Skeleton_Layer";
 	rename -uid "EF6C299C-4DE5-7447-23AE-0891F32285B4";
-	setAttr ".dt" 2;
 	setAttr ".c" 13;
 	setAttr ".do" 2;
 createNode displayLayer -n "Ctrls";
@@ -58799,4 +58798,4 @@ connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "orange_model_01_defaultRenderLayer.msg" ":defaultRenderingList1.r" 
 		-na;
 connectAttr "ikRPsolver.msg" ":ikSystem.sol" -na;
-// End of BlueRobotModel_IK.ma
+// End of BlueRobotModel_IK_Animatable_Hand_Ctrls_Off.ma
