@@ -10,7 +10,4 @@ public class CharacterStates : ScriptableObject
 
 	public GameObject Pose;
 	
-
-
-
 }

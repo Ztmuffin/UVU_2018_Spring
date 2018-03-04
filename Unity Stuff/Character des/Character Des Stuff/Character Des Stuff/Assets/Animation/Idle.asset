@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc12900e42683a44f8357374bfd5ab2b, type: 3}
   m_Name: Idle
   m_EditorClassIdentifier: 
-  name: Player1
+  name: Idle
   description: BoyIdle
   Pose: {fileID: 100002, guid: 18bb08d32cfa78f42b7ba46b6795e33f, type: 3}

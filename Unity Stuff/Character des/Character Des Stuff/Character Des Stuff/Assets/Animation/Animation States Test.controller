@@ -48,6 +48,7 @@ MonoBehaviour:
   Name: {fileID: 0}
   Description: {fileID: 0}
   Pose: {fileID: 100002, guid: 18bb08d32cfa78f42b7ba46b6795e33f, type: 3}
+  IngamePose: {fileID: 0}
 --- !u!114 &114694792725493820
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -63,6 +64,7 @@ MonoBehaviour:
   Name: {fileID: 0}
   Description: {fileID: 0}
   Pose: {fileID: 100002, guid: 73d58da6b0ca48a4783dbd64842c3a41, type: 3}
+  IngamePose: {fileID: 0}
 --- !u!114 &114881199836580498
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -78,6 +80,7 @@ MonoBehaviour:
   Name: {fileID: 0}
   Description: {fileID: 0}
   Pose: {fileID: 100002, guid: 70358f707bef9a84cad4699bafc14cb9, type: 3}
+  IngamePose: {fileID: 0}
 --- !u!1101 &1101264659457613436
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -111,7 +114,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 4
     m_ConditionEvent: Run
-    m_EventTreshold: 0
+    m_EventTreshold: 0.01
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102970761267363020}
   m_Solo: 0
@@ -291,13 +294,13 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 1102970761267363020}
-    m_Position: {x: 312, y: 120, z: 0}
+    m_Position: {x: 360, y: 204, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102545455864555412}
-    m_Position: {x: 588, y: 120, z: 0}
+    m_Position: {x: 636, y: 204, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102793515554952992}
-    m_Position: {x: 695.41425, y: -52.899796, z: 0}
+    m_Position: {x: 492, y: 84, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -305,6 +308,6 @@ AnimatorStateMachine:
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: 50, y: 20, z: 0}
   m_EntryPosition: {x: 50, y: 120, z: 0}
-  m_ExitPosition: {x: 800, y: 120, z: 0}
+  m_ExitPosition: {x: 864, y: 132, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 1102970761267363020}
