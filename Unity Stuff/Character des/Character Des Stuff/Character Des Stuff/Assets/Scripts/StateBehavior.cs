@@ -31,10 +31,10 @@ public class StateBehavior : StateMachineBehaviour
 			Instantiate(Pose);
 			IngamePose = Pose;
 		}
-		
-		Debug.Log(characterstate.description);
-		Debug.Log(characterstate.name + " is Active.");
+
+		characterstate.Activation();
 		Pose.SetActive(true);
+		
 	}
 
 
@@ -42,7 +42,7 @@ public class StateBehavior : StateMachineBehaviour
 	override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		
 		Pose.SetActive(false);
-		Debug.Log(characterstate.name + " deactivated.");
+		characterstate.Deactivation();
 	}
 
 

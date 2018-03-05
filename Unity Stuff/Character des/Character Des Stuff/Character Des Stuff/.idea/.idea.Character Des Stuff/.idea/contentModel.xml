@@ -4,8 +4,51 @@
     <e p="C:\Users\addis\.Rider2017.3\system\resharper-host\local\Transient\ReSharperHost\v11\SolutionCaches\_Character Des Stuff.1691293238.00" t="ExcludeRecursive" />
     <e p="F:\addis\Documents\UVU\UVU_2018_Spring\Unity Stuff\Character des\Character Des Stuff\Character Des Stuff" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Code" t="Include">
+          <e p="Elements" t="Include">
+            <e p="AttackElement.cs" t="Include" />
+            <e p="Elemental.cs" t="Include" />
+          </e>
+          <e p="Events" t="Include">
+            <e p="Editor" t="Include">
+              <e p="EventEditor.cs" t="Include" />
+            </e>
+            <e p="GameEvent.cs" t="Include" />
+            <e p="GameEventListener.cs" t="Include" />
+          </e>
+          <e p="Sets" t="Include">
+            <e p="RuntimeSet.cs" t="Include" />
+            <e p="Thing.cs" t="Include" />
+            <e p="ThingDisabler.cs" t="Include" />
+            <e p="ThingMonitor.cs" t="Include" />
+            <e p="ThingRuntimeSet.cs" t="Include" />
+          </e>
+          <e p="Variables" t="Include">
+            <e p="AnimatorParameterSetter.cs" t="Include" />
+            <e p="AudioParameterSetter.cs" t="Include" />
+            <e p="AudioVolumeSetter.cs" t="Include" />
+            <e p="DamageDealer.cs" t="Include" />
+            <e p="Editor" t="Include">
+              <e p="FloatReferenceDrawer.cs" t="Include" />
+            </e>
+            <e p="FloatReference.cs" t="Include" />
+            <e p="FloatVariable.cs" t="Include" />
+            <e p="ImageFillSetter.cs" t="Include" />
+            <e p="KeyboardMover.cs" t="Include" />
+            <e p="SimpleUnitHealth.cs" t="Include" />
+            <e p="SliderSetter.cs" t="Include" />
+            <e p="StringVariable.cs" t="Include" />
+            <e p="TextReplacer.cs" t="Include" />
+            <e p="UnitHealth.cs" t="Include" />
+            <e p="UnityEventRaiser.cs" t="Include" />
+            <e p="VariableAudioTrigger.cs" t="Include" />
+          </e>
+        </e>
+        <e p="OnStateEnterB.cs" t="Include" />
+        <e p="OnStateExitB.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="Editor" t="Include">
             <e p="JetBrains" t="Include">
