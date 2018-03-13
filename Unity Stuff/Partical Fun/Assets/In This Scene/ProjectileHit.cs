@@ -9,7 +9,7 @@ public class ProjectileHit : MonoBehaviour
 	private bool DoOnce;  
 
 	public GameEvent EnterEvent;
-	// public GameEvent ExitEvent;
+	public GameEvent ExitEvent;
 
 	private void OnTriggerEnter(Collider other)
 	{
@@ -23,11 +23,18 @@ public class ProjectileHit : MonoBehaviour
 		
 	}
 
-	/*
+	
 	 private void OnTriggerExit(Collider other)
+	 {
+		 StartCoroutine(EventRaising());
+	 }
+
+	IEnumerator EventRaising()
 	{
+		yield return new WaitForSeconds(2);
 		Debug.Log("More Explosions!!");
 		ExitEvent.Raise();
+		StopAllCoroutines();
 	}
-	*/
+	
 }
