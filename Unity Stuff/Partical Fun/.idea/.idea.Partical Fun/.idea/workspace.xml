@@ -11,30 +11,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProjectileHit.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProjectileHit.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/In This Scene/ProjectileHit.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="28" column="40" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="40" />
+            <state relative-caret-position="645">
+              <caret line="43" column="5" lean-forward="false" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
               <folding>
-                <marker date="1520916525314" expanded="false" signature="6:150" ph="..." />
-                <marker date="1520916525314" expanded="true" signature="194:699" ph="{...}" />
-                <marker date="1520916525314" expanded="true" signature="326:453" ph="{...}" />
-                <marker date="1520916525314" expanded="true" signature="363:446" ph="{...}" />
-                <marker date="1520916525314" expanded="true" signature="501:544" ph="{...}" />
-                <marker date="1520916525314" expanded="true" signature="573:695" ph="{...}" />
+                <marker date="1521243672429" expanded="true" signature="6:150" ph="..." />
+                <marker date="1521243672429" expanded="true" signature="194:1017" ph="{...}" />
+                <marker date="1521243672429" expanded="true" signature="363:529" ph="{...}" />
+                <marker date="1521243672429" expanded="true" signature="400:483" ph="{...}" />
+                <marker date="1521243672429" expanded="true" signature="577:620" ph="{...}" />
+                <marker date="1521243672429" expanded="true" signature="649:771" ph="{...}" />
+                <marker date="1521243672429" expanded="true" signature="863:1015" ph="{...}" />
+                <marker date="1521243672429" expanded="true" signature="939:1007" ph="/* Dont know if i want this to stop or not ... */" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OnUpdateBehavior.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="OnUpdateBehavior.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/In This Scene/OnUpdateBehavior.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1520557161357" expanded="false" signature="6:144" ph="..." />
+                <marker date="1520557161357" expanded="true" signature="6:144" ph="..." />
                 <marker date="1520557161357" expanded="true" signature="200:1431" ph="{...}" />
                 <marker date="1520557161357" expanded="true" signature="205:516" ph="/* OnStateEnter is called when a transition starts and the state machine starts to evaluate this state ... */" />
                 <marker date="1520557161357" expanded="true" signature="642:716" ph="{...}" />
@@ -48,10 +50,10 @@
       <file leaf-file-name="ENTERSTATE.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/ENTERSTATE.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="105">
               <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
               <folding>
-                <marker date="1521002511654" expanded="true" signature="6:115" ph="..." />
+                <marker date="1521002511654" expanded="false" signature="6:115" ph="..." />
                 <marker date="1521002511654" expanded="true" signature="165:1353" ph="{...}" />
                 <marker date="1521002511654" expanded="true" signature="402:428" ph="{...}" />
                 <marker date="1521002511654" expanded="true" signature="431:1351" ph="/* OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks ... */" />
@@ -121,9 +123,9 @@
         <option value="$PROJECT_DIR$/Assets/OnUpdateBehavior.cs" />
         <option value="$PROJECT_DIR$/Assets/DeactivateOBJ.cs" />
         <option value="$PROJECT_DIR$/Assets/ProjectileHit.cs" />
-        <option value="$PROJECT_DIR$/Assets/In This Scene/ProjectileHit.cs" />
         <option value="$PROJECT_DIR$/Assets/ChargeAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/ENTERSTATE.cs" />
+        <option value="$PROJECT_DIR$/Assets/In This Scene/ProjectileHit.cs" />
       </list>
     </option>
   </component>
@@ -134,10 +136,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1795" />
-    <option name="y" value="-11" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="1874" />
+    <option name="y" value="-21" />
+    <option name="width" value="1934" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator currentView="SolutionExplorer" proportions="" version="1">
@@ -205,12 +207,12 @@
       <workItem from="1520915698911" duration="1422000" />
       <workItem from="1520920291104" duration="12000" />
       <workItem from="1520994892754" duration="3548000" />
-      <workItem from="1521179387178" duration="623000" />
+      <workItem from="1521179387178" duration="2064000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11950000" />
+    <option name="totallyTimeSpent" value="13391000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -264,12 +266,14 @@
         <state relative-caret-position="480">
           <caret line="36" column="28" lean-forward="false" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
           <folding>
-            <marker date="1520916525314" expanded="false" signature="6:150" ph="..." />
-            <marker date="1520916525314" expanded="true" signature="194:699" ph="{...}" />
-            <marker date="1520916525314" expanded="true" signature="326:453" ph="{...}" />
-            <marker date="1520916525314" expanded="true" signature="363:446" ph="{...}" />
-            <marker date="1520916525314" expanded="true" signature="501:544" ph="{...}" />
-            <marker date="1520916525314" expanded="true" signature="573:695" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="6:150" ph="..." />
+            <marker date="1521243672429" expanded="true" signature="194:1017" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="363:529" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="400:483" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="577:620" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="649:771" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="863:1015" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="939:1007" ph="/* Dont know if i want this to stop or not ... */" />
           </folding>
         </state>
       </provider>
@@ -279,7 +283,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1520557161357" expanded="false" signature="6:144" ph="..." />
+            <marker date="1520557161357" expanded="true" signature="6:144" ph="..." />
             <marker date="1520557161357" expanded="true" signature="200:1431" ph="{...}" />
             <marker date="1520557161357" expanded="true" signature="205:516" ph="/* OnStateEnter is called when a transition starts and the state machine starts to evaluate this state ... */" />
             <marker date="1520557161357" expanded="true" signature="642:716" ph="{...}" />
@@ -332,7 +336,7 @@
         <state relative-caret-position="150">
           <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
           <folding>
-            <marker date="1521002511654" expanded="true" signature="6:115" ph="..." />
+            <marker date="1521002511654" expanded="false" signature="6:115" ph="..." />
             <marker date="1521002511654" expanded="true" signature="165:1353" ph="{...}" />
             <marker date="1521002511654" expanded="true" signature="402:428" ph="{...}" />
             <marker date="1521002511654" expanded="true" signature="431:1351" ph="/* OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks ... */" />
@@ -346,12 +350,14 @@
         <state relative-caret-position="480">
           <caret line="36" column="28" lean-forward="false" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
           <folding>
-            <marker date="1520916525314" expanded="false" signature="6:150" ph="..." />
-            <marker date="1520916525314" expanded="true" signature="194:699" ph="{...}" />
-            <marker date="1520916525314" expanded="true" signature="326:453" ph="{...}" />
-            <marker date="1520916525314" expanded="true" signature="363:446" ph="{...}" />
-            <marker date="1520916525314" expanded="true" signature="501:544" ph="{...}" />
-            <marker date="1520916525314" expanded="true" signature="573:695" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="6:150" ph="..." />
+            <marker date="1521243672429" expanded="true" signature="194:1017" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="363:529" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="400:483" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="577:620" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="649:771" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="863:1015" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="939:1007" ph="/* Dont know if i want this to stop or not ... */" />
           </folding>
         </state>
       </provider>
@@ -374,12 +380,14 @@
         <state relative-caret-position="480">
           <caret line="36" column="28" lean-forward="false" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
           <folding>
-            <marker date="1520916525314" expanded="false" signature="6:150" ph="..." />
-            <marker date="1520916525314" expanded="true" signature="194:699" ph="{...}" />
-            <marker date="1520916525314" expanded="true" signature="326:453" ph="{...}" />
-            <marker date="1520916525314" expanded="true" signature="363:446" ph="{...}" />
-            <marker date="1520916525314" expanded="true" signature="501:544" ph="{...}" />
-            <marker date="1520916525314" expanded="true" signature="573:695" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="6:150" ph="..." />
+            <marker date="1521243672429" expanded="true" signature="194:1017" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="363:529" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="400:483" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="577:620" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="649:771" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="863:1015" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="939:1007" ph="/* Dont know if i want this to stop or not ... */" />
           </folding>
         </state>
       </provider>
@@ -390,12 +398,14 @@
         <state relative-caret-position="315">
           <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
           <folding>
-            <marker date="1520916525314" expanded="false" signature="6:150" ph="..." />
-            <marker date="1520916525314" expanded="true" signature="194:699" ph="{...}" />
-            <marker date="1520916525314" expanded="true" signature="326:453" ph="{...}" />
-            <marker date="1520916525314" expanded="true" signature="363:446" ph="{...}" />
-            <marker date="1520916525314" expanded="true" signature="501:544" ph="{...}" />
-            <marker date="1520916525314" expanded="true" signature="573:695" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="6:150" ph="..." />
+            <marker date="1521243672429" expanded="true" signature="194:1017" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="363:529" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="400:483" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="577:620" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="649:771" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="863:1015" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="939:1007" ph="/* Dont know if i want this to stop or not ... */" />
           </folding>
         </state>
       </provider>
@@ -450,12 +460,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/In This Scene/ProjectileHit.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="5" lean-forward="false" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+          <folding>
+            <marker date="1521243672429" expanded="true" signature="6:150" ph="..." />
+            <marker date="1521243672429" expanded="true" signature="194:1017" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="363:529" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="400:483" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="577:620" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="649:771" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="863:1015" ph="{...}" />
+            <marker date="1521243672429" expanded="true" signature="939:1007" ph="/* Dont know if i want this to stop or not ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/ENTERSTATE.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="105">
           <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
           <folding>
-            <marker date="1521002511654" expanded="true" signature="6:115" ph="..." />
+            <marker date="1521002511654" expanded="false" signature="6:115" ph="..." />
             <marker date="1521002511654" expanded="true" signature="165:1353" ph="{...}" />
             <marker date="1521002511654" expanded="true" signature="402:428" ph="{...}" />
             <marker date="1521002511654" expanded="true" signature="431:1351" ph="/* OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks ... */" />
@@ -468,27 +495,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1520557161357" expanded="false" signature="6:144" ph="..." />
+            <marker date="1520557161357" expanded="true" signature="6:144" ph="..." />
             <marker date="1520557161357" expanded="true" signature="200:1431" ph="{...}" />
             <marker date="1520557161357" expanded="true" signature="205:516" ph="/* OnStateEnter is called when a transition starts and the state machine starts to evaluate this state ... */" />
             <marker date="1520557161357" expanded="true" signature="642:716" ph="{...}" />
             <marker date="1520557161357" expanded="true" signature="687:713" ph="{...}" />
             <marker date="1520557161357" expanded="true" signature="719:1429" ph="/* OnStateExit is called when a transition ends and the state machine finishes evaluating this state ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/In This Scene/ProjectileHit.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="28" column="40" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="40" />
-          <folding>
-            <marker date="1520916525314" expanded="false" signature="6:150" ph="..." />
-            <marker date="1520916525314" expanded="true" signature="194:699" ph="{...}" />
-            <marker date="1520916525314" expanded="true" signature="326:453" ph="{...}" />
-            <marker date="1520916525314" expanded="true" signature="363:446" ph="{...}" />
-            <marker date="1520916525314" expanded="true" signature="501:544" ph="{...}" />
-            <marker date="1520916525314" expanded="true" signature="573:695" ph="{...}" />
           </folding>
         </state>
       </provider>

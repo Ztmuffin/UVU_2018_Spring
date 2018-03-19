@@ -10,6 +10,7 @@ public class ProjectileHit : MonoBehaviour
 
 	public GameEvent EnterEvent;
 	public GameEvent ExitEvent;
+	public GameEvent DelayedEnterEvent;
 
 	private void OnTriggerEnter(Collider other)
 	{
@@ -19,8 +20,10 @@ public class ProjectileHit : MonoBehaviour
 			EnterEvent.Raise();
 			Debug.Log("EXPLOSIONS!!!!!");
 			DoOnce = false;
-		} 
-		
+		}
+
+		StartCoroutine(DelayedEventRaising());
+
 	}
 
 	
@@ -36,5 +39,12 @@ public class ProjectileHit : MonoBehaviour
 		ExitEvent.Raise();
 		StopAllCoroutines();
 	}
-	
+
+	IEnumerator DelayedEventRaising()   // This is double cause i want it to be its own thing
+	{
+		yield return new WaitForSeconds(1.5f);
+		DelayedEnterEvent.Raise();
+		// Dont know if i want this to stop or not
+		// StopAllCoroutines();
+     	}
 }
