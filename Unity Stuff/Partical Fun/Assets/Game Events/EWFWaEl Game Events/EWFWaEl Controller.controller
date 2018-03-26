@@ -18,7 +18,7 @@ AnimatorController:
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
-    m_DefaultBool: 0
+    m_DefaultBool: 1
     m_Controller: {fileID: 0}
   - m_Name: Electric
     m_Type: 9
@@ -69,7 +69,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnterEvent: {fileID: 11400000, guid: 1048ec90f12c333438d059ec8cea7cee, type: 2}
-  ExitEvent: {fileID: 11400000, guid: ffeffd935b597ca4cbda95df24a2ff64, type: 2}
+  ExitEvent: {fileID: 0}
 --- !u!114 &114192171005687266
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -82,7 +82,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnterEvent: {fileID: 11400000, guid: b9c0cfbeb45b483459a6495e62173315, type: 2}
-  ExitEvent: {fileID: 11400000, guid: ffeffd935b597ca4cbda95df24a2ff64, type: 2}
+  ExitEvent: {fileID: 0}
 --- !u!114 &114357251048684376
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnterEvent: {fileID: 11400000, guid: bb60f5e84c2e73e42a8c5d4b16ba6e62, type: 2}
-  ExitEvent: {fileID: 11400000, guid: ffeffd935b597ca4cbda95df24a2ff64, type: 2}
+  ExitEvent: {fileID: 0}
 --- !u!114 &114438668465171044
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnterEvent: {fileID: 11400000, guid: 670ac72a82c4b1f44953e42568c262df, type: 2}
-  ExitEvent: {fileID: 11400000, guid: ffeffd935b597ca4cbda95df24a2ff64, type: 2}
+  ExitEvent: {fileID: 0}
 --- !u!114 &114610067973284980
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnterEvent: {fileID: 11400000, guid: 803c7ca624617db40ba3302a251fe8bd, type: 2}
-  ExitEvent: {fileID: 11400000, guid: ffeffd935b597ca4cbda95df24a2ff64, type: 2}
+  ExitEvent: {fileID: 0}
 --- !u!114 &114673785600072002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnterEvent: {fileID: 11400000, guid: 875b41e781bbe564997961643eff7fbb, type: 2}
-  ExitEvent: {fileID: 11400000, guid: ffeffd935b597ca4cbda95df24a2ff64, type: 2}
+  ExitEvent: {fileID: 0}
 --- !u!1101 &1101008998456247738
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

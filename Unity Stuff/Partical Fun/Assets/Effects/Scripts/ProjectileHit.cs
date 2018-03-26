@@ -34,7 +34,7 @@ public class ProjectileHit : MonoBehaviour
 
 	IEnumerator EventRaising()
 	{
-		yield return new WaitForSeconds(2);
+		yield return new WaitForSeconds(3);
 		Debug.Log("More Explosions!!");
 		ExitEvent.Raise();
 		StopAllCoroutines();
