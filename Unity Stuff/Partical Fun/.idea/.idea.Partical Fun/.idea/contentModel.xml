@@ -7,13 +7,6 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="Classmate's Prefabs" t="Include">
-          <e p="JoshVFXPack" t="Include">
-            <e p="Scripts" t="Include">
-              <e p="rotate.cs" t="Include" />
-            </e>
-          </e>
-        </e>
         <e p="Code" t="Include">
           <e p="Elements" t="Include">
             <e p="AttackElement.cs" t="Include" />
@@ -54,13 +47,22 @@
             <e p="VariableAudioTrigger.cs" t="Include" />
           </e>
         </e>
-        <e p="ENTERSTATE.cs" t="Include" />
-        <e p="In This Scene" t="Include">
-          <e p="DeactivateOBJ.cs" t="Include" />
-          <e p="OnStateEnter.cs" t="Include" />
-          <e p="OnUpdateBehavior.cs" t="Include" />
-          <e p="ProjectileHit.cs" t="Include" />
+        <e p="Effects" t="Include">
+          <e p="Classmate's Prefabs" t="Include">
+            <e p="JoshVFXPack" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="rotate.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="DeactivateOBJ.cs" t="Include" />
+            <e p="OnStateEnter.cs" t="Include" />
+            <e p="OnUpdateBehavior.cs" t="Include" />
+            <e p="ProjectileHit.cs" t="Include" />
+          </e>
         </e>
+        <e p="ENTERSTATE.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="Editor" t="Include">
             <e p="JetBrains" t="Include">
