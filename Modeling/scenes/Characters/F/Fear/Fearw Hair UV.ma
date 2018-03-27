@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff05 scene
 //Name: Fearw Hair UV.ma
-//Last modified: Tue, Mar 27, 2018 03:04:42 PM
+//Last modified: Tue, Mar 27, 2018 04:17:44 PM
 //Codeset: 1252
 requires maya "2017ff05";
 requires "stereoCamera" "10.0";
@@ -15,7 +15,7 @@ fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "906F4157-4F9D-B7E1-B248-098A397DBC24";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 4.5580164102403131 28.604933735791384 5.8998377116208447 ;
+	setAttr ".t" -type "double3" 6.5028304930466447 29.363911006303884 8.201214395378523 ;
 	setAttr ".r" -type "double3" -14.138352467707421 40.200000000002952 1.0410353557183313e-015 ;
 	setAttr ".rp" -type "double3" 0 3.5527136788005009e-015 0 ;
 	setAttr ".rpt" -type "double3" -4.1967094670702381e-016 -6.2135965279897016e-016 
@@ -24,7 +24,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "620C44C1-4886-A4B2-7C32-B28543F65B30";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 3.922022843933934;
+	setAttr ".coi" 7.0292214140900047;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
