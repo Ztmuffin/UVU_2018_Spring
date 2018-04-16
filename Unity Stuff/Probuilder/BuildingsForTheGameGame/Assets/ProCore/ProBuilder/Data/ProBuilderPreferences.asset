@@ -17,19 +17,22 @@ MonoBehaviour:
   - pbDefaultSelectionMode
   - pb_GIWorkflowMode
   - pbHandleAlignment
+  - pbMirrorObjectScale
   m_Float_keys:
   - pbEditorScroll.x
   - pbEditorScroll.y
   - pbWeldDistance
+  - pbBevelAmount
   m_String_keys: []
   m_Color_keys: []
   m_Material_keys: []
   m_Bool_values: 
-  m_Int_values: 01000000020000000000000000000000
+  m_Int_values: 000000000000000000000000000000000c000000
   m_Float_values:
   - 0
   - 244
   - 0.2
+  - 10
   m_String_values: []
   m_Color_values: []
   m_Material_values: []
