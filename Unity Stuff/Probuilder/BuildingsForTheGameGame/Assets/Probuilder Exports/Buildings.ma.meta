@@ -12,6 +12,7 @@ ModelImporter:
     100008: //RootNode
     100010: House_v02:polySurface1
     100012: polySurface1
+    100014: House_v03:polySurface1
     400000: _Users_10541409_AD_Documents_UVU_2018_Spring_Unity_Stuff_Probuilder_BuildingsForTheGameGame_Assets_Probuilder_Exports_Bridge_stl
     400002: _Users_10541409_AD_Documents_UVU_2018_Spring_Unity_Stuff_Probuilder_BuildingsForTheGameGame_Assets_Probuilder_Exports_Bridge_stl1
     400004: Archway:polySurface1
@@ -19,18 +20,22 @@ ModelImporter:
     400008: //RootNode
     400010: House_v02:polySurface1
     400012: polySurface1
+    400014: House_v03:polySurface1
     2300000: Archway:polySurface1
     2300002: Bridge:polySurface1
     2300004: House_v02:polySurface1
     2300006: polySurface1
+    2300008: House_v03:polySurface1
     3300000: Archway:polySurface1
     3300002: Bridge:polySurface1
     3300004: House_v02:polySurface1
     3300006: polySurface1
+    3300008: House_v03:polySurface1
     4300000: House_v02:polySurface1
     4300002: Archway:polySurface1
     4300004: Bridge:polySurface1
     4300006: polySurface1
+    4300008: House_v03:polySurface1
     9500000: //RootNode
   materials:
     importMaterials: 1
