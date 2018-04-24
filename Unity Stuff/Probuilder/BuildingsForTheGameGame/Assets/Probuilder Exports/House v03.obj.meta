@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 5232309540712c043875d49cd2f67300
-timeCreated: 1524164074
+guid: 68a64544546811a4e8d028e9f2356d62
+timeCreated: 1524594165
 licenseType: Pro
 ModelImporter:
   serializedVersion: 21
@@ -11,52 +11,27 @@ ModelImporter:
     100006: //RootNode
     100008: Stairs_0
     100010: Stairs_1
-    100012: House_v02:Cube_0_House_v02:polySurface1
-    100014: House_v02:Cube_1_House_v02:polySurface1
-    100016: House_v02:Cube_House_v02:set1_House_v02:polySurface1
-    100018: House_v02:Stairs_0_House_v02:polySurface1
-    100020: House_v02:Stairs_1_House_v02:polySurface1
     400000: Cube_(1)
     400002: Cube_0
     400004: Cube_1
     400006: //RootNode
     400008: Stairs_0
     400010: Stairs_1
-    400012: House_v02:Cube_0_House_v02:polySurface1
-    400014: House_v02:Cube_1_House_v02:polySurface1
-    400016: House_v02:Cube_House_v02:set1_House_v02:polySurface1
-    400018: House_v02:Stairs_0_House_v02:polySurface1
-    400020: House_v02:Stairs_1_House_v02:polySurface1
     2300000: Cube_(1)
     2300002: Cube_0
     2300004: Cube_1
     2300006: Stairs_0
     2300008: Stairs_1
-    2300010: House_v02:Cube_0_House_v02:polySurface1
-    2300012: House_v02:Cube_1_House_v02:polySurface1
-    2300014: House_v02:Cube_House_v02:set1_House_v02:polySurface1
-    2300016: House_v02:Stairs_0_House_v02:polySurface1
-    2300018: House_v02:Stairs_1_House_v02:polySurface1
     3300000: Cube_(1)
     3300002: Cube_0
     3300004: Cube_1
     3300006: Stairs_0
     3300008: Stairs_1
-    3300010: House_v02:Cube_0_House_v02:polySurface1
-    3300012: House_v02:Cube_1_House_v02:polySurface1
-    3300014: House_v02:Cube_House_v02:set1_House_v02:polySurface1
-    3300016: House_v02:Stairs_0_House_v02:polySurface1
-    3300018: House_v02:Stairs_1_House_v02:polySurface1
     4300000: Cube_(1)
     4300002: Cube_0
     4300004: Cube_1
     4300006: Stairs_0
     4300008: Stairs_1
-    4300010: House_v02:Cube_0_House_v02:polySurface1
-    4300012: House_v02:Cube_1_House_v02:polySurface1
-    4300014: House_v02:Cube_House_v02:set1_House_v02:polySurface1
-    4300016: House_v02:Stairs_0_House_v02:polySurface1
-    4300018: House_v02:Stairs_1_House_v02:polySurface1
   materials:
     importMaterials: 1
     materialName: 0

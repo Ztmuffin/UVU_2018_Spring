@@ -12,6 +12,12 @@ ModelImporter:
     100008: Stairs_(1)_1
     100010: Stairs_0
     100012: Stairs_1
+    100014: Archway:Arch_Archway:polySurface1
+    100016: Archway:Door_Archway:polySurface1
+    100018: Archway:Stairs_0_Archway:polySurface1
+    100020: Archway:Stairs_1_Archway:polySurface1
+    100022: Archway:Stairs_Archway:_0_Archway:polySurface1
+    100024: Archway:Stairs_Archway:_1_Archway:polySurface1
     400000: Arch
     400002: //RootNode
     400004: Door
@@ -19,24 +25,48 @@ ModelImporter:
     400008: Stairs_(1)_1
     400010: Stairs_0
     400012: Stairs_1
+    400014: Archway:Arch_Archway:polySurface1
+    400016: Archway:Door_Archway:polySurface1
+    400018: Archway:Stairs_0_Archway:polySurface1
+    400020: Archway:Stairs_1_Archway:polySurface1
+    400022: Archway:Stairs_Archway:_0_Archway:polySurface1
+    400024: Archway:Stairs_Archway:_1_Archway:polySurface1
     2300000: Arch
     2300002: Door
     2300004: Stairs_(1)_0
     2300006: Stairs_(1)_1
     2300008: Stairs_0
     2300010: Stairs_1
+    2300012: Archway:Arch_Archway:polySurface1
+    2300014: Archway:Door_Archway:polySurface1
+    2300016: Archway:Stairs_0_Archway:polySurface1
+    2300018: Archway:Stairs_1_Archway:polySurface1
+    2300020: Archway:Stairs_Archway:_0_Archway:polySurface1
+    2300022: Archway:Stairs_Archway:_1_Archway:polySurface1
     3300000: Arch
     3300002: Door
     3300004: Stairs_(1)_0
     3300006: Stairs_(1)_1
     3300008: Stairs_0
     3300010: Stairs_1
+    3300012: Archway:Arch_Archway:polySurface1
+    3300014: Archway:Door_Archway:polySurface1
+    3300016: Archway:Stairs_0_Archway:polySurface1
+    3300018: Archway:Stairs_1_Archway:polySurface1
+    3300020: Archway:Stairs_Archway:_0_Archway:polySurface1
+    3300022: Archway:Stairs_Archway:_1_Archway:polySurface1
     4300000: Arch
     4300002: Door
     4300004: Stairs_(1)_0
     4300006: Stairs_(1)_1
     4300008: Stairs_0
     4300010: Stairs_1
+    4300012: Archway:Arch_Archway:polySurface1
+    4300014: Archway:Door_Archway:polySurface1
+    4300016: Archway:Stairs_0_Archway:polySurface1
+    4300018: Archway:Stairs_1_Archway:polySurface1
+    4300020: Archway:Stairs_Archway:_0_Archway:polySurface1
+    4300022: Archway:Stairs_Archway:_1_Archway:polySurface1
   materials:
     importMaterials: 1
     materialName: 0

@@ -1,62 +1,17 @@
 fileFormatVersion: 2
-guid: aa869529af883664d965da8b75c87865
-timeCreated: 1524164074
+guid: bc5d16fe6a678e242ab50096829b5ca6
+timeCreated: 1524593799
 licenseType: Pro
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Cube
-    100004: Cube_(2)
-    100006: Cube_(4)
-    100008: Cube_(5)
-    100010: Cube_(6)
-    100012: Bridge:Cube_Bridge:polySurface1
-    100014: Bridge:Cube_Bridge:set1_Bridge:polySurface1
-    100016: Bridge:Cube_Bridge:set2_Bridge:polySurface1
-    100018: Bridge:Cube_Bridge:set3_Bridge:polySurface1
-    100020: Bridge:Cube_Bridge:set4_Bridge:polySurface1
+    100002: polySurface1__Users_10541409_AD_Documents_UVU_2018_Spring_Unity_Stuff_Probuilder_BuildingsForTheGameGame_Assets_Probuilder_Exports_Bridge_stl
     400000: //RootNode
-    400002: Cube
-    400004: Cube_(2)
-    400006: Cube_(4)
-    400008: Cube_(5)
-    400010: Cube_(6)
-    400012: Bridge:Cube_Bridge:polySurface1
-    400014: Bridge:Cube_Bridge:set1_Bridge:polySurface1
-    400016: Bridge:Cube_Bridge:set2_Bridge:polySurface1
-    400018: Bridge:Cube_Bridge:set3_Bridge:polySurface1
-    400020: Bridge:Cube_Bridge:set4_Bridge:polySurface1
-    2300000: Cube
-    2300002: Cube_(2)
-    2300004: Cube_(4)
-    2300006: Cube_(5)
-    2300008: Cube_(6)
-    2300010: Bridge:Cube_Bridge:polySurface1
-    2300012: Bridge:Cube_Bridge:set1_Bridge:polySurface1
-    2300014: Bridge:Cube_Bridge:set2_Bridge:polySurface1
-    2300016: Bridge:Cube_Bridge:set3_Bridge:polySurface1
-    2300018: Bridge:Cube_Bridge:set4_Bridge:polySurface1
-    3300000: Cube
-    3300002: Cube_(2)
-    3300004: Cube_(4)
-    3300006: Cube_(5)
-    3300008: Cube_(6)
-    3300010: Bridge:Cube_Bridge:polySurface1
-    3300012: Bridge:Cube_Bridge:set1_Bridge:polySurface1
-    3300014: Bridge:Cube_Bridge:set2_Bridge:polySurface1
-    3300016: Bridge:Cube_Bridge:set3_Bridge:polySurface1
-    3300018: Bridge:Cube_Bridge:set4_Bridge:polySurface1
-    4300000: Cube
-    4300002: Cube_(2)
-    4300004: Cube_(4)
-    4300006: Cube_(5)
-    4300008: Cube_(6)
-    4300010: Bridge:Cube_Bridge:polySurface1
-    4300012: Bridge:Cube_Bridge:set1_Bridge:polySurface1
-    4300014: Bridge:Cube_Bridge:set2_Bridge:polySurface1
-    4300016: Bridge:Cube_Bridge:set3_Bridge:polySurface1
-    4300018: Bridge:Cube_Bridge:set4_Bridge:polySurface1
+    400002: polySurface1__Users_10541409_AD_Documents_UVU_2018_Spring_Unity_Stuff_Probuilder_BuildingsForTheGameGame_Assets_Probuilder_Exports_Bridge_stl
+    2300000: polySurface1__Users_10541409_AD_Documents_UVU_2018_Spring_Unity_Stuff_Probuilder_BuildingsForTheGameGame_Assets_Probuilder_Exports_Bridge_stl
+    3300000: polySurface1__Users_10541409_AD_Documents_UVU_2018_Spring_Unity_Stuff_Probuilder_BuildingsForTheGameGame_Assets_Probuilder_Exports_Bridge_stl
+    4300000: polySurface1__Users_10541409_AD_Documents_UVU_2018_Spring_Unity_Stuff_Probuilder_BuildingsForTheGameGame_Assets_Probuilder_Exports_Bridge_stl
   materials:
     importMaterials: 1
     materialName: 0
