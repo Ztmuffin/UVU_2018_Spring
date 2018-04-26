@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff05 scene
 //Name: Viking HeroRig.ma
-//Last modified: Wed, Apr 25, 2018 10:26:53 PM
+//Last modified: Thu, Apr 26, 2018 12:14:15 PM
 //Codeset: 1252
 requires maya "2017ff05";
 requires "stereoCamera" "10.0";
@@ -9,22 +9,22 @@ currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2017";
 fileInfo "version" "2017";
-fileInfo "cutIdentifier" "201710312130-1018716";
-fileInfo "osv" "Microsoft Windows 8 Home Premium Edition, 64-bit  (Build 9200)\n";
+fileInfo "cutIdentifier" "201706020738-1017329";
+fileInfo "osv" "Microsoft Windows 8 Enterprise Edition, 64-bit  (Build 9200)\n";
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "68F4226C-4EC4-410F-842F-518396167AF0";
-	setAttr ".t" -type "double3" 6.3780850938521469 7.8326810801525912 6.1685773002088347 ;
-	setAttr ".r" -type "double3" 325.46164724901996 -2098.1999999999148 3.3653047650379647e-015 ;
+	setAttr ".t" -type "double3" -0.97087967269111908 23.948690818738985 42.309957573003636 ;
+	setAttr ".r" -type "double3" 359.66164724794214 -2163.7999999994322 1.867712483785739e-017 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "2C5BA5D6-4AC9-0AC7-2C97-9BA2474A1F90";
 	setAttr -k off ".v";
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 11.681600818201881;
+	setAttr ".coi" 46.400036435845955;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -1.8392003703578075 0.73325480190668535 1.8244222298088193 ;
+	setAttr ".tp" -type "double3" 11.338499999999993 23.194400000000005 -1.3027200000000074 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "C1B23A3C-4369-9A1E-79B5-7583EC2664D8";
@@ -89,21 +89,20 @@ createNode nurbsCurve -n "TransformShape" -p "Transform";
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
-		13.730610310541259 8.407573983571985e-016 -13.730610310541234
+		13.730610310541259 8.407573983571986e-016 -13.730610310541234
 		-2.2153633661303982e-015 1.1890105154222698e-015 -19.418015320827283
 		-13.730610310541245 8.4075739835719899e-016 -13.730610310541245
 		-19.418015320827283 3.4454550067494973e-031 -5.6268550395891409e-015
-		-13.730610310541248 -8.407573983571987e-016 13.730610310541239
+		-13.730610310541248 -8.407573983571988e-016 13.730610310541239
 		-5.8510269804503099e-015 -1.18901051542227e-015 19.418015320827291
 		13.730610310541234 -8.4075739835719909e-016 13.730610310541246
 		19.418015320827283 -6.3861986727709418e-031 1.0429453908208084e-014
-		13.730610310541259 8.407573983571985e-016 -13.730610310541234
+		13.730610310541259 8.407573983571986e-016 -13.730610310541234
 		-2.2153633661303982e-015 1.1890105154222698e-015 -19.418015320827283
 		-13.730610310541245 8.4075739835719899e-016 -13.730610310541245
 		;
 createNode transform -n "Geo" -p "Transform";
 	rename -uid "AE5C31E2-4971-1DB8-E537-D19005C51AB3";
-	setAttr ".v" no;
 createNode transform -n "Sword" -p "Geo";
 	rename -uid "021E8538-4E01-9DE4-7668-1999CBCE8674";
 	setAttr ".rp" -type "double3" 12.209753402641315 21.807285986122849 0.51818919339928016 ;
@@ -18435,7 +18434,7 @@ createNode parentConstraint -n "R_Fingers_02_Jnt_parentConstraint4" -p "|VikingH
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -1.5543122344752192e-015 1.0658141036401503e-014 
 		-5.3290705182007514e-015 ;
-	setAttr ".tg[0].tor" -type "double3" 3.3395824155366934e-014 1.5902773407317587e-014 
+	setAttr ".tg[0].tor" -type "double3" 3.339582415536694e-014 1.5902773407317587e-014 
 		3.1805546814635176e-015 ;
 	setAttr ".lr" -type "double3" -3.1805546814635174e-014 1.9878466759146996e-015 3.1805546814635168e-015 ;
 	setAttr ".rst" -type "double3" 1.1752735569910442 1.0012576365524417 1.4053930263381371 ;
@@ -18544,7 +18543,7 @@ createNode parentConstraint -n "R_Shoulder_Jnt_parentConstraint3" -p "|VikingHer
 		2.2204460492503131e-016 ;
 	setAttr ".tg[1].tor" -type "double3" 3.8087142310525616e-013 -6.3611093629270335e-015 
 		7.9513867036587919e-015 ;
-	setAttr ".lr" -type "double3" -1.9142963489058544e-013 7.3301846174354275e-016 -1.3417965062424225e-015 ;
+	setAttr ".lr" -type "double3" -3.8305805444876234e-013 4.634167563226104e-015 -1.0784068216837254e-014 ;
 	setAttr ".rst" -type "double3" 1.7616737287500879 -1.0658141036401503e-014 -8.8817841970012523e-016 ;
 	setAttr ".rsrr" -type "double3" -1.9142963489058544e-013 7.3301846174354275e-016 
 		-1.3417965062424225e-015 ;
@@ -18907,7 +18906,7 @@ createNode parentConstraint -n "L_elbow_Jnt_parentConstraint2" -p "|VikingHero|T
 		-1.9984014443252818e-015 ;
 	setAttr ".tg[1].tor" -type "double3" -2.5469285535157073e-016 3.975693351829396e-016 
 		4.7133708292196156e-015 ;
-	setAttr ".lr" -type "double3" 3.7272125173400585e-016 3.1060104311167364e-018 -6.3556738446725796e-015 ;
+	setAttr ".lr" -type "double3" 4.7211358552974075e-016 3.2730668310992135e-032 -7.9443981801887797e-015 ;
 	setAttr ".rst" -type "double3" -5.7026527055229934 -3.1357130346520989e-005 -2.8296210090594798e-006 ;
 	setAttr ".rsrr" -type "double3" 3.7272125173400585e-016 3.1060104311167364e-018 
 		-6.3556738446725796e-015 ;
@@ -18938,8 +18937,8 @@ createNode parentConstraint -n "L_Shoulder_Jnt_parentConstraint3" -p "|VikingHer
 		-8.8817841970012523e-016 ;
 	setAttr ".tg[1].tor" -type "double3" 7.9513867036587919e-016 1.9083328088781104e-014 
 		-1.093315671753084e-015 ;
-	setAttr ".lr" -type "double3" -6.4406232299636188e-013 -1.4958546236257985e-014 
-		1.9803922508800253e-014 ;
+	setAttr ".lr" -type "double3" -1.2875282919899498e-012 -1.3927350773126929e-014 
+		3.7520606007890072e-014 ;
 	setAttr ".rst" -type "double3" -1.7616936180739238 2.4032692550690626e-005 7.7483790228427551e-006 ;
 	setAttr ".rsrr" -type "double3" -6.4406232299636188e-013 -1.4958546236257985e-014 
 		1.9803922508800253e-014 ;
@@ -19053,7 +19052,7 @@ createNode parentConstraint -n "Upper_Body_jnt_parentConstraint2" -p "|VikingHer
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -3.5527136788005009e-015 0 -4.4408920985006262e-016 ;
 	setAttr ".tg[0].tor" -type "double3" -1.8957583197733864e-021 3.9756933518293967e-015 
-		1.206176230955817e-020 ;
+		1.2061762309558171e-020 ;
 	setAttr ".lr" -type "double3" 1.5166066558187095e-021 -3.9756933518294307e-015 -1.5177886929717194e-020 ;
 	setAttr ".rst" -type "double3" 3.5527136788005009e-015 1.4823076576950256e-021 1.1102230246251565e-016 ;
 	setAttr ".rsrr" -type "double3" 1.5166066558187095e-021 -3.9756933518294307e-015 
@@ -19126,7 +19125,6 @@ createNode parentConstraint -n "R_Foot_Toe_Jnt_parentConstraint2" -p "|VikingHer
 	setAttr ".tg[1].tot" -type "double3" -3.016734924365938e-009 -4.4876004805516345e-006 
 		-1.7800614924290414e-006 ;
 	setAttr ".tg[1].tor" -type "double3" 4.0910269676749138 72.411814495547731 -1.1467437491798167 ;
-	setAttr ".lr" -type "double3" 3.2252812316715978e-014 8.9453100416161435e-015 -6.361109362927032e-015 ;
 	setAttr ".rst" -type "double3" 3.0829216102084467 2.2204460492503131e-016 -4.4408920985006262e-016 ;
 	setAttr ".rsrr" -type "double3" 1.6548823576989861e-014 -4.3732626870123352e-015 
 		-5.5659706925611551e-015 ;
@@ -19153,7 +19151,7 @@ createNode parentConstraint -n "R_Foot_Ball_Jnt_parentConstraint2" -p "|VikingHe
 	setAttr ".tg[0].tor" -type "double3" 0 1.590277340731758e-015 3.7769086842379252e-015 ;
 	setAttr ".tg[1].tot" -type "double3" -0.8876918313872546 -0.48024221711992854 0.15029876894419081 ;
 	setAttr ".tg[1].tor" -type "double3" 94.54585516329378 2.7944796491748383 8.9725196319897176 ;
-	setAttr ".lr" -type "double3" -19.521999432090247 61.655702123263197 -18.89762718945903 ;
+	setAttr ".lr" -type "double3" 4.4726550208080709e-016 -1.888454342118963e-015 -3.876301018033661e-015 ;
 	setAttr ".rst" -type "double3" 1.6138121116446571 -4.4408920985006262e-016 0 ;
 	setAttr ".rsrr" -type "double3" -2.8823776800763114e-015 -3.4290355159528535e-015 
 		-1.590277340731758e-015 ;
@@ -19182,7 +19180,7 @@ createNode parentConstraint -n "R_Foot_Jnt_parentConstraint2" -p "|VikingHero|Tr
 		-2.484808344893373e-016 ;
 	setAttr ".tg[1].tot" -type "double3" -0.058599592986137816 0.02601998154591012 0.053355352571517134 ;
 	setAttr ".tg[1].tor" -type "double3" 85.616860480565919 -2.6660159950801612 -12.045659239570481 ;
-	setAttr ".lr" -type "double3" 10.225475655207461 -63.10611916352287 -11.805073460806284 ;
+	setAttr ".lr" -type "double3" -3.975693351829395e-016 2.0690185772110108e-033 5.963540027744093e-016 ;
 	setAttr ".rst" -type "double3" -1.5543122344752192e-015 0 -1.1102230246251565e-016 ;
 	setAttr ".rsrr" -type "double3" 10.225475655207461 -63.10611916352287 -11.805073460806284 ;
 	setAttr -k on ".w0";
@@ -19209,7 +19207,6 @@ createNode parentConstraint -n "R_Ankle_Jnt_parentConstraint2" -p "|VikingHero|T
 	setAttr ".tg[0].tor" -type "double3" 1.4020798493971223 -1.7409589715041001 -0.066601808575826996 ;
 	setAttr ".tg[1].tot" -type "double3" -1.2434497875801753e-014 1.9984014443252818e-015 
 		-3.3306690738754696e-016 ;
-	setAttr ".lr" -type "double3" -1.987846675914698e-016 1.077613842297402e-035 6.2120208622334312e-018 ;
 	setAttr ".rst" -type "double3" 8.6602793286281425 2.2204460492503131e-016 -2.2204460492503131e-016 ;
 	setAttr ".rsrr" -type "double3" -1.987846675914698e-016 1.077613842297402e-035 6.2120208622334312e-018 ;
 	setAttr -k on ".w0";
@@ -19233,12 +19230,12 @@ createNode parentConstraint -n "R_knee_Jnt_parentConstraint2" -p "|VikingHero|Tr
 	setAttr -s 2 ".tg";
 	setAttr ".tg[0].tot" -type "double3" -0.037337112217898039 0.062176439675034612 
 		-0.21277907436199289 ;
-	setAttr ".tg[0].tor" -type "double3" 1.4020798493971172 -1.7409589715041058 -0.066601808575827037 ;
+	setAttr ".tg[0].tor" -type "double3" 1.4020798493971172 -1.7409589715041061 -0.066601808575827037 ;
 	setAttr ".tg[1].tot" -type "double3" -1.5987211554602254e-014 -2.2204460492503131e-016 
 		2.7755575615628914e-015 ;
 	setAttr ".tg[1].tor" -type "double3" -8.6968292071268049e-017 1.4312496066585827e-014 
 		-1.366644589691355e-016 ;
-	setAttr ".lr" -type "double3" 2.4848083448933719e-017 -1.1132208307893729e-014 8.1532773816813727e-018 ;
+	setAttr ".lr" -type "double3" 3.7272125173400599e-017 -1.4312714457944265e-014 -9.1627307717943115e-017 ;
 	setAttr ".rst" -type "double3" 8.9081436285386975 -2.6645352591003757e-015 -4.4408920985006262e-016 ;
 	setAttr ".rsrr" -type "double3" 2.4848083448933719e-017 -1.1132208307893729e-014 
 		8.1532773816813727e-018 ;
@@ -19264,13 +19261,14 @@ createNode parentConstraint -n "R_Hip_Jnt_parentConstraint3" -p "|VikingHero|Tra
 	setAttr ".tg[0].tot" -type "double3" -1.4210854715202004e-014 -2.2204460492503131e-015 
 		-2.4424906541753444e-015 ;
 	setAttr ".tg[0].tor" -type "double3" -6.3611093629270351e-015 -3.180554681463516e-015 
-		3.578124016646456e-015 ;
-	setAttr ".tg[1].tot" -type "double3" -1.4210854715202004e-014 -4.2188474935755949e-015 
-		-1.3322676295501878e-015 ;
+		3.5781240166464568e-015 ;
+	setAttr ".tg[1].tot" -type "double3" -1.7763568394002505e-014 -5.9952043329758453e-015 
+		-1.7763568394002505e-015 ;
 	setAttr ".tg[1].tor" -type "double3" 1.3675998073436844 1.3889966812334811 0.40173264411974624 ;
-	setAttr ".lr" -type "double3" 6.3611093629270335e-015 1.689669674527494e-015 -1.1877383888590321e-014 ;
-	setAttr ".rst" -type "double3" 3.0127140149627039 0 8.8817841970012523e-016 ;
-	setAttr ".rsrr" -type "double3" 6.3611093629270335e-015 1.689669674527494e-015 -1.1877383888590321e-014 ;
+	setAttr ".lr" -type "double3" 6.3611093629270335e-015 1.6896696745274936e-015 -5.5162745256632868e-015 ;
+	setAttr ".rst" -type "double3" 3.0127140149627021 0 2.6645352591003757e-015 ;
+	setAttr ".rsrr" -type "double3" 5.5659706925611536e-015 4.8702243559910109e-015 
+		-1.1827687721692454e-014 ;
 	setAttr -k on ".w0";
 	setAttr -k on ".w1";
 createNode joint -n "L_Hip_Jnt" -p "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt";
@@ -19361,7 +19359,7 @@ createNode parentConstraint -n "L_Foot_Ball_Jnt_parentConstraint2" -p "|VikingHe
 		1.5099033134902129e-014 ;
 	setAttr ".tg[1].tor" -type "double3" -6.3611093629270335e-015 1.5902773407317584e-015 
 		2.7829853462805772e-015 ;
-	setAttr ".lr" -type "double3" 6.5598940305185004e-015 4.9696166897867536e-017 -1.8884543421189622e-015 ;
+	setAttr ".lr" -type "double3" 6.708982531212106e-015 1.9203078669739703e-031 -3.2799470152592518e-015 ;
 	setAttr ".rst" -type "double3" -1.613812521893037 2.4867790711091686e-006 -2.2522712783690224e-007 ;
 	setAttr ".rsrr" -type "double3" 6.5598940305185004e-015 4.9696166897867536e-017 
 		-1.8884543421189622e-015 ;
@@ -19390,11 +19388,11 @@ createNode parentConstraint -n "L_Foot_Jnt_parentConstraint2" -p "|VikingHero|Tr
 		1.987846675914698e-015 ;
 	setAttr ".tg[1].tot" -type "double3" -0.058492230760792685 0.02605488738861661 -0.00010074048673947011 ;
 	setAttr ".tg[1].tor" -type "double3" 85.496067744284488 -2.4561570461282027 167.95973833553171 ;
-	setAttr ".lr" -type "double3" -3.180554681463516e-015 -1.2535858099987062e-014 -2.981770013872046e-015 ;
+	setAttr ".lr" -type "double3" 1.1927080055488188e-015 8.6968292071268061e-017 -2.5842006786891076e-015 ;
 	setAttr ".rst" -type "double3" 4.4408920985006262e-016 -6.6613381477509392e-016 
 		1.1102230246251565e-016 ;
 	setAttr ".rsrr" -type "double3" -3.180554681463516e-015 -1.2535858099987062e-014 
-		-2.981770013872046e-015 ;
+		-2.9817700138720464e-015 ;
 	setAttr -k on ".w0";
 	setAttr -k on ".w1";
 createNode parentConstraint -n "L_Ankle_Jnt_parentConstraint2" -p "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt";
@@ -19419,7 +19417,6 @@ createNode parentConstraint -n "L_Ankle_Jnt_parentConstraint2" -p "|VikingHero|T
 	setAttr ".tg[0].tor" -type "double3" 1.9949840617859231 0.015508347575498613 -0.21618010865391549 ;
 	setAttr ".tg[1].tot" -type "double3" 1.4654943925052066e-014 -2.2204460492503131e-015 
 		3.7747582837255322e-015 ;
-	setAttr ".lr" -type "double3" 3.9757085178959542e-016 -1.6837780516687182e-037 4.8531412986198681e-020 ;
 	setAttr ".rst" -type "double3" -8.6602839776951051 -4.3269447205229739e-006 2.6664877028625966e-007 ;
 	setAttr ".rsrr" -type "double3" 3.9757085178959542e-016 -1.6837780516687182e-037 
 		4.8531412986198681e-020 ;
@@ -19448,8 +19445,9 @@ createNode parentConstraint -n "L_knee_Jnt_parentConstraint2" -p "|VikingHero|Tr
 		5.0938571070314137e-016 ;
 	setAttr ".tg[1].tot" -type "double3" -6.1919698438828163e-005 -0.032671316505076264 
 		-0.0023439464460901505 ;
-	setAttr ".tg[1].tor" -type "double3" 1.9949840617859267 0.015508347575500639 -0.21618010865391529 ;
-	setAttr ".lr" -type "double3" 7.4544250346801187e-017 -7.9510712494743802e-015 -3.0322426833776934e-016 ;
+	setAttr ".tg[1].tor" -type "double3" 1.9949840617859267 0.015508347575500639 -0.21618010865391532 ;
+	setAttr ".lr" -type "double3" -8.6968292071267963e-017 -1.5903646972751334e-014 
+		-5.7849444279548831e-016 ;
 	setAttr ".rst" -type "double3" -8.9081241841609877 7.0065042818701073e-006 6.8089663944892465e-006 ;
 	setAttr ".rsrr" -type "double3" 7.4544250346801187e-017 -7.9510712494743802e-015 
 		-3.0322426833776934e-016 ;
@@ -19472,16 +19470,17 @@ createNode parentConstraint -n "L_Hip_Jnt_parentConstraint2" -p "|VikingHero|Tra
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -s 2 ".tg";
-	setAttr ".tg[0].tot" -type "double3" 1.0658141036401503e-014 -3.9968028886505635e-015 
-		2.2204460492503131e-015 ;
-	setAttr ".tg[0].tor" -type "double3" 1.9956343879323544 -0.015186698726898295 0.2101283122526432 ;
+	setAttr ".tg[0].tot" -type "double3" 1.0658141036401503e-014 -5.1070259132757201e-015 
+		1.9984014443252818e-015 ;
+	setAttr ".tg[0].tor" -type "double3" 1.9956343880460787 -0.015186698592332201 0.21012831227925652 ;
 	setAttr ".tg[1].tot" -type "double3" 1.0658141036401503e-014 -3.3306690738754696e-015 
 		2.886579864025407e-015 ;
 	setAttr ".tg[1].tor" -type "double3" -1.5902773407317584e-015 -3.1805546814635168e-015 
 		-3.975693351829396e-016 ;
-	setAttr ".lr" -type "double3" 9.9392333795734899e-016 3.776908684237926e-015 3.2759460805841026e-032 ;
-	setAttr ".rst" -type "double3" 0.83694873938680736 -2.8447997953932589 0.53213013143903254 ;
-	setAttr ".rsrr" -type "double3" 9.9392333795734899e-016 3.776908684237926e-015 3.2759460805841026e-032 ;
+	setAttr ".lr" -type "double3" 0 2.981770013872047e-016 0 ;
+	setAttr ".rst" -type "double3" 0.83694873938680736 -2.8447997953932589 0.53213013143903343 ;
+	setAttr ".rsrr" -type "double3" -5.9635400277440999e-016 1.1131941385122309e-014 
+		-6.3611093629270335e-015 ;
 	setAttr -k on ".w0";
 	setAttr -k on ".w1";
 createNode parentConstraint -n "Lower_Body_Jnt_parentConstraint2" -p "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt";
@@ -19524,7 +19523,6 @@ createNode parentConstraint -n "Cog_Jnt_parentConstraint2" -p "|VikingHero|Trans
 	setAttr -k on ".w0";
 createNode transform -n "IK_Skeleton" -p "Transform";
 	rename -uid "13A2EC05-4EA7-5033-5E69-3399FC128DCC";
-	setAttr ".v" no;
 createNode joint -n "L_Shoulder_Jnt" -p "IK_Skeleton";
 	rename -uid "FD26BF35-4308-5653-673C-4D9FD957A476";
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
@@ -19732,8 +19730,6 @@ createNode parentConstraint -n "R_Shoulder_Jnt_parentConstraint1" -p "|VikingHer
 	setAttr -k on ".w0";
 createNode joint -n "L_Hip_Jnt" -p "IK_Skeleton";
 	rename -uid "444A74FC-430F-5DC6-6010-DFAA6DC274A8";
-	setAttr ".t" -type "double3" 1.8103899999999975 19.198 -1.37587 ;
-	setAttr ".r" -type "double3" -1.9956766766563063 0.007860030429238626 -0.21052971902808018 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jot" -type "string" "xzy";
@@ -19742,7 +19738,7 @@ createNode joint -n "L_Hip_Jnt" -p "IK_Skeleton";
 createNode joint -n "L_knee_Jnt" -p "|VikingHero|Transform|IK_Skeleton|L_Hip_Jnt";
 	rename -uid "BF32C913-4E69-3BA6-F9F8-C38ED1298A0E";
 	setAttr ".t" -type "double3" -8.9081241841609877 7.0065042827582857e-006 6.8089663949333357e-006 ;
-	setAttr ".r" -type "double3" 5.2925854323586416e-015 3.0858789012962548e-006 1.7166078121189203e-007 ;
+	setAttr ".r" -type "double3" 5.2232538036011295e-015 3.0861441918164278e-006 1.695389668431983e-007 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jot" -type "string" "xzy";
@@ -19759,6 +19755,27 @@ createNode ikEffector -n "effector4" -p "|VikingHero|Transform|IK_Skeleton|L_Hip
 	rename -uid "D09BB41A-48BC-CADD-0224-298CEB2C923C";
 	setAttr ".v" no;
 	setAttr ".hd" yes;
+createNode parentConstraint -n "L_Hip_Jnt_parentConstraint3" -p "|VikingHero|Transform|IK_Skeleton|L_Hip_Jnt";
+	rename -uid "C6B53F5A-4459-3393-936E-DD9708CEAE4B";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_IK_Hip_CtrlW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 0 -7.1054273576010019e-015 1.3322676295501878e-015 ;
+	setAttr ".tg[0].tor" -type "double3" -1.9956766767695424 0.0078600302934146715 -90.210529719050001 ;
+	setAttr ".lr" -type "double3" -1.9956766767695431 0.007860030293413367 -0.21052971905000961 ;
+	setAttr ".rst" -type "double3" 1.8103899999999975 19.198000000000004 -1.3758699999999997 ;
+	setAttr ".rsrr" -type "double3" -1.9956766767695431 0.007860030293413367 -0.21052971905000961 ;
+	setAttr -k on ".w0";
 createNode joint -n "R_Hip_Jnt" -p "IK_Skeleton";
 	rename -uid "FCA96236-43DA-5335-BE80-4BA64B81FF81";
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
@@ -20099,7 +20116,7 @@ createNode parentConstraint -n "L_Heel_Lifter_parentConstraint1" -p "L_Heel_Lift
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -1.3322676295501878e-015 0 -8.8817841970012523e-016 ;
 	setAttr ".tg[0].tor" -type "double3" -6.6742682215138256 -19.838037251510944 -3.5999219820649291 ;
-	setAttr ".lr" -type "double3" 5.8392996104994252e-016 4.9696166897867462e-017 -1.5848418224773041e-015 ;
+	setAttr ".lr" -type "double3" -1.2298558903049748e-013 3.5986236854918271e-014 4.9750522080411604e-015 ;
 	setAttr ".rst" -type "double3" 2.1538822221985918 8.8817841970012523e-016 1.7763568394002505e-015 ;
 	setAttr ".rsrr" -type "double3" 5.8392996104994252e-016 4.9696166897867462e-017 
 		-1.5848418224773041e-015 ;
@@ -20136,7 +20153,7 @@ createNode parentConstraint -n "L_Toe_Lifter_parentConstraint1" -p "L_Toe_Lifter
 	setAttr ".tg[0].tot" -type "double3" -8.8817841970012523e-016 -2.2204460492503131e-016 
 		-6.6613381477509392e-016 ;
 	setAttr ".tg[0].tor" -type "double3" -6.6742682215138274 -19.838037251510954 -3.5999219820649313 ;
-	setAttr ".lr" -type "double3" -3.727212517340058e-016 7.7029058691694525e-016 -6.2120208622334327e-018 ;
+	setAttr ".lr" -type "double3" -1.2465041062157601e-013 3.3240523633811089e-014 8.1486183660346642e-015 ;
 	setAttr ".rst" -type "double3" 2.1538822221985914 8.8817841970012523e-016 1.5543122344752192e-015 ;
 	setAttr ".rsrr" -type "double3" -3.727212517340058e-016 7.7029058691694525e-016 
 		-6.2120208622334327e-018 ;
@@ -20158,8 +20175,8 @@ createNode parentConstraint -n "L_Toe_Jnt_parentConstraint1" -p "|VikingHero|Tra
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -0.023904511537033102 4.6109603063504423e-007 
 		-0.060563093594056538 ;
-	setAttr ".tg[0].tor" -type "double3" -8.7191698054401474 -20.986546459423341 -157.18338428577937 ;
-	setAttr ".lr" -type "double3" -3.3296431821571197e-015 3.6340322044065581e-015 -3.1805546814635176e-015 ;
+	setAttr ".tg[0].tor" -type "double3" -8.7191698054401474 -20.986546459423344 -157.18338428577937 ;
+	setAttr ".lr" -type "double3" -1.2709794684129604e-013 7.0667949328767539e-014 3.1805546814634395e-015 ;
 	setAttr ".rst" -type "double3" 5.635422527672616 -6.6613381477509392e-016 1.7763568394002505e-015 ;
 	setAttr ".rsrr" -type "double3" -3.3296431821571197e-015 3.6340322044065581e-015 
 		-3.1805546814635176e-015 ;
@@ -20181,7 +20198,7 @@ createNode parentConstraint -n "L_Heel_Jnt1_parentConstraint1" -p "L_Heel_Jnt1";
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" 0.039936736125439465 -0.0014665312186671747 
 		-0.10034473446925585 ;
-	setAttr ".tg[0].tor" -type "double3" 0.098157779659012276 -22.595505789232686 -2.3585034438227925 ;
+	setAttr ".tg[0].tor" -type "double3" 0.09815777965901229 -22.595505789232686 -2.3585034438227925 ;
 	setAttr ".lr" -type "double3" 1.2657613708886838e-013 1.9343844713691014e-014 -9.9392333795713538e-017 ;
 	setAttr ".rst" -type "double3" 1.8539299964904785 -0.05766599997878074 -1.9112700223922732 ;
 	setAttr ".rsrr" -type "double3" 1.2657613708886838e-013 1.9343844713691014e-014 
@@ -20196,7 +20213,7 @@ createNode joint -n "L_Ankle_Jnt2" -p "IK_Skeleton";
 createNode joint -n "L_Ball_Jnt" -p "L_Ankle_Jnt2";
 	rename -uid "11169051-403C-1303-E66F-16967D548346";
 	setAttr ".t" -type "double3" 2.4814938569387781 0 1.5265566588595902e-016 ;
-	setAttr ".r" -type "double3" -2.5444437451708134e-014 -6.5576938275403196e-030 -2.2951928396391101e-030 ;
+	setAttr ".r" -type "double3" -1.526666247102488e-013 -3.9346162965241935e-029 -1.3771157037834618e-029 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0.59016541492932495 -1.0907248068312061 -10.562451126153693 ;
@@ -20234,13 +20251,12 @@ createNode parentConstraint -n "L_Ankle_Jnt2_parentConstraint1" -p "L_Ankle_Jnt2
 	setAttr ".tg[0].tot" -type "double3" -0.039667110925187821 -0.001743699722819958 
 		0.050236300690641222 ;
 	setAttr ".tg[0].tor" -type "double3" 81.426215665287927 -75.57846430880808 -171.72438300250005 ;
-	setAttr ".lr" -type "double3" -4.7708320221952759e-015 -9.939233379573482e-016 2.385416011097638e-014 ;
+	setAttr ".lr" -type "double3" 2.1252466381413675e-011 -1.1250118870007812e-010 1.2788215235492351e-010 ;
 	setAttr ".rst" -type "double3" 1.8539299964904783 1.7049344335032828 -0.53256478508954386 ;
 	setAttr ".rsrr" -type "double3" 0 0 1.272221872585407e-014 ;
 	setAttr -k on ".w0";
 createNode transform -n "FK_Skeleton" -p "Transform";
 	rename -uid "3781CAA4-481D-EE26-8C87-30AB8AC3EF5E";
-	setAttr ".v" no;
 createNode joint -n "Cog_Jnt" -p "FK_Skeleton";
 	rename -uid "E70CA63E-4488-47C8-1330-4994C63CC6D6";
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
@@ -20350,8 +20366,7 @@ createNode parentConstraint -n "R_Thumb_02_Jnt_parentConstraint1" -p "|VikingHer
 		1.0658141036401503e-014 ;
 	setAttr ".tg[0].tor" -type "double3" 2.7829853462805764e-015 1.2722218725854067e-014 
 		3.2799470152592518e-015 ;
-	setAttr ".lr" -type "double3" -3.5284278497485881e-015 -1.0982852884428706e-014 
-		-3.876301018033661e-015 ;
+	setAttr ".lr" -type "double3" 7.0071595325993091e-014 -5.2976113913126665e-014 -3.4389747493324297e-014 ;
 	setAttr ".rst" -type "double3" 0.6665221901411289 1.0658141036401503e-014 3.1086244689504383e-015 ;
 	setAttr ".rsrr" -type "double3" -3.5284278497485881e-015 -1.0982852884428706e-014 
 		-3.876301018033661e-015 ;
@@ -20376,7 +20391,7 @@ createNode parentConstraint -n "R_Thumb_01_Jnt_parentConstraint1" -p "|VikingHer
 		2.2204460492503131e-015 ;
 	setAttr ".tg[0].tor" -type "double3" 6.3611093629270335e-015 7.9513867036587919e-016 
 		1.5902773407317584e-015 ;
-	setAttr ".lr" -type "double3" -1.033680271475643e-014 1.5902773407317584e-015 -2.3854160110976376e-015 ;
+	setAttr ".lr" -type "double3" 6.917706432183152e-014 -4.6118042881220982e-014 -3.9359364183111053e-014 ;
 	setAttr ".rst" -type "double3" 1.0456700937344934 0 0 ;
 	setAttr ".rsrr" -type "double3" -1.033680271475643e-014 1.5902773407317584e-015 
 		-2.3854160110976376e-015 ;
@@ -20440,7 +20455,8 @@ createNode parentConstraint -n "R_Fingers_02_Jnt_parentConstraint2" -p "|VikingH
 		3.5527136788005009e-015 ;
 	setAttr ".tg[0].tor" -type "double3" 2.3257806108201971e-014 -3.1805546814635168e-015 
 		-1.3060773862845788e-014 ;
-	setAttr ".lr" -type "double3" -2.3183261857855165e-014 3.1510475823679106e-015 1.318268477226712e-014 ;
+	setAttr ".lr" -type "double3" -2.6488056956563345e-014 -9.4174236271458973e-015 
+		-6.9514842956215434e-014 ;
 	setAttr ".rst" -type "double3" 0.69300590600792067 0 -1.9984014443252818e-015 ;
 	setAttr ".rsrr" -type "double3" -2.3183261857855165e-014 3.1510475823679106e-015 
 		1.318268477226712e-014 ;
@@ -20464,8 +20480,7 @@ createNode parentConstraint -n "R_Fingers_02_Jnt_parentConstraint1" -p "|VikingH
 	setAttr ".tg[0].tot" -type "double3" 4.2632564145606011e-014 -1.3322676295501878e-015 
 		-1.5099033134902129e-014 ;
 	setAttr ".tg[0].tor" -type "double3" -148.66030636501361 -54.333727276700934 67.100253443595264 ;
-	setAttr ".lr" -type "double3" -3.1805546814635168e-015 -5.9635400277440935e-015 
-		1.6552148617688094e-031 ;
+	setAttr ".lr" -type "double3" 2.3854160110976377e-014 -6.3611093629270193e-015 -6.7586786981099735e-014 ;
 	setAttr ".rst" -type "double3" 1.1752735569910477 1.0012576365524382 1.4053930263381353 ;
 	setAttr ".rsrr" -type "double3" -3.1805546814635168e-015 -5.9635400277440935e-015 
 		1.6552148617688094e-031 ;
@@ -20488,8 +20503,8 @@ createNode parentConstraint -n "R_Hand_Jnt_parentConstraint1" -p "|VikingHero|Tr
 	setAttr ".tg[0].tot" -type "double3" -2.4868995751603507e-014 2.8421709430404007e-014 
 		-1.9539925233402755e-014 ;
 	setAttr ".tg[0].tor" -type "double3" -1.7890620083232281e-014 -3.180554681463516e-015 
-		3.578124016646456e-015 ;
-	setAttr ".lr" -type "double3" 2.5444437451708128e-014 7.1562480332929151e-015 -1.5902773407317578e-014 ;
+		3.5781240166464568e-015 ;
+	setAttr ".lr" -type "double3" 9.8597195125368991e-014 -4.3732626870123068e-015 -3.1805546814635161e-014 ;
 	setAttr ".rst" -type "double3" -2.2204460492503131e-015 2.4868995751603507e-014 
 		4.8849813083506888e-015 ;
 	setAttr ".rsrr" -type "double3" 2.5444437451708128e-014 7.1562480332929151e-015 
@@ -20516,7 +20531,7 @@ createNode parentConstraint -n "R_Wrist_Jnt_parentConstraint1" -p "|VikingHero|T
 	setAttr ".lr" -type "double3" 9.8225516750148342e-017 2.4848083448933725e-017 1.59020681028787e-015 ;
 	setAttr ".rst" -type "double3" 4.5573695310049978 -3.5527136788005009e-015 -2.2204460492503131e-016 ;
 	setAttr ".rsrr" -type "double3" 9.8225516750148342e-017 2.4848083448933725e-017 
-		1.59020681028787e-015 ;
+		1.5902068102878702e-015 ;
 	setAttr -k on ".w0";
 createNode parentConstraint -n "R_elbow_Jnt_parentConstraint1" -p "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt";
 	rename -uid "95AFEDF6-44E1-9BA8-7799-6995D9B43C2F";
@@ -20540,7 +20555,7 @@ createNode parentConstraint -n "R_elbow_Jnt_parentConstraint1" -p "|VikingHero|T
 	setAttr ".lr" -type "double3" -2.8078334297295117e-015 -6.2555050082690655e-015 
 		1.2653886496369499e-014 ;
 	setAttr ".rst" -type "double3" 5.7026792614458977 7.1054273576010019e-015 4.4408920985006262e-016 ;
-	setAttr ".rsrr" -type "double3" -2.8078334297295117e-015 -6.2555050082690655e-015 
+	setAttr ".rsrr" -type "double3" -2.8078334297295117e-015 -6.2555050082690663e-015 
 		1.2653886496369499e-014 ;
 	setAttr -k on ".w0";
 createNode parentConstraint -n "R_Shoulder_Jnt_parentConstraint2" -p "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt";
@@ -20675,10 +20690,6 @@ createNode joint -n "L_Wrist_Jnt" -p "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|
 	setAttr ".radi" 0.3822;
 createNode joint -n "L_Hand_Jnt" -p "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt";
 	rename -uid "41EE703B-49F5-8250-94F3-B19D88656290";
-	setAttr ".r" -type "double3" 4.7708320221952759e-015 -6.7586786981099743e-015 -2.3854160110976384e-015 ;
-	setAttr -av ".rx";
-	setAttr -av ".ry";
-	setAttr -av ".rz";
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jot" -type "string" "xzy";
@@ -20724,7 +20735,7 @@ createNode parentConstraint -n "L_Thumb_02_Jnt_parentConstraint1" -p "|VikingHer
 		-1.7763568394002505e-014 ;
 	setAttr ".tg[0].tor" -type "double3" 4.4527765540489235e-014 -9.5416640443905487e-015 
 		-8.5477407064332003e-015 ;
-	setAttr ".lr" -type "double3" -4.4328980872897771e-014 7.0071595325993134e-015 8.3986522057395963e-015 ;
+	setAttr ".lr" -type "double3" -6.3710485963066064e-014 2.0710877554686287e-014 4.4776246374978569e-014 ;
 	setAttr ".rst" -type "double3" -0.66654034762208259 -8.4390936265776872e-006 -1.5959473870896801e-005 ;
 	setAttr ".rsrr" -type "double3" -4.4328980872897771e-014 7.0071595325993134e-015 
 		8.3986522057395963e-015 ;
@@ -20749,7 +20760,7 @@ createNode parentConstraint -n "L_Thumb_01_Jnt_parentConstraint1" -p "|VikingHer
 		-2.042810365310288e-014 ;
 	setAttr ".tg[0].tor" -type "double3" 4.4527765540489235e-014 -4.7708320221952744e-015 
 		-9.9392333795734871e-015 ;
-	setAttr ".lr" -type "double3" -5.2479152244148016e-014 7.9513867036588205e-016 6.361109362927032e-015 ;
+	setAttr ".lr" -type "double3" -5.9635400277440923e-014 1.3517357396219972e-014 5.4069429584879763e-014 ;
 	setAttr ".rst" -type "double3" -1.045676297987308 5.3327303710659635e-006 -1.4110957419433134e-005 ;
 	setAttr ".rsrr" -type "double3" -5.2479152244148016e-014 7.9513867036588205e-016 
 		6.361109362927032e-015 ;
@@ -20813,7 +20824,7 @@ createNode parentConstraint -n "L_Fingers_02_Jnt_parentConstraint2" -p "|VikingH
 		-6.6613381477509392e-015 ;
 	setAttr ".tg[0].tor" -type "double3" -3.0811623476677822e-015 -1.5902773407317588e-015 
 		2.0435995631532434e-014 ;
-	setAttr ".lr" -type "double3" 2.9569219304231134e-015 1.4753549547804446e-016 -1.7556335710583345e-014 ;
+	setAttr ".lr" -type "double3" 7.2059442001907794e-015 1.0063473796818145e-015 2.372681368330059e-014 ;
 	setAttr ".rst" -type "double3" -0.69293350552531696 2.2579104758335689e-005 3.2510177474520674e-006 ;
 	setAttr ".rsrr" -type "double3" 2.9569219304231134e-015 1.4753549547804446e-016 
 		-1.7556335710583345e-014 ;
@@ -20838,8 +20849,8 @@ createNode parentConstraint -n "L_Fingers_02_Jnt_parentConstraint1" -p "|VikingH
 		-1.0880185641326534e-014 ;
 	setAttr ".tg[0].tor" -type "double3" 2.0673605429512861e-014 1.272221872585407e-014 
 		1.272221872585407e-014 ;
-	setAttr ".lr" -type "double3" -1.9083328088781097e-014 -1.5902773407317588e-015 
-		-3.9756933518293944e-015 ;
+	setAttr ".lr" -type "double3" -1.7493050748049341e-014 -2.3854160110976332e-015 
+		2.7034714792439894e-014 ;
 	setAttr ".rst" -type "double3" -1.1753105993847726 -1.001300319250813 -1.4054549324834422 ;
 	setAttr ".rsrr" -type "double3" -1.9083328088781097e-014 -1.5902773407317588e-015 
 		-3.9756933518293944e-015 ;
@@ -20861,8 +20872,8 @@ createNode parentConstraint -n "L_Hand_Jnt_parentConstraint1" -p "|VikingHero|Tr
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" 3.5527136788005009e-015 1.7763568394002505e-014 
 		5.3290705182007514e-015 ;
-	setAttr ".tg[0].tor" -type "double3" 170.17129493314249 -40.876253543958725 -23.596672911355533 ;
-	setAttr ".lr" -type "double3" 4.7708320221952759e-015 -6.7586786981099743e-015 -2.3854160110976384e-015 ;
+	setAttr ".tg[0].tor" -type "double3" 170.17129493314249 -40.876253543958732 -23.596672911355533 ;
+	setAttr ".lr" -type "double3" -7.9513867036587935e-015 4.9656445853064307e-031 7.1562480332929135e-015 ;
 	setAttr ".rst" -type "double3" -2.2204460492503131e-015 -3.5527136788005009e-015 
 		-2.2204460492503131e-016 ;
 	setAttr ".rsrr" -type "double3" 4.7708320221952759e-015 -6.7586786981099743e-015 
@@ -20889,7 +20900,7 @@ createNode parentConstraint -n "L_Wrist_Jnt_parentConstraint1" -p "|VikingHero|T
 	setAttr ".lr" -type "double3" 9.8225516750148342e-017 2.4848083448933725e-017 1.59020681028787e-015 ;
 	setAttr ".rst" -type "double3" -4.5573563932721699 4.4560514069758028e-005 3.9549024952734158e-006 ;
 	setAttr ".rsrr" -type "double3" 9.8225516750148342e-017 2.4848083448933725e-017 
-		1.59020681028787e-015 ;
+		1.5902068102878702e-015 ;
 	setAttr -k on ".w0";
 createNode parentConstraint -n "L_elbow_Jnt_parentConstraint1" -p "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt";
 	rename -uid "164654E2-4819-1ABD-CC8B-6C87FBBC5E18";
@@ -20933,7 +20944,7 @@ createNode parentConstraint -n "L_Shoulder_Jnt_parentConstraint2" -p "|VikingHer
 	setAttr ".tg[0].tot" -type "double3" -7.1054273576010019e-015 3.5527136788005009e-015 
 		-2.886579864025407e-015 ;
 	setAttr ".tg[0].tor" -type "double3" -3.1805546814635168e-015 3.1805546814635176e-015 
-		4.9696166897867459e-015 ;
+		4.9696166897867467e-015 ;
 	setAttr ".lr" -type "double3" 2.9817700138720468e-015 -6.1871727787844973e-015 -2.0623909262614992e-015 ;
 	setAttr ".rst" -type "double3" -1.7616936180739238 2.403269255424334e-005 7.748379024619112e-006 ;
 	setAttr ".rsrr" -type "double3" 2.9817700138720468e-015 -6.1871727787844973e-015 
@@ -20984,8 +20995,8 @@ createNode parentConstraint -n "Spine_03_Jnt_parentConstraint1" -p "|VikingHero|
 	setAttr ".tg[0].tor" -type "double3" -8.0842996002261156 15.179578207590003 -61.500265760512157 ;
 	setAttr ".lr" -type "double3" -1.590277340731758e-015 7.1562480332929119e-015 1.9878466759146967e-016 ;
 	setAttr ".rst" -type "double3" 1.9431039535580936 2.8057966377798699e-021 -2.2204460492503131e-015 ;
-	setAttr ".rsrr" -type "double3" -1.590277340731758e-015 7.1562480332929119e-015 
-		1.9878466759146967e-016 ;
+	setAttr ".rsrr" -type "double3" -1.590277340731758e-015 7.1562480332929135e-015 
+		1.987846675914697e-016 ;
 	setAttr -k on ".w0";
 createNode parentConstraint -n "Spine_02_Jnt_parentConstraint1" -p "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt";
 	rename -uid "CD0D9C9C-4E17-73A1-346F-C08941DE7F39";
@@ -21149,7 +21160,7 @@ createNode parentConstraint -n "R_Foot_Ball_Jnt_parentConstraint1" -p "|VikingHe
 		-1.8805029554153044e-013 ;
 	setAttr ".rst" -type "double3" 1.6138121116446571 0 -4.4408920985006262e-016 ;
 	setAttr ".rsrr" -type "double3" -1.2096047022940936e-013 -1.3318572728628674e-014 
-		-1.8805029554153044e-013 ;
+		-1.8805029554153046e-013 ;
 	setAttr -k on ".w0";
 createNode parentConstraint -n "R_Foot_Jnt_parentConstraint1" -p "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt";
 	rename -uid "C1756742-4062-60FB-5C72-DBA126267E53";
@@ -21192,7 +21203,8 @@ createNode parentConstraint -n "R_Ankle_Jnt_parentConstraint1" -p "|VikingHero|T
 	setAttr ".tg[0].tot" -type "double3" 1.1102230246251565e-015 -8.8817841970012523e-016 
 		1.7763568394002505e-015 ;
 	setAttr ".tg[0].tor" -type "double3" 10.225475655207802 -63.106119163522855 -11.805073460806428 ;
-	setAttr ".lr" -type "double3" 1.5902773407317588e-015 -6.3114131960291676e-015 1.5902773407317588e-015 ;
+	setAttr ".lr" -type "double3" -3.9756933518293969e-016 -6.3983814881004357e-015 
+		7.9513867036587939e-016 ;
 	setAttr ".rst" -type "double3" 8.6602793286281425 -6.6613381477509392e-016 -4.4408920985006262e-016 ;
 	setAttr ".rsrr" -type "double3" 1.5902773407317588e-015 -6.3114131960291676e-015 
 		1.5902773407317588e-015 ;
@@ -21243,7 +21255,7 @@ createNode parentConstraint -n "R_Hip_Jnt_parentConstraint2" -p "|VikingHero|Tra
 		-1.8685758753598161e-014 ;
 	setAttr ".lr" -type "double3" -2.1548257966915327e-013 2.7829853462805953e-015 9.641056378186279e-015 ;
 	setAttr ".rst" -type "double3" 3.012714014962711 -5.3290705182007514e-015 -8.8817841970012523e-016 ;
-	setAttr ".rsrr" -type "double3" -2.1548257966915327e-013 2.7829853462805953e-015 
+	setAttr ".rsrr" -type "double3" -2.1548257966915327e-013 2.7829853462805957e-015 
 		9.641056378186279e-015 ;
 	setAttr -k on ".w0";
 createNode joint -n "L_Hip_Jnt" -p "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt";
@@ -21330,7 +21342,7 @@ createNode parentConstraint -n "L_Foot_Ball_Jnt_parentConstraint1" -p "|VikingHe
 	setAttr ".tg[0].tor" -type "double3" -1.141169673687638 74.062952522969312 -6.1110198068083843 ;
 	setAttr ".lr" -type "double3" 1.6399735076296251e-015 1.5405811738338903e-015 -1.5902773407317576e-015 ;
 	setAttr ".rst" -type "double3" -1.6138125218930366 2.4867790711091686e-006 -2.2522712717076843e-007 ;
-	setAttr ".rsrr" -type "double3" 1.6399735076296251e-015 1.5405811738338903e-015 
+	setAttr ".rsrr" -type "double3" 1.6399735076296251e-015 1.5405811738338905e-015 
 		-1.5902773407317576e-015 ;
 	setAttr -k on ".w0";
 createNode parentConstraint -n "L_Foot_Jnt_parentConstraint1" -p "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt";
@@ -21477,7 +21489,7 @@ createNode transform -n "IK_FK_Switch_Legs" -p "Controls";
 		1 -at "double";
 	setAttr ".rp" -type "double3" 1.6689300537109375e-006 18.684179697649697 -0.66014212369918823 ;
 	setAttr ".sp" -type "double3" 1.6689300537109375e-006 18.684179697649697 -0.66014212369918823 ;
-	setAttr -k on ".FK_IKControlSwitch" 1;
+	setAttr -k on ".FK_IKControlSwitch";
 createNode nurbsCurve -n "IK_FK_Switch_LegsShape" -p "IK_FK_Switch_Legs";
 	rename -uid "EC9FC7A8-4F16-8BA2-FF1A-93BE86AFCFF7";
 	setAttr -k off ".v";
@@ -21505,7 +21517,7 @@ createNode transform -n "IK_FK_Switch_Arms" -p "Controls";
 		1 -at "double";
 	setAttr ".rp" -type "double3" -4.4582783508021183e-010 28.789505004882752 -1.3654851913454611 ;
 	setAttr ".sp" -type "double3" -4.4582783508021183e-010 28.789505004882752 -1.3654851913454611 ;
-	setAttr -k on ".FK_IKControlSwitch" 1;
+	setAttr -k on ".FK_IKControlSwitch";
 createNode nurbsCurve -n "IK_FK_Switch_ArmsShape" -p "IK_FK_Switch_Arms";
 	rename -uid "C4CAC1CC-4E1D-8BF8-18FF-8BA91EC8D1C4";
 	setAttr -k off ".v";
@@ -22277,15 +22289,145 @@ createNode nurbsCurve -n "L_Wrist_CtrlShape" -p "L_Wrist_Ctrl";
 		-1.3665228786212438 3.9178500000000112 1.448313607426454
 		-1.3537974917759685 4.8818873792400908 1.0487996344803745
 		;
-createNode transform -n "L_Hand_Ctrl_Grp1" -p "L_Wrist_Ctrl";
+createNode transform -n "R_Clavicle_Ctrl_Grp1" -p "Spine_03_Ctrl";
+	rename -uid "67441EF0-405C-4ED1-678F-D2BBF8D2C42B";
+	setAttr ".t" -type "double3" 9.677130244970396 6.9085932820947296 1.874695625649581 ;
+	setAttr ".r" -type "double3" -8.5207052884862478 -21.633106213321739 -115.97694065645737 ;
+	setAttr ".s" -type "double3" 1.0000000000000002 1 1 ;
+	setAttr ".rp" -type "double3" 7.59405897866937 3.7642500000000014 -1.1920928943975892e-007 ;
+	setAttr ".rpt" -type "double3" -7.7586169725049388 -11.925647686890274 -2.2811877943778089 ;
+	setAttr ".sp" -type "double3" 7.59405897866937 3.7642500000000014 -1.1920928943975895e-007 ;
+	setAttr ".spt" -type "double3" 0 0 2.646977960169688e-023 ;
+createNode transform -n "R_Clavicle_Ctrl" -p "R_Clavicle_Ctrl_Grp1";
+	rename -uid "258A76A9-4920-3072-9C21-939B6CABB851";
+	setAttr ".rp" -type "double3" 7.59405897866937 3.7642500000000014 -1.1920928943975895e-007 ;
+	setAttr ".sp" -type "double3" 7.59405897866937 3.7642500000000014 -1.1920928943975895e-007 ;
+createNode nurbsCurve -n "R_Clavicle_CtrlShape" -p "R_Clavicle_Ctrl";
+	rename -uid "B042A2C7-452B-051B-2A16-629C7087B823";
+	setAttr -k off ".v";
+	setAttr ".ove" yes;
+	setAttr ".ovc" 6;
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		7.5837024573086493 2.4126660972395739 1.3519400391872323
+		7.6121282014999396 3.7642500000000192 1.9116227512354327
+		7.6299692400186263 5.1158339027604551 1.3515027119197003
+		7.6267745344672733 5.6756782859689796 -0.0003093562857588705
+		7.6044155000300941 5.115833902760432 -1.3519402776058118
+		7.5759897558388021 3.7642499999999872 -1.9116229896540118
+		7.5581487173201198 2.4126660972395522 -1.3515029503382801
+		7.5613434228714631 1.8528217140310297 0.00030911786717929612
+		7.5837024573086493 2.4126660972395739 1.3519400391872323
+		7.6121282014999396 3.7642500000000192 1.9116227512354327
+		7.6299692400186263 5.1158339027604551 1.3515027119197003
+		;
+createNode transform -n "R_Shoulder_Ctrl_Grp1" -p "R_Clavicle_Ctrl";
+	rename -uid "A315EA6E-4F33-B805-2B9F-6F82C111F9E2";
+	setAttr ".t" -type "double3" 1.7354065517541768 0.98146160927628445 2.4547967945385283 ;
+	setAttr ".r" -type "double3" -2.2629002817583888 17.734727704273812 -7.5612102663208249 ;
+	setAttr ".s" -type "double3" 0.99999999999999989 1.0000000000000002 1.0000000000000002 ;
+	setAttr ".rp" -type "double3" 7.5940589786693682 3.7642500000000014 -1.1920928943975892e-007 ;
+	setAttr ".rpt" -type "double3" 0.026267176995916165 -0.9814616092763031 -2.4547967945385301 ;
+	setAttr ".sp" -type "double3" 7.59405897866937 3.7642500000000014 -1.1920928943975895e-007 ;
+	setAttr ".spt" -type "double3" -1.7763568394002503e-015 0 2.6469779601696883e-023 ;
+createNode transform -n "R_Shoulder_Ctrl" -p "R_Shoulder_Ctrl_Grp1";
+	rename -uid "4BE02CE8-496F-8B4A-C1D9-20B0A060CC81";
+	setAttr ".rp" -type "double3" 7.59405897866937 3.7642500000000014 -1.1920928943975895e-007 ;
+	setAttr ".sp" -type "double3" 7.59405897866937 3.7642500000000014 -1.1920928943975895e-007 ;
+createNode nurbsCurve -n "R_Shoulder_CtrlShape" -p "R_Shoulder_Ctrl";
+	rename -uid "B90C7A28-4672-0A10-AA71-A09C7ADD672D";
+	setAttr -k off ".v";
+	setAttr ".ove" yes;
+	setAttr ".ovc" 6;
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		7.5819205903471127 2.1801225029002747 1.5845449282533641
+		7.6152370592004131 3.7642500000000165 2.2405225349680631
+		7.6361476957036594 5.3483774970997349 1.5840323576698327
+		7.6324033325910996 6.004544590926586 -0.00036256134474033341
+		7.6061973669916219 5.3483774970997144 -1.5845451666719428
+		7.5728808981383242 3.7642499999999797 -2.2405227733866426
+		7.551970261635069 2.1801225029002516 -1.5840325960884114
+		7.5557146247476341 1.5239554090734073 0.00036232292616124827
+		7.5819205903471127 2.1801225029002747 1.5845449282533641
+		7.6152370592004131 3.7642500000000165 2.2405225349680631
+		7.6361476957036594 5.3483774970997349 1.5840323576698327
+		;
+createNode transform -n "R_Elbow_Ctrl_Grp" -p "R_Shoulder_Ctrl";
+	rename -uid "E7D4A96E-43BA-71AF-D4AE-A78AEC99AF4C";
+	setAttr ".t" -type "double3" 10.831339261445896 -0.087789999999981383 -0.048477799999999238 ;
+	setAttr ".r" -type "double3" -0.055427578033347975 3.0470550395001399 7.6468162728611304 ;
+	setAttr ".s" -type "double3" 0.99999999999999967 1 0.99999999999999989 ;
+	setAttr ".rp" -type "double3" 2.46539897866937 3.8520399999999997 0.048477680790710576 ;
+	setAttr ".sp" -type "double3" 2.46539897866937 3.8520399999999997 0.048477680790710576 ;
+createNode transform -n "R_Elbow_Ctrl" -p "R_Elbow_Ctrl_Grp";
+	rename -uid "435DEADE-412B-CEE8-6EFE-12897796ECE2";
+	setAttr ".rp" -type "double3" 2.46539897866937 3.8520399999999997 0.048477680790710576 ;
+	setAttr ".sp" -type "double3" 2.46539897866937 3.8520399999999997 0.048477680790710576 ;
+createNode nurbsCurve -n "R_Elbow_CtrlShape" -p "R_Elbow_Ctrl";
+	rename -uid "E3377BD0-45C0-F567-76A1-EC95AF1DF0AC";
+	setAttr -k off ".v";
+	setAttr ".ove" yes;
+	setAttr ".ovc" 6;
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		2.4555258588723023 2.5635427022154911 1.3373146056035452
+		2.4826248014560273 3.8520400000000148 1.8708735364386635
+		2.4996330906743611 5.1405372977845332 1.3368976910477317
+		2.4965875013759704 5.6742503536079507 0.048182877681120555
+		2.4752720984664323 5.1405372977845065 -1.2403592440221225
+		2.4481731558827087 3.8520399999999841 -1.773918174857243
+		2.4311648666643739 2.5635427022154706 -1.2399423294663106
+		2.434210455962766 2.0298296463920469 0.04877248390030002
+		2.4555258588723023 2.5635427022154911 1.3373146056035452
+		2.4826248014560273 3.8520400000000148 1.8708735364386635
+		2.4996330906743611 5.1405372977845332 1.3368976910477317
+		;
+createNode transform -n "R_Wrist_Ctrl_Grp" -p "R_Elbow_Ctrl";
+	rename -uid "5C2BE43D-4DFE-BD09-7F83-EDB163DA4BBF";
+	setAttr ".t" -type "double3" 8.4021795310049914 -0.065810000000000812 -0.036342400000001329 ;
+	setAttr ".rp" -type "double3" -1.379411021330629 3.9178499999999996 0.084820080790710572 ;
+	setAttr ".sp" -type "double3" -1.379411021330629 3.9178499999999996 0.084820080790710572 ;
+createNode transform -n "R_Wrist_Ctrl" -p "R_Wrist_Ctrl_Grp";
+	rename -uid "7FAF2BA4-45B6-C557-B158-8B8EB1ADCD98";
+	setAttr ".r" -type "double3" -0.64765689672503579 0.061095087331075951 10.777700248107895 ;
+	setAttr ".rp" -type "double3" -1.379411021330629 3.9178499999999996 0.084820080790710572 ;
+	setAttr ".sp" -type "double3" -1.379411021330629 3.9178499999999996 0.084820080790710572 ;
+createNode nurbsCurve -n "R_Wrist_CtrlShape" -p "R_Wrist_Ctrl";
+	rename -uid "0A188F00-4EBB-6332-05D2-ECB95041948B";
+	setAttr -k off ".v";
+	setAttr ".ove" yes;
+	setAttr ".ovc" 6;
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		-1.3867979646718782 2.9538126207599245 1.0491115646772349
+		-1.3665228786212438 3.9178500000000112 1.448313607426454
+		-1.3537974917759685 4.8818873792400908 1.0487996344803745
+		-1.35607616316357 5.2812047363559396 0.084599512833253662
+		-1.3720240779893833 4.8818873792400748 -0.87947140309581429
+		-1.3922991640400177 3.9178499999999885 -1.2786734458450333
+		-1.405024550885293 2.9538126207599094 -0.8791594728989538
+		-1.4027458794976915 2.5544952636440597 0.0850406487481669
+		-1.3867979646718782 2.9538126207599245 1.0491115646772349
+		-1.3665228786212438 3.9178500000000112 1.448313607426454
+		-1.3537974917759685 4.8818873792400908 1.0487996344803745
+		;
+createNode transform -n "L_Hand_Ctrl_Grp1" -p "Cog_Ctrl";
 	rename -uid "6640A2BA-45C4-1448-781D-06AC03FEBC74";
-	setAttr ".t" -type "double3" 2.7735861271866087 3.808624692270417 0.070595069971969737 ;
-	setAttr ".r" -type "double3" -176.60899378991161 13.495002890542283 -71.590716131988785 ;
-	setAttr ".s" -type "double3" 0.99999999999999967 0.99999999999999967 0.99999999999999967 ;
-	setAttr ".rp" -type "double3" -1.3794110213306283 3.9178499999999983 0.084820080790710531 ;
-	setAttr ".rpt" -type "double3" -2.7735861271866105 -3.8086246922704174 -0.070595069971963728 ;
+	setAttr ".r" -type "double3" -3.0762303864697002e-015 -14.56415010227548 -1.4702259366384988e-005 ;
+	setAttr ".s" -type "double3" 0.99999999999999978 0.99999999999999956 0.99999999999999967 ;
+	setAttr ".rp" -type "double3" -1.3794110213306288 3.9178499999999983 0.084820080790710531 ;
+	setAttr ".rpt" -type "double3" 0.022996851714136238 3.4805984849717879e-007 -0.34959750627234082 ;
 	setAttr ".sp" -type "double3" -1.379411021330629 3.91785 0.084820080790710572 ;
-	setAttr ".spt" -type "double3" 6.6613381477509373e-016 -1.7763568394002499e-015 
+	setAttr ".spt" -type "double3" 2.2204460492503126e-016 -1.7763568394002497e-015 
 		-4.1633363423443358e-017 ;
 createNode transform -n "L_Hand_Ctrl" -p "L_Hand_Ctrl_Grp1";
 	rename -uid "6CABAF0E-41D7-B696-32D0-08B152EF0FA5";
@@ -22477,147 +22619,29 @@ createNode nurbsCurve -n "L_Finger_01_FK_02_CtrlShape" -p "L_Finger_01_FK_02_Ctr
 		-3.0243508076080294 3.9968404713953278 2.1318719060318991
 		-3.1819956751417187 3.8275085240889783 2.117829296629298
 		;
-createNode transform -n "R_Clavicle_Ctrl_Grp1" -p "Spine_03_Ctrl";
-	rename -uid "67441EF0-405C-4ED1-678F-D2BBF8D2C42B";
-	setAttr ".t" -type "double3" 9.677130244970396 6.9085932820947296 1.874695625649581 ;
-	setAttr ".r" -type "double3" -8.5207052884862478 -21.633106213321739 -115.97694065645737 ;
-	setAttr ".s" -type "double3" 1.0000000000000002 1 1 ;
-	setAttr ".rp" -type "double3" 7.59405897866937 3.7642500000000014 -1.1920928943975892e-007 ;
-	setAttr ".rpt" -type "double3" -7.7586169725049388 -11.925647686890274 -2.2811877943778089 ;
-	setAttr ".sp" -type "double3" 7.59405897866937 3.7642500000000014 -1.1920928943975895e-007 ;
-	setAttr ".spt" -type "double3" 0 0 2.646977960169688e-023 ;
-createNode transform -n "R_Clavicle_Ctrl" -p "R_Clavicle_Ctrl_Grp1";
-	rename -uid "258A76A9-4920-3072-9C21-939B6CABB851";
-	setAttr ".rp" -type "double3" 7.59405897866937 3.7642500000000014 -1.1920928943975895e-007 ;
-	setAttr ".sp" -type "double3" 7.59405897866937 3.7642500000000014 -1.1920928943975895e-007 ;
-createNode nurbsCurve -n "R_Clavicle_CtrlShape" -p "R_Clavicle_Ctrl";
-	rename -uid "B042A2C7-452B-051B-2A16-629C7087B823";
+createNode pointConstraint -n "L_Hand_Ctrl_Grp1_pointConstraint1" -p "L_Hand_Ctrl_Grp1";
+	rename -uid "4276228B-4B3C-A7D5-4F9E-A980245E95B6";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_Wrist_JntW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
 	setAttr -k off ".v";
-	setAttr ".ove" yes;
-	setAttr ".ovc" 6;
-	setAttr ".cc" -type "nurbsCurve" 
-		3 8 2 no 3
-		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
-		11
-		7.5837024573086493 2.4126660972395739 1.3519400391872323
-		7.6121282014999396 3.7642500000000192 1.9116227512354327
-		7.6299692400186263 5.1158339027604551 1.3515027119197003
-		7.6267745344672733 5.6756782859689796 -0.0003093562857588705
-		7.6044155000300941 5.115833902760432 -1.3519402776058118
-		7.5759897558388021 3.7642499999999872 -1.9116229896540118
-		7.5581487173201198 2.4126660972395522 -1.3515029503382801
-		7.5613434228714631 1.8528217140310297 0.00030911786717929612
-		7.5837024573086493 2.4126660972395739 1.3519400391872323
-		7.6121282014999396 3.7642500000000192 1.9116227512354327
-		7.6299692400186263 5.1158339027604551 1.3515027119197003
-		;
-createNode transform -n "R_Shoulder_Ctrl_Grp1" -p "R_Clavicle_Ctrl";
-	rename -uid "A315EA6E-4F33-B805-2B9F-6F82C111F9E2";
-	setAttr ".t" -type "double3" 1.7354065517541768 0.98146160927628445 2.4547967945385283 ;
-	setAttr ".r" -type "double3" -2.2629002817583888 17.734727704273812 -7.5612102663208249 ;
-	setAttr ".s" -type "double3" 0.99999999999999989 1.0000000000000002 1.0000000000000002 ;
-	setAttr ".rp" -type "double3" 7.5940589786693682 3.7642500000000014 -1.1920928943975892e-007 ;
-	setAttr ".rpt" -type "double3" 0.026267176995916165 -0.9814616092763031 -2.4547967945385301 ;
-	setAttr ".sp" -type "double3" 7.59405897866937 3.7642500000000014 -1.1920928943975895e-007 ;
-	setAttr ".spt" -type "double3" -1.7763568394002503e-015 0 2.6469779601696883e-023 ;
-createNode transform -n "R_Shoulder_Ctrl" -p "R_Shoulder_Ctrl_Grp1";
-	rename -uid "4BE02CE8-496F-8B4A-C1D9-20B0A060CC81";
-	setAttr ".rp" -type "double3" 7.59405897866937 3.7642500000000014 -1.1920928943975895e-007 ;
-	setAttr ".sp" -type "double3" 7.59405897866937 3.7642500000000014 -1.1920928943975895e-007 ;
-createNode nurbsCurve -n "R_Shoulder_CtrlShape" -p "R_Shoulder_Ctrl";
-	rename -uid "B90C7A28-4672-0A10-AA71-A09C7ADD672D";
-	setAttr -k off ".v";
-	setAttr ".ove" yes;
-	setAttr ".ovc" 6;
-	setAttr ".cc" -type "nurbsCurve" 
-		3 8 2 no 3
-		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
-		11
-		7.5819205903471127 2.1801225029002747 1.5845449282533641
-		7.6152370592004131 3.7642500000000165 2.2405225349680631
-		7.6361476957036594 5.3483774970997349 1.5840323576698327
-		7.6324033325910996 6.004544590926586 -0.00036256134474033341
-		7.6061973669916219 5.3483774970997144 -1.5845451666719428
-		7.5728808981383242 3.7642499999999797 -2.2405227733866426
-		7.551970261635069 2.1801225029002516 -1.5840325960884114
-		7.5557146247476341 1.5239554090734073 0.00036232292616124827
-		7.5819205903471127 2.1801225029002747 1.5845449282533641
-		7.6152370592004131 3.7642500000000165 2.2405225349680631
-		7.6361476957036594 5.3483774970997349 1.5840323576698327
-		;
-createNode transform -n "R_Elbow_Ctrl_Grp" -p "R_Shoulder_Ctrl";
-	rename -uid "E7D4A96E-43BA-71AF-D4AE-A78AEC99AF4C";
-	setAttr ".t" -type "double3" 10.831339261445896 -0.087789999999981383 -0.048477799999999238 ;
-	setAttr ".r" -type "double3" -0.055427578033347975 3.0470550395001399 7.6468162728611304 ;
-	setAttr ".s" -type "double3" 0.99999999999999967 1 0.99999999999999989 ;
-	setAttr ".rp" -type "double3" 2.46539897866937 3.8520399999999997 0.048477680790710576 ;
-	setAttr ".sp" -type "double3" 2.46539897866937 3.8520399999999997 0.048477680790710576 ;
-createNode transform -n "R_Elbow_Ctrl" -p "R_Elbow_Ctrl_Grp";
-	rename -uid "435DEADE-412B-CEE8-6EFE-12897796ECE2";
-	setAttr ".rp" -type "double3" 2.46539897866937 3.8520399999999997 0.048477680790710576 ;
-	setAttr ".sp" -type "double3" 2.46539897866937 3.8520399999999997 0.048477680790710576 ;
-createNode nurbsCurve -n "R_Elbow_CtrlShape" -p "R_Elbow_Ctrl";
-	rename -uid "E3377BD0-45C0-F567-76A1-EC95AF1DF0AC";
-	setAttr -k off ".v";
-	setAttr ".ove" yes;
-	setAttr ".ovc" 6;
-	setAttr ".cc" -type "nurbsCurve" 
-		3 8 2 no 3
-		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
-		11
-		2.4555258588723023 2.5635427022154911 1.3373146056035452
-		2.4826248014560273 3.8520400000000148 1.8708735364386635
-		2.4996330906743611 5.1405372977845332 1.3368976910477317
-		2.4965875013759704 5.6742503536079507 0.048182877681120555
-		2.4752720984664323 5.1405372977845065 -1.2403592440221225
-		2.4481731558827087 3.8520399999999841 -1.773918174857243
-		2.4311648666643739 2.5635427022154706 -1.2399423294663106
-		2.434210455962766 2.0298296463920469 0.04877248390030002
-		2.4555258588723023 2.5635427022154911 1.3373146056035452
-		2.4826248014560273 3.8520400000000148 1.8708735364386635
-		2.4996330906743611 5.1405372977845332 1.3368976910477317
-		;
-createNode transform -n "R_Wrist_Ctrl_Grp" -p "R_Elbow_Ctrl";
-	rename -uid "5C2BE43D-4DFE-BD09-7F83-EDB163DA4BBF";
-	setAttr ".t" -type "double3" 8.4021795310049914 -0.065810000000000812 -0.036342400000001329 ;
-	setAttr ".rp" -type "double3" -1.379411021330629 3.9178499999999996 0.084820080790710572 ;
-	setAttr ".sp" -type "double3" -1.379411021330629 3.9178499999999996 0.084820080790710572 ;
-createNode transform -n "R_Wrist_Ctrl" -p "R_Wrist_Ctrl_Grp";
-	rename -uid "7FAF2BA4-45B6-C557-B158-8B8EB1ADCD98";
-	setAttr ".r" -type "double3" -0.64765689672503579 0.061095087331075951 10.777700248107895 ;
-	setAttr ".rp" -type "double3" -1.379411021330629 3.9178499999999996 0.084820080790710572 ;
-	setAttr ".sp" -type "double3" -1.379411021330629 3.9178499999999996 0.084820080790710572 ;
-createNode nurbsCurve -n "R_Wrist_CtrlShape" -p "R_Wrist_Ctrl";
-	rename -uid "0A188F00-4EBB-6332-05D2-ECB95041948B";
-	setAttr -k off ".v";
-	setAttr ".ove" yes;
-	setAttr ".ovc" 6;
-	setAttr ".cc" -type "nurbsCurve" 
-		3 8 2 no 3
-		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
-		11
-		-1.3867979646718782 2.9538126207599245 1.0491115646772349
-		-1.3665228786212438 3.9178500000000112 1.448313607426454
-		-1.3537974917759685 4.8818873792400908 1.0487996344803745
-		-1.35607616316357 5.2812047363559396 0.084599512833253662
-		-1.3720240779893833 4.8818873792400748 -0.87947140309581429
-		-1.3922991640400177 3.9178499999999885 -1.2786734458450333
-		-1.405024550885293 2.9538126207599094 -0.8791594728989538
-		-1.4027458794976915 2.5544952636440597 0.0850406487481669
-		-1.3867979646718782 2.9538126207599245 1.0491115646772349
-		-1.3665228786212438 3.9178500000000112 1.448313607426454
-		-1.3537974917759685 4.8818873792400908 1.0487996344803745
-		;
-createNode transform -n "R_Hand_Ctrl_Grp1" -p "R_Wrist_Ctrl";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".rst" -type "double3" 3.0535187899778258 7.4206479830100953 0.90735530178244783 ;
+	setAttr -k on ".w0";
+createNode transform -n "R_Hand_Ctrl_Grp1" -p "Cog_Ctrl";
 	rename -uid "AF80B234-4A18-F94A-C3FB-5BA077BC327A";
-	setAttr ".t" -type "double3" 2.7735861271866038 3.8086246922703957 0.070595069971964547 ;
-	setAttr ".r" -type "double3" 3.6618165827702849 51.217747939163139 -38.622186462808678 ;
-	setAttr ".s" -type "double3" 0.99999999999999989 1 1 ;
-	setAttr ".rp" -type "double3" -1.3794110213306283 3.9178499999999983 0.084820080790710531 ;
-	setAttr ".rpt" -type "double3" -2.7735861271866105 -3.8086246922704174 -0.070595069971963728 ;
+	setAttr ".r" -type "double3" -2.6968568236941567e-015 53.865833235410044 -149.11701851315883 ;
+	setAttr ".rp" -type "double3" -1.379411021330629 3.91785 0.084820080790710572 ;
+	setAttr ".rpt" -type "double3" 4.0296799751982117 -6.8978677487167328 1.0792617564838969 ;
 	setAttr ".sp" -type "double3" -1.379411021330629 3.91785 0.084820080790710572 ;
-	setAttr ".spt" -type "double3" 6.6613381477509373e-016 -1.7763568394002499e-015 
-		-4.1633363423443358e-017 ;
 createNode transform -n "R_Hand_Ctrl" -p "R_Hand_Ctrl_Grp1";
 	rename -uid "AA9332FF-44D1-78DC-BE2A-6AA07F31E1D6";
 	setAttr ".rp" -type "double3" -1.3794110213306228 3.9178500000000049 0.084820080790713348 ;
@@ -22774,7 +22798,7 @@ createNode nurbsCurve -n "R_Finger_01_FK_01_CtrlShape" -p "R_Finger_01_FK_01_Ctr
 createNode transform -n "R_Finger_01_FK_02_Ctrl_Grp" -p "R_Finger_01_FK_01_Ctrl";
 	rename -uid "58CFE173-4C40-6B51-B890-B4ABD187BE61";
 	setAttr ".t" -type "double3" -0.25324384881057727 0.24829406326474057 -0.53886067806319016 ;
-	setAttr ".r" -type "double3" -2.6643970468244196 12.830497084312224 2.3125339702657342 ;
+	setAttr ".r" -type "double3" -2.66439704682442 12.830497084312224 2.3125339702657342 ;
 	setAttr ".s" -type "double3" 0.99999999999999967 0.99999999999999967 0.99999999999999944 ;
 	setAttr ".rp" -type "double3" -0.87854965689878961 4.5935237490113145 0.87713938652954226 ;
 	setAttr ".sp" -type "double3" -0.87854965689878961 4.5935237490113145 0.87713938652954226 ;
@@ -22803,6 +22827,23 @@ createNode nurbsCurve -n "R_Finger_01_FK_02_CtrlShape" -p "R_Finger_01_FK_02_Ctr
 		-1.0991030227268941 4.8034232520867448 0.32809081147344943
 		-1.0336613556529777 5.004227076767565 0.42357703938747704
 		;
+createNode pointConstraint -n "R_Hand_Ctrl_Grp1_pointConstraint1" -p "R_Hand_Ctrl_Grp1";
+	rename -uid "13FC2ED2-4097-1E83-BA7A-D19BD9AE04B1";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "R_Wrist_JntW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".rst" -type "double3" -0.95317691195148946 -8.3585173144255371 -0.52150089591403848 ;
+	setAttr -k on ".w0";
 createNode transform -n "IK_Ctrls" -p "Controls";
 	rename -uid "95858B22-437E-7853-AEFC-8DABE92053E3";
 createNode transform -n "IK__R_Arm_Point_Orient_Ctrl_Grp" -p "IK_Ctrls";
@@ -23305,9 +23346,10 @@ createNode nurbsCurve -n "L_Ball_Rotator_IK_Ctrl_GrpShape" -p "|VikingHero|Trans
 createNode transform -n "IK_L_Hip_Ctrl_Grp" -p "IK_Ctrls";
 	rename -uid "B8B028E6-44BE-63B1-73FA-2B8E2349120F";
 	setAttr ".t" -type "double3" 1.8103899999999975 19.198 -1.37587 ;
-	setAttr ".r" -type "double3" -8.0424122593074405e-016 8.6285258673502803 90.472414411513014 ;
+	setAttr ".r" -type "double3" 0 8.628525867350282 90.472414411513014 ;
 createNode transform -n "L_IK_Hip_Ctrl" -p "IK_L_Hip_Ctrl_Grp";
 	rename -uid "302F68D9-49FA-941A-F6F7-559492F2079E";
+	setAttr ".t" -type "double3" 7.5809488137904976e-015 2.3690465043095118e-016 0 ;
 	setAttr ".r" -type "double3" 0 0 90 ;
 	setAttr ".s" -type "double3" 0.53346184770158878 0.53346184770158878 0.53346184770158878 ;
 createNode nurbsCurve -n "L_IK_Hip_CtrlShape" -p "L_IK_Hip_Ctrl";
@@ -23531,21 +23573,22 @@ createNode lambert -n "Lenz";
 	rename -uid "7FA6D6AD-47BA-0D1B-B37A-E2B4C1235DFC";
 	setAttr ".it" -type "float3" 0.73548388 0.73548388 0.73548388 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "068D66D2-4A89-16C6-EDEA-1FB3669E6E5D";
+	rename -uid "423F42BB-467F-9300-3063-968B951B18F5";
 	setAttr -s 10 ".lnk";
 	setAttr -s 10 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "469E9318-4878-E854-0592-2EA96DDA2485";
+	rename -uid "2F2D11C8-4FC6-673E-C153-A99C04B5AD04";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "ADF5DC34-403C-9004-5C54-AC9AF4F5D71A";
+	rename -uid "C9DB41B3-404F-8AAD-4679-0A8D56CEC94D";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "B78B62CE-4E0A-FB96-8049-7893D81A279B";
-	setAttr ".cdl" 8;
-	setAttr -s 9 ".dli[1:8]"  1 3 5 6 2 4 7 8;
+	rename -uid "20DC3D45-4C0A-79DB-EDD4-088F2DD4D8ED";
+	setAttr ".cdl" 6;
+	setAttr -s 9 ".dli[1:8]"  9 1 3 5 6 4 7 8;
+	setAttr -s 6 ".dli";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "360C3956-4963-8910-CA22-9A8DAED46020";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "BDE6F246-4854-19BD-289A-9D95671EF180";
+	rename -uid "BEF22E7B-4E4F-C743-7626-7DA6BD1EC44B";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "D78994CA-4F2C-2845-CC18-26A4EB588F55";
 	setAttr ".g" yes;
@@ -23553,45 +23596,48 @@ createNode script -n "uiConfigurationScriptNode";
 	rename -uid "B04BF3EF-4CC0-5131-D2F6-E5AAF2238A51";
 	setAttr ".b" -type "string" (
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n"
-		+ "            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 1\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n"
+		+ "            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 1\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n"
 		+ "            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n"
-		+ "            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"side\" \n"
-		+ "            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 1\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n"
-		+ "            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n"
-		+ "            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 1\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
+		+ "            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 1\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
 		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n"
-		+ "            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n"
-		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 1\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n"
-		+ "            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n"
-		+ "            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1101\n            -height 691\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
-		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n"
-		+ "            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 1\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n"
-		+ "            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -showAnimLayerWeight 1\n"
-		+ "            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n"
-		+ "            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"graphEditor\" (localizedPanelLabel(\"Graph Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n"
-		+ "                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n"
-		+ "                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayKeys 1\n                -displayTangents 0\n"
-		+ "                -displayActiveKeys 0\n                -displayActiveKeyTangents 1\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 1\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showResults \"off\" \n                -showBufferCurves \"off\" \n                -smoothness \"fine\" \n                -resultSamples 1\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -showCurveNames 0\n                -showActiveCurveNames 0\n                -stackedCurves 0\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -displayNormalized 0\n                -preSelectionHighlight 0\n                -constrainDrag 0\n                -classicMode 1\n                -valueLinesToggle 1\n                -outliner \"graphEditor1OutlineEd\" \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
-		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dopeSheetPanel\" (localizedPanelLabel(\"Dope Sheet\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n"
-		+ "                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n"
-		+ "                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n                -showSummary 1\n                -showScene 0\n                -hierarchyBelow 0\n                -showTicks 1\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"timeEditorPanel\" (localizedPanelLabel(\"Time Editor\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"clipEditorPanel\" (localizedPanelLabel(\"Trax Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n"
-		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n\tif (\"\" != $panelName) {\n"
-		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 1\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n"
-		+ "                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
-		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
-		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n"
-		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\nstring $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"smoothShaded\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 0\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n"
-		+ "                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 32768\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n"
-		+ "                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n"
-		+ "                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n"
-		+ "                -activeTab -1\n                -editorMode \"default\" \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 1\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1101\\n    -height 691\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 1\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1101\\n    -height 691\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName\"\n"
+		+ "            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 1\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n"
+		+ "            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n"
+		+ "            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n"
+		+ "        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 1\n            -activeComponentsXray 0\n"
+		+ "            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n"
+		+ "            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n"
+		+ "            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 931\n            -height 747\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n"
+		+ "            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n"
+		+ "            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n"
+		+ "            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"graphEditor\" (localizedPanelLabel(\"Graph Editor\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n"
+		+ "                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n"
+		+ "                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 1\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 1\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showResults \"off\" \n                -showBufferCurves \"off\" \n                -smoothness \"fine\" \n                -resultSamples 1\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -showCurveNames 0\n                -showActiveCurveNames 0\n                -stackedCurves 0\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n"
+		+ "                -displayNormalized 0\n                -preSelectionHighlight 0\n                -constrainDrag 0\n                -classicMode 1\n                -valueLinesToggle 1\n                -outliner \"graphEditor1OutlineEd\" \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dopeSheetPanel\" (localizedPanelLabel(\"Dope Sheet\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n"
+		+ "                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n"
+		+ "                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n"
+		+ "                -showSummary 1\n                -showScene 0\n                -hierarchyBelow 0\n                -showTicks 1\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"timeEditorPanel\" (localizedPanelLabel(\"Time Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"clipEditorPanel\" (localizedPanelLabel(\"Trax Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n"
+		+ "                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n"
+		+ "                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 1\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n"
+		+ "                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
+		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
+		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
+		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\nstring $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"smoothShaded\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n"
+		+ "                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 0\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n"
+		+ "                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n"
+		+ "                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n"
+		+ "                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -defaultPinnedState 0\n"
+		+ "                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -activeTab -1\n                -editorMode \"default\" \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n"
+		+ "        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"0\" \n            -showSetMembers 1\n"
+		+ "            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n"
+		+ "        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 1\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 931\\n    -height 747\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 1\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 931\\n    -height 747\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 120 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
@@ -24887,6 +24933,232 @@ createNode polyTweakUV -n "polyTweakUV5";
 		 -0.93997836 -0.034337115 -0.93997836 -0.034337115 -0.93997836 -0.034337115 -0.93997836
 		 -0.034337085 -0.93997836 -0.034337085 -0.93997836 -0.034337085 -0.93997836 -0.0343371
 		 -0.93997836 -0.034337115;
+createNode displayLayer -n "ControlsGroup";
+	rename -uid "9EFEED7C-46DB-FAEC-06EA-A68BEC9C865E";
+	setAttr ".do" 1;
+createNode displayLayer -n "FKSkeletonGroup";
+	rename -uid "0E573E11-43F6-61C8-EE0D-D095BCB9A42A";
+	setAttr ".v" no;
+	setAttr ".do" 2;
+createNode displayLayer -n "IKSkeletonGroup";
+	rename -uid "5D693495-4C47-C9EC-674B-7EB2DD6D7B5B";
+	setAttr ".v" no;
+	setAttr ".do" 3;
+createNode displayLayer -n "RKSkeletonGrp";
+	rename -uid "85F537C9-44A6-92D2-67D4-25954D236B21";
+	setAttr ".do" 4;
+createNode displayLayer -n "GeometryGroup";
+	rename -uid "2A2F2F88-4B74-2DB8-8A06-EA9B1438B352";
+	setAttr ".v" no;
+	setAttr ".do" 5;
+createNode animCurveUU -n "L_Shoulder_Jnt_parentConstraint3_L_Shoulder_JntW0";
+	rename -uid "45C72594-4975-CF99-12B4-0080076BB1BF";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 1 1 0;
+createNode animCurveUU -n "L_Shoulder_Jnt_parentConstraint3_L_Shoulder_JntW1";
+	rename -uid "62983BCD-4FE3-B2B0-A288-538D385507EE";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 1;
+createNode animCurveUU -n "L_elbow_Jnt_parentConstraint2_L_elbow_JntW0";
+	rename -uid "229F4BBD-4B80-7A21-E147-7BA7B7F1287A";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 1 1 0;
+createNode animCurveUU -n "L_elbow_Jnt_parentConstraint2_L_elbow_JntW1";
+	rename -uid "6F6FEF7A-4C70-5B09-A12F-61A2E38F1733";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 1;
+createNode animCurveUU -n "L_Wrist_Jnt_parentConstraint2_L_Wrist_JntW0";
+	rename -uid "D71DFECD-4B83-7C69-0B9F-C48ACD40B5E3";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 1;
+createNode animCurveUU -n "L_Wrist_Jnt_parentConstraint2_L_Wrist_JntW1";
+	rename -uid "678FAE1F-4C96-CF13-FEE9-07839D514A8D";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 1 1 0;
+createNode animCurveUU -n "R_Shoulder_Jnt_parentConstraint3_R_Shoulder_JntW0";
+	rename -uid "E355D243-4F98-D889-6C22-96A18C6B508A";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 1;
+createNode animCurveUU -n "R_Shoulder_Jnt_parentConstraint3_R_Shoulder_JntW1";
+	rename -uid "BA8EF8D7-4C66-A9D1-45B0-14A96FEF780A";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 1 1 0;
+createNode animCurveUU -n "R_elbow_Jnt_parentConstraint2_R_elbow_JntW0";
+	rename -uid "E508C715-4FC5-BFB5-0613-E2BB6F00149C";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 1;
+createNode animCurveUU -n "R_elbow_Jnt_parentConstraint2_R_elbow_JntW1";
+	rename -uid "E1F42A4D-4696-2364-6150-FAA707E7F1B0";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 1 1 0;
+createNode animCurveUU -n "R_Wrist_Jnt_parentConstraint2_R_Wrist_JntW0";
+	rename -uid "E9C33AE9-4A7C-9147-1C79-44B5795CD638";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 1 1 0;
+createNode animCurveUU -n "R_Wrist_Jnt_parentConstraint2_R_Wrist_JntW1";
+	rename -uid "25FA922B-4381-4C6D-6A1D-50B2E1E0ECB4";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 1;
+createNode animCurveUU -n "L_Shoulder_Ctrl_visibility";
+	rename -uid "82ADD65E-4F3D-4205-6849-1883FCE69000";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 1 1 0;
+createNode animCurveUU -n "R_Shoulder_Ctrl_visibility";
+	rename -uid "89D9FDAC-4301-FBB5-4FB6-759D75B98DAD";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 1 1 0;
+createNode animCurveUU -n "R_Arm_Point_Orient_Ctrl_visibility";
+	rename -uid "38DB605A-4FB7-6126-0F7F-82B36978F416";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 1;
+createNode animCurveUU -n "L_Arm_Point_Orient_Ctrl_visibility";
+	rename -uid "53EB1E6D-4122-B56A-19DD-BFB7B942083C";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 1;
+createNode animCurveUU -n "R_IK_Wrist_Ctrl_visibility";
+	rename -uid "C0A113BC-4610-0E7F-CB81-F1B847D049EE";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 1;
+createNode animCurveUU -n "R_IK_Shoulder_Ctrl_visibility";
+	rename -uid "0D7666DB-4F54-E59E-11D7-779726E0E996";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 1;
+createNode animCurveUU -n "L_IK_Wrist_Ctrl_visibility";
+	rename -uid "CE528779-45F8-E0C3-58DA-8E9BD5F1EAC0";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 1;
+createNode animCurveUU -n "L_IK_Shoulder_Ctrl_visibility";
+	rename -uid "A242A3D4-4BEF-16C9-F86F-B2ABB8FFD5F8";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 1;
+createNode animCurveUU -n "R_Hip_Jnt_parentConstraint3_R_Hip_JntW0";
+	rename -uid "DA48B7FF-4881-0079-D35E-5FB457E77D23";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 1 1 0;
+createNode animCurveUU -n "R_Hip_Jnt_parentConstraint3_R_Hip_JntW1";
+	rename -uid "6FF64684-45A9-E0BC-F1D0-B1878139A403";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 1;
+createNode animCurveUU -n "R_knee_Jnt_parentConstraint2_R_knee_JntW0";
+	rename -uid "EB50DC9A-4F4A-6316-25D3-8EB183FDA18E";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 1;
+createNode animCurveUU -n "R_knee_Jnt_parentConstraint2_R_knee_JntW1";
+	rename -uid "F7D798ED-4003-B8D0-76AD-3BA99867FD39";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 1 1 0;
+createNode animCurveUU -n "R_Ankle_Jnt_parentConstraint2_R_Ankle_JntW0";
+	rename -uid "E40963BD-4D6D-F8E4-694A-3D85A730B712";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 1;
+createNode animCurveUU -n "R_Ankle_Jnt_parentConstraint2_R_Ankle_JntW1";
+	rename -uid "C48F5A07-4510-872B-49D0-8180825B2869";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 1 1 0;
+createNode animCurveUU -n "R_Foot_Jnt_parentConstraint2_R_Foot_JntW0";
+	rename -uid "DC7CC2BC-4451-0E27-2959-E98566370FC8";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 1 1 0;
+createNode animCurveUU -n "R_Foot_Jnt_parentConstraint2_R_Ankle_Jnt1W1";
+	rename -uid "65F3960D-4CE7-628E-4A3E-3A9489948F3B";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 1;
+createNode animCurveUU -n "R_Foot_Ball_Jnt_parentConstraint2_R_Foot_Ball_JntW0";
+	rename -uid "3C42B704-4DDE-C112-2B10-F7A9B6C23552";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 1 1 0;
+createNode animCurveUU -n "R_Foot_Ball_Jnt_parentConstraint2_R_Ball_JntW1";
+	rename -uid "3D29407C-49CE-5ECB-5D57-BFA542202039";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 1;
+createNode animCurveUU -n "R_Foot_Toe_Jnt_parentConstraint2_R_Foot_Toe_JntW0";
+	rename -uid "A50F4DED-4FB1-475D-C12B-2F8C5FF451CA";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 1 1 0;
+createNode animCurveUU -n "R_Foot_Toe_Jnt_parentConstraint2_R_Toe_JntW1";
+	rename -uid "A6082365-4DA7-D1FD-4F74-3C85357CFA8B";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 1;
+createNode animCurveUU -n "L_Hip_Jnt_parentConstraint2_L_Hip_JntW0";
+	rename -uid "4A7AAEAD-42E8-3DC9-3DE1-E29F58E2AECB";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 1;
+createNode animCurveUU -n "L_Hip_Jnt_parentConstraint2_L_Hip_JntW1";
+	rename -uid "325D608E-496D-89E6-88E6-4D9B231B9E56";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 1 1 0;
+createNode animCurveUU -n "L_knee_Jnt_parentConstraint2_L_knee_JntW0";
+	rename -uid "8596F98B-45B0-F17D-41A2-1799FBA3B441";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 1 1 0;
+createNode animCurveUU -n "L_knee_Jnt_parentConstraint2_L_knee_JntW1";
+	rename -uid "A34A4914-4A41-1907-1A0C-C4B8A67F8789";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 1;
+createNode animCurveUU -n "L_Ankle_Jnt_parentConstraint2_L_Ankle_JntW0";
+	rename -uid "936E7904-4B37-2726-8FDE-29BC423BD365";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 1;
+createNode animCurveUU -n "L_Ankle_Jnt_parentConstraint2_L_Ankle_JntW1";
+	rename -uid "6F6A1CCB-4868-76D5-F5BF-FE973B38978B";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 1 1 0;
+createNode animCurveUU -n "L_Foot_Jnt_parentConstraint2_L_Foot_JntW0";
+	rename -uid "4A65E61B-4EDE-29FF-85C8-839969149551";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 1 1 0;
+createNode animCurveUU -n "L_Foot_Jnt_parentConstraint2_L_Ankle_Jnt2W1";
+	rename -uid "45F70C51-44F0-60CC-3789-F7B6D75CA644";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 1;
+createNode animCurveUU -n "L_Foot_Ball_Jnt_parentConstraint2_L_Ball_JntW0";
+	rename -uid "7AE145F5-436C-C9DE-4B5E-1C99C1B3A523";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 1;
+createNode animCurveUU -n "L_Foot_Ball_Jnt_parentConstraint2_L_Foot_Ball_JntW1";
+	rename -uid "016DCA77-4E4B-B341-B6A1-3D8E81888BD6";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 1 1 0;
+createNode animCurveUU -n "L_Foot_Toe_Jnt_parentConstraint2_L_Foot_Toe_JntW0";
+	rename -uid "2C0A5673-4F58-4694-10FF-4BABB16A5222";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 1 1 0;
+createNode animCurveUU -n "L_Foot_Toe_Jnt_parentConstraint2_L_Toe_JntW1";
+	rename -uid "918FB06F-489B-19D9-C7F7-FBBBB88603F4";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 1;
+createNode animCurveUU -n "L_Leg_01_Ctrl_visibility";
+	rename -uid "935A3812-4A7B-80D7-8B3B-64A255669293";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 1 1 0;
+createNode animCurveUU -n "R_Leg_01_Ctrl_visibility";
+	rename -uid "5BE202B1-4E12-FF12-1548-48B16D57B00C";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 1 1 0;
+createNode animCurveUU -n "L_Leg_Point_Orient_Ctrl_visibility";
+	rename -uid "B99FC331-4F02-BE86-B1F0-AF92AB16F8D9";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 1;
+createNode animCurveUU -n "R_Leg_Point_Orient_Ctrl_visibility";
+	rename -uid "65759199-439F-92A3-CAAC-6C9D5731A6F4";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 1;
+createNode animCurveUU -n "R_IK_Hip_Ctrl_visibility";
+	rename -uid "7837D1D0-4BFD-6464-0DC5-F99A5E76B611";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 1;
+createNode animCurveUU -n "L_IK_Ankle_Ctrl_visibility";
+	rename -uid "95DF64C5-435B-1011-96A9-DA8AE98AA4C4";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 1;
+createNode animCurveUU -n "L_IK_Hip_Ctrl_visibility";
+	rename -uid "58D80210-48C2-B8AF-167D-C3AF4C172E92";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 1;
+createNode animCurveUU -n "R_IK_Ankle_Ctrl_visibility";
+	rename -uid "6CE28C38-40E4-C74B-E924-24AA48816C21";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  0 0 1 1;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -24920,32 +25192,42 @@ select -ne :hardwareRenderGlobals;
 	setAttr ".btrs" 512;
 select -ne :ikSystem;
 	setAttr -s 4 ".sol";
+connectAttr "GeometryGroup.di" "Geo.do";
+connectAttr "GeometryGroup.di" "Sword.do";
 connectAttr "groupId46.id" "SwordShape.iog.og[0].gid";
 connectAttr "lambert6SG.mwc" "SwordShape.iog.og[0].gco";
 connectAttr "groupId47.id" "SwordShape.ciog.cog[0].cgid";
+connectAttr "GeometryGroup.di" "Glove.do";
 connectAttr "groupParts12.og" "GloveShape.i";
 connectAttr "polyTweakUV2.uvtk[0]" "GloveShape.uvst[0].uvtw";
 connectAttr "groupId54.id" "GloveShape.iog.og[0].gid";
 connectAttr "lambert7SG.mwc" "GloveShape.iog.og[0].gco";
 connectAttr "groupId55.id" "GloveShape.ciog.cog[0].cgid";
+connectAttr "GeometryGroup.di" "Finger01.do";
 connectAttr "groupId33.id" "Finger0Shape1.iog.og[0].gid";
 connectAttr "lambert9SG.mwc" "Finger0Shape1.iog.og[0].gco";
+connectAttr "GeometryGroup.di" "Finger02.do";
 connectAttr "groupId34.id" "Finger0Shape2.iog.og[0].gid";
 connectAttr "lambert9SG.mwc" "Finger0Shape2.iog.og[0].gco";
+connectAttr "GeometryGroup.di" "Finger03.do";
 connectAttr "groupId35.id" "Finger0Shape3.iog.og[0].gid";
 connectAttr "lambert9SG.mwc" "Finger0Shape3.iog.og[0].gco";
+connectAttr "GeometryGroup.di" "Shoes.do";
 connectAttr "groupParts11.og" "ShoesShape.i";
 connectAttr "groupId52.id" "ShoesShape.iog.og[0].gid";
 connectAttr "lambert7SG.mwc" "ShoesShape.iog.og[0].gco";
 connectAttr "groupId53.id" "ShoesShape.ciog.cog[0].cgid";
+connectAttr "GeometryGroup.di" "Helmet.do";
 connectAttr "groupId71.id" "HelmetShape.iog.og[0].gid";
 connectAttr "lambert9SG.mwc" "HelmetShape.iog.og[0].gco";
 connectAttr "groupId72.id" "HelmetShape.ciog.cog[0].cgid";
+connectAttr "GeometryGroup.di" "Belt.do";
 connectAttr "groupId50.id" "BeltShape.iog.og[0].gid";
 connectAttr "lambert9SG.mwc" "BeltShape.iog.og[0].gco";
 connectAttr "groupId56.id" "BeltShape.iog.og[1].gid";
 connectAttr "lambert7SG.mwc" "BeltShape.iog.og[1].gco";
 connectAttr "groupId51.id" "BeltShape.ciog.cog[0].cgid";
+connectAttr "GeometryGroup.di" "Brest_Plate.do";
 connectAttr "groupId43.id" "Brest_PlateShape.iog.og[1].gid";
 connectAttr "tweakSet3.mwc" "Brest_PlateShape.iog.og[1].gco";
 connectAttr "groupId69.id" "Brest_PlateShape.iog.og[2].gid";
@@ -24954,29 +25236,36 @@ connectAttr "polyTweakUV5.out" "Brest_PlateShape.i";
 connectAttr "tweak3.vl[0].vt[0]" "Brest_PlateShape.twl";
 connectAttr "groupId70.id" "Brest_PlateShape.ciog.cog[0].cgid";
 connectAttr "polyTweakUV5.uvtk[0]" "Brest_PlateShape.uvst[0].uvtw";
+connectAttr "GeometryGroup.di" "Head.do";
 connectAttr "polyTweakUV3.out" "HeadShape.i";
 connectAttr "groupId67.id" "HeadShape.iog.og[0].gid";
 connectAttr "lambert8SG.mwc" "HeadShape.iog.og[0].gco";
 connectAttr "groupId68.id" "HeadShape.ciog.cog[0].cgid";
 connectAttr "polyTweakUV3.uvtk[0]" "HeadShape.uvst[0].uvtw";
+connectAttr "GeometryGroup.di" "Eye_L.do";
 connectAttr ":initialShadingGroup.mwc" "Eye_LShape.iog.og[0].gco";
 connectAttr "groupId65.id" "Eye_LShape.iog.og[1].gid";
 connectAttr "lambert8SG.mwc" "Eye_LShape.iog.og[1].gco";
 connectAttr "groupId66.id" "Eye_LShape.ciog.cog[0].cgid";
+connectAttr "GeometryGroup.di" "Lenz_L.do";
 connectAttr "groupId63.id" "Lenz_LShape.iog.og[0].gid";
 connectAttr "lambert8SG.mwc" "Lenz_LShape.iog.og[0].gco";
 connectAttr "groupId64.id" "Lenz_LShape.ciog.cog[0].cgid";
+connectAttr "GeometryGroup.di" "Eye_R.do";
 connectAttr ":initialShadingGroup.mwc" "Eye_RShape.iog.og[0].gco";
 connectAttr "groupId61.id" "Eye_RShape.iog.og[1].gid";
 connectAttr "lambert8SG.mwc" "Eye_RShape.iog.og[1].gco";
 connectAttr "groupId62.id" "Eye_RShape.ciog.cog[0].cgid";
+connectAttr "GeometryGroup.di" "Lenz_R.do";
 connectAttr "groupId59.id" "Lenz_RShape.iog.og[0].gid";
 connectAttr "lambert8SG.mwc" "Lenz_RShape.iog.og[0].gco";
 connectAttr "groupId60.id" "Lenz_RShape.ciog.cog[0].cgid";
+connectAttr "GeometryGroup.di" "Pant.do";
 connectAttr "groupParts10.og" "PantShape.i";
 connectAttr "groupId48.id" "PantShape.iog.og[0].gid";
 connectAttr "lambert7SG.mwc" "PantShape.iog.og[0].gco";
 connectAttr "groupId49.id" "PantShape.ciog.cog[0].cgid";
+connectAttr "GeometryGroup.di" "Arms.do";
 connectAttr "groupId45.id" "ArmsShape.iog.og[1].gid";
 connectAttr "tweakSet4.mwc" "ArmsShape.iog.og[1].gco";
 connectAttr "groupId57.id" "ArmsShape.iog.og[2].gid";
@@ -24985,11 +25274,14 @@ connectAttr "polyTweakUV4.out" "ArmsShape.i";
 connectAttr "tweak4.vl[0].vt[0]" "ArmsShape.twl";
 connectAttr "groupId58.id" "ArmsShape.ciog.cog[0].cgid";
 connectAttr "polyTweakUV4.uvtk[0]" "ArmsShape.uvst[0].uvtw";
+connectAttr "GeometryGroup.di" "polySurface29.do";
 connectAttr "groupId37.id" "Shirt.iog.og[0].gid";
 connectAttr "lambert7SG.mwc" "Shirt.iog.og[0].gco";
 connectAttr "groupParts1.og" "Shirt.i";
+connectAttr "GeometryGroup.di" "Shield.do";
 connectAttr "groupId36.id" "Shape.iog.og[0].gid";
 connectAttr "lambert6SG.mwc" "Shape.iog.og[0].gco";
+connectAttr "RKSkeletonGrp.di" "RK_Skeleton.do";
 connectAttr "Cog_Jnt_parentConstraint2.ctx" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt.tx"
 		;
 connectAttr "Cog_Jnt_parentConstraint2.cty" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt.ty"
@@ -25002,6 +25294,7 @@ connectAttr "Cog_Jnt_parentConstraint2.cry" "|VikingHero|Transform|RK_Skeleton|C
 		;
 connectAttr "Cog_Jnt_parentConstraint2.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt.rz"
 		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt.is"
 		;
 connectAttr "Upper_Body_jnt_parentConstraint2.ctx" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt.tx"
@@ -25015,6 +25308,8 @@ connectAttr "Upper_Body_jnt_parentConstraint2.crx" "|VikingHero|Transform|RK_Ske
 connectAttr "Upper_Body_jnt_parentConstraint2.cry" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt.ry"
 		;
 connectAttr "Upper_Body_jnt_parentConstraint2.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt.rz"
+		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt.do"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt.is"
 		;
@@ -25030,6 +25325,8 @@ connectAttr "Spine_01_Jnt_parentConstraint2.cry" "|VikingHero|Transform|RK_Skele
 		;
 connectAttr "Spine_01_Jnt_parentConstraint2.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt.rz"
 		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt.is"
 		;
 connectAttr "Spine_02_Jnt_parentConstraint2.ctx" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt.tx"
@@ -25043,6 +25340,8 @@ connectAttr "Spine_02_Jnt_parentConstraint2.crx" "|VikingHero|Transform|RK_Skele
 connectAttr "Spine_02_Jnt_parentConstraint2.cry" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt.ry"
 		;
 connectAttr "Spine_02_Jnt_parentConstraint2.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt.rz"
+		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt.is"
 		;
@@ -25058,6 +25357,8 @@ connectAttr "Spine_03_Jnt_parentConstraint2.cry" "|VikingHero|Transform|RK_Skele
 		;
 connectAttr "Spine_03_Jnt_parentConstraint2.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt.rz"
 		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt.is"
 		;
 connectAttr "R_Clavicle_Jnt_parentConstraint2.ctx" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt.tx"
@@ -25071,6 +25372,8 @@ connectAttr "R_Clavicle_Jnt_parentConstraint2.crx" "|VikingHero|Transform|RK_Ske
 connectAttr "R_Clavicle_Jnt_parentConstraint2.cry" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt.ry"
 		;
 connectAttr "R_Clavicle_Jnt_parentConstraint2.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt.rz"
+		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt.is"
 		;
@@ -25086,6 +25389,8 @@ connectAttr "R_Shoulder_Jnt_parentConstraint3.cry" "|VikingHero|Transform|RK_Ske
 		;
 connectAttr "R_Shoulder_Jnt_parentConstraint3.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt.rz"
 		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt.is"
 		;
 connectAttr "R_elbow_Jnt_parentConstraint2.ctx" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt.tx"
@@ -25099,6 +25404,8 @@ connectAttr "R_elbow_Jnt_parentConstraint2.crx" "|VikingHero|Transform|RK_Skelet
 connectAttr "R_elbow_Jnt_parentConstraint2.cry" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt.ry"
 		;
 connectAttr "R_elbow_Jnt_parentConstraint2.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt.rz"
+		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt.is"
 		;
@@ -25114,6 +25421,8 @@ connectAttr "R_Wrist_Jnt_parentConstraint2.cry" "|VikingHero|Transform|RK_Skelet
 		;
 connectAttr "R_Wrist_Jnt_parentConstraint2.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt.rz"
 		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt.is"
 		;
 connectAttr "R_Hand_Jnt_parentConstraint2.ctx" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt.tx"
@@ -25127,6 +25436,8 @@ connectAttr "R_Hand_Jnt_parentConstraint2.crx" "|VikingHero|Transform|RK_Skeleto
 connectAttr "R_Hand_Jnt_parentConstraint2.cry" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt.ry"
 		;
 connectAttr "R_Hand_Jnt_parentConstraint2.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt.rz"
+		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt.is"
 		;
@@ -25142,6 +25453,8 @@ connectAttr "R_Thumb_01_Jnt_parentConstraint2.cry" "|VikingHero|Transform|RK_Ske
 		;
 connectAttr "R_Thumb_01_Jnt_parentConstraint2.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt.rz"
 		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt|R_Thumb_02_Jnt.is"
 		;
 connectAttr "R_Thumb_02_Jnt_parentConstraint2.ctx" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt|R_Thumb_02_Jnt.tx"
@@ -25156,6 +25469,8 @@ connectAttr "R_Thumb_02_Jnt_parentConstraint2.cry" "|VikingHero|Transform|RK_Ske
 		;
 connectAttr "R_Thumb_02_Jnt_parentConstraint2.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt|R_Thumb_02_Jnt.rz"
 		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt|R_Thumb_02_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt|R_Thumb_02_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt|R_Thumb_02_Jnt|R_Thumb_03_Jnt.is"
 		;
 connectAttr "R_Thumb_03_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt|R_Thumb_02_Jnt|R_Thumb_03_Jnt.tx"
@@ -25169,6 +25484,8 @@ connectAttr "R_Thumb_03_Jnt_parentConstraint1.crx" "|VikingHero|Transform|RK_Ske
 connectAttr "R_Thumb_03_Jnt_parentConstraint1.cry" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt|R_Thumb_02_Jnt|R_Thumb_03_Jnt.ry"
 		;
 connectAttr "R_Thumb_03_Jnt_parentConstraint1.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt|R_Thumb_02_Jnt|R_Thumb_03_Jnt.rz"
+		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt|R_Thumb_02_Jnt|R_Thumb_03_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt|R_Thumb_02_Jnt|R_Thumb_03_Jnt.ro" "R_Thumb_03_Jnt_parentConstraint1.cro"
 		;
@@ -25202,6 +25519,7 @@ connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_J
 		;
 connectAttr "R_Thumb_03_Jnt_parentConstraint1.w0" "R_Thumb_03_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "RKSkeletonGrp.di" "R_Thumb_03_Jnt_parentConstraint1.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt|R_Thumb_02_Jnt.ro" "R_Thumb_02_Jnt_parentConstraint2.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt|R_Thumb_02_Jnt.pim" "R_Thumb_02_Jnt_parentConstraint2.cpim"
@@ -25234,6 +25552,7 @@ connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_J
 		;
 connectAttr "R_Thumb_02_Jnt_parentConstraint2.w0" "R_Thumb_02_Jnt_parentConstraint2.tg[0].tw"
 		;
+connectAttr "RKSkeletonGrp.di" "R_Thumb_02_Jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt.ro" "R_Thumb_01_Jnt_parentConstraint2.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt.pim" "R_Thumb_01_Jnt_parentConstraint2.cpim"
@@ -25266,6 +25585,7 @@ connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_J
 		;
 connectAttr "R_Thumb_01_Jnt_parentConstraint2.w0" "R_Thumb_01_Jnt_parentConstraint2.tg[0].tw"
 		;
+connectAttr "RKSkeletonGrp.di" "R_Thumb_01_Jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt.is"
 		;
 connectAttr "R_Fingers_02_Jnt_parentConstraint4.ctx" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt.tx"
@@ -25279,6 +25599,8 @@ connectAttr "R_Fingers_02_Jnt_parentConstraint4.crx" "|VikingHero|Transform|RK_S
 connectAttr "R_Fingers_02_Jnt_parentConstraint4.cry" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt.ry"
 		;
 connectAttr "R_Fingers_02_Jnt_parentConstraint4.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt.rz"
+		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt.is"
 		;
@@ -25294,6 +25616,8 @@ connectAttr "R_Fingers_02_Jnt_parentConstraint5.cry" "|VikingHero|Transform|RK_S
 		;
 connectAttr "R_Fingers_02_Jnt_parentConstraint5.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt.rz"
 		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt.is"
 		;
 connectAttr "R_Fingers_02_Jnt_parentConstraint6.ctx" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt.tx"
@@ -25307,6 +25631,8 @@ connectAttr "R_Fingers_02_Jnt_parentConstraint6.crx" "|VikingHero|Transform|RK_S
 connectAttr "R_Fingers_02_Jnt_parentConstraint6.cry" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt.ry"
 		;
 connectAttr "R_Fingers_02_Jnt_parentConstraint6.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt.rz"
+		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt.ro" "R_Fingers_02_Jnt_parentConstraint6.cro"
 		;
@@ -25340,6 +25666,7 @@ connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_J
 		;
 connectAttr "R_Fingers_02_Jnt_parentConstraint6.w0" "R_Fingers_02_Jnt_parentConstraint6.tg[0].tw"
 		;
+connectAttr "RKSkeletonGrp.di" "R_Fingers_02_Jnt_parentConstraint6.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt.ro" "R_Fingers_02_Jnt_parentConstraint5.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt.pim" "R_Fingers_02_Jnt_parentConstraint5.cpim"
@@ -25372,6 +25699,7 @@ connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_J
 		;
 connectAttr "R_Fingers_02_Jnt_parentConstraint5.w0" "R_Fingers_02_Jnt_parentConstraint5.tg[0].tw"
 		;
+connectAttr "RKSkeletonGrp.di" "R_Fingers_02_Jnt_parentConstraint5.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt.ro" "R_Fingers_02_Jnt_parentConstraint4.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt.pim" "R_Fingers_02_Jnt_parentConstraint4.cpim"
@@ -25404,6 +25732,7 @@ connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_J
 		;
 connectAttr "R_Fingers_02_Jnt_parentConstraint4.w0" "R_Fingers_02_Jnt_parentConstraint4.tg[0].tw"
 		;
+connectAttr "RKSkeletonGrp.di" "R_Fingers_02_Jnt_parentConstraint4.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt.ro" "R_Hand_Jnt_parentConstraint2.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt.pim" "R_Hand_Jnt_parentConstraint2.cpim"
@@ -25436,6 +25765,7 @@ connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_J
 		;
 connectAttr "R_Hand_Jnt_parentConstraint2.w0" "R_Hand_Jnt_parentConstraint2.tg[0].tw"
 		;
+connectAttr "RKSkeletonGrp.di" "R_Hand_Jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt.ro" "R_Wrist_Jnt_parentConstraint2.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt.pim" "R_Wrist_Jnt_parentConstraint2.cpim"
@@ -25490,6 +25820,11 @@ connectAttr "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt|R_elbow_Jnt|R_Wris
 		;
 connectAttr "R_Wrist_Jnt_parentConstraint2.w1" "R_Wrist_Jnt_parentConstraint2.tg[1].tw"
 		;
+connectAttr "R_Wrist_Jnt_parentConstraint2_R_Wrist_JntW0.o" "R_Wrist_Jnt_parentConstraint2.w0"
+		;
+connectAttr "R_Wrist_Jnt_parentConstraint2_R_Wrist_JntW1.o" "R_Wrist_Jnt_parentConstraint2.w1"
+		;
+connectAttr "RKSkeletonGrp.di" "R_Wrist_Jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt.ro" "R_elbow_Jnt_parentConstraint2.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt.pim" "R_elbow_Jnt_parentConstraint2.cpim"
@@ -25544,6 +25879,11 @@ connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_J
 		;
 connectAttr "R_elbow_Jnt_parentConstraint2.w1" "R_elbow_Jnt_parentConstraint2.tg[1].tw"
 		;
+connectAttr "R_elbow_Jnt_parentConstraint2_R_elbow_JntW0.o" "R_elbow_Jnt_parentConstraint2.w0"
+		;
+connectAttr "R_elbow_Jnt_parentConstraint2_R_elbow_JntW1.o" "R_elbow_Jnt_parentConstraint2.w1"
+		;
+connectAttr "RKSkeletonGrp.di" "R_elbow_Jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt.ro" "R_Shoulder_Jnt_parentConstraint3.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt.pim" "R_Shoulder_Jnt_parentConstraint3.cpim"
@@ -25598,6 +25938,11 @@ connectAttr "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt.is" "R_Shoulder_Jn
 		;
 connectAttr "R_Shoulder_Jnt_parentConstraint3.w1" "R_Shoulder_Jnt_parentConstraint3.tg[1].tw"
 		;
+connectAttr "R_Shoulder_Jnt_parentConstraint3_R_Shoulder_JntW0.o" "R_Shoulder_Jnt_parentConstraint3.w0"
+		;
+connectAttr "R_Shoulder_Jnt_parentConstraint3_R_Shoulder_JntW1.o" "R_Shoulder_Jnt_parentConstraint3.w1"
+		;
+connectAttr "RKSkeletonGrp.di" "R_Shoulder_Jnt_parentConstraint3.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt.ro" "R_Clavicle_Jnt_parentConstraint2.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt.pim" "R_Clavicle_Jnt_parentConstraint2.cpim"
@@ -25630,6 +25975,7 @@ connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_J
 		;
 connectAttr "R_Clavicle_Jnt_parentConstraint2.w0" "R_Clavicle_Jnt_parentConstraint2.tg[0].tw"
 		;
+connectAttr "RKSkeletonGrp.di" "R_Clavicle_Jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|Neck_Jnt.is"
 		;
 connectAttr "Neck_Jnt_parentConstraint2.ctx" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|Neck_Jnt.tx"
@@ -25644,6 +25990,8 @@ connectAttr "Neck_Jnt_parentConstraint2.cry" "|VikingHero|Transform|RK_Skeleton|
 		;
 connectAttr "Neck_Jnt_parentConstraint2.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|Neck_Jnt.rz"
 		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|Neck_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|Neck_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|Neck_Jnt|Head_Jnt.is"
 		;
 connectAttr "Head_Jnt_parentConstraint2.ctx" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|Neck_Jnt|Head_Jnt.tx"
@@ -25657,6 +26005,8 @@ connectAttr "Head_Jnt_parentConstraint2.crx" "|VikingHero|Transform|RK_Skeleton|
 connectAttr "Head_Jnt_parentConstraint2.cry" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|Neck_Jnt|Head_Jnt.ry"
 		;
 connectAttr "Head_Jnt_parentConstraint2.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|Neck_Jnt|Head_Jnt.rz"
+		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|Neck_Jnt|Head_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|Neck_Jnt|Head_Jnt.ro" "Head_Jnt_parentConstraint2.cro"
 		;
@@ -25690,6 +26040,7 @@ connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_J
 		;
 connectAttr "Head_Jnt_parentConstraint2.w0" "Head_Jnt_parentConstraint2.tg[0].tw"
 		;
+connectAttr "RKSkeletonGrp.di" "Head_Jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|Neck_Jnt.ro" "Neck_Jnt_parentConstraint2.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|Neck_Jnt.pim" "Neck_Jnt_parentConstraint2.cpim"
@@ -25722,6 +26073,7 @@ connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_J
 		;
 connectAttr "Neck_Jnt_parentConstraint2.w0" "Neck_Jnt_parentConstraint2.tg[0].tw"
 		;
+connectAttr "RKSkeletonGrp.di" "Neck_Jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt.is"
 		;
 connectAttr "L_Clavicle_Jnt_parentConstraint2.ctx" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt.tx"
@@ -25735,6 +26087,8 @@ connectAttr "L_Clavicle_Jnt_parentConstraint2.crx" "|VikingHero|Transform|RK_Ske
 connectAttr "L_Clavicle_Jnt_parentConstraint2.cry" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt.ry"
 		;
 connectAttr "L_Clavicle_Jnt_parentConstraint2.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt.rz"
+		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt.is"
 		;
@@ -25750,6 +26104,8 @@ connectAttr "L_Shoulder_Jnt_parentConstraint3.cry" "|VikingHero|Transform|RK_Ske
 		;
 connectAttr "L_Shoulder_Jnt_parentConstraint3.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt.rz"
 		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt.is"
 		;
 connectAttr "L_elbow_Jnt_parentConstraint2.ctx" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt.tx"
@@ -25763,6 +26119,8 @@ connectAttr "L_elbow_Jnt_parentConstraint2.crx" "|VikingHero|Transform|RK_Skelet
 connectAttr "L_elbow_Jnt_parentConstraint2.cry" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt.ry"
 		;
 connectAttr "L_elbow_Jnt_parentConstraint2.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt.rz"
+		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt.is"
 		;
@@ -25778,6 +26136,8 @@ connectAttr "L_Wrist_Jnt_parentConstraint2.cry" "|VikingHero|Transform|RK_Skelet
 		;
 connectAttr "L_Wrist_Jnt_parentConstraint2.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt.rz"
 		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt.is"
 		;
 connectAttr "L_Hand_Jnt_parentConstraint2.ctx" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt.tx"
@@ -25791,6 +26151,8 @@ connectAttr "L_Hand_Jnt_parentConstraint2.crx" "|VikingHero|Transform|RK_Skeleto
 connectAttr "L_Hand_Jnt_parentConstraint2.cry" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt.ry"
 		;
 connectAttr "L_Hand_Jnt_parentConstraint2.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt.rz"
+		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt.is"
 		;
@@ -25806,6 +26168,8 @@ connectAttr "L_Thumb_01_Jnt_parentConstraint2.cry" "|VikingHero|Transform|RK_Ske
 		;
 connectAttr "L_Thumb_01_Jnt_parentConstraint2.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt.rz"
 		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt|L_Thumb_02_Jnt.is"
 		;
 connectAttr "L_Thumb_02_Jnt_parentConstraint2.ctx" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt|L_Thumb_02_Jnt.tx"
@@ -25820,6 +26184,8 @@ connectAttr "L_Thumb_02_Jnt_parentConstraint2.cry" "|VikingHero|Transform|RK_Ske
 		;
 connectAttr "L_Thumb_02_Jnt_parentConstraint2.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt|L_Thumb_02_Jnt.rz"
 		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt|L_Thumb_02_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt|L_Thumb_02_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt|L_Thumb_02_Jnt|L_Thumb_03_Jnt.is"
 		;
 connectAttr "L_Thumb_03_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt|L_Thumb_02_Jnt|L_Thumb_03_Jnt.tx"
@@ -25833,6 +26199,8 @@ connectAttr "L_Thumb_03_Jnt_parentConstraint1.crx" "|VikingHero|Transform|RK_Ske
 connectAttr "L_Thumb_03_Jnt_parentConstraint1.cry" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt|L_Thumb_02_Jnt|L_Thumb_03_Jnt.ry"
 		;
 connectAttr "L_Thumb_03_Jnt_parentConstraint1.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt|L_Thumb_02_Jnt|L_Thumb_03_Jnt.rz"
+		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt|L_Thumb_02_Jnt|L_Thumb_03_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt|L_Thumb_02_Jnt|L_Thumb_03_Jnt.ro" "L_Thumb_03_Jnt_parentConstraint1.cro"
 		;
@@ -25866,6 +26234,7 @@ connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_J
 		;
 connectAttr "L_Thumb_03_Jnt_parentConstraint1.w0" "L_Thumb_03_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "RKSkeletonGrp.di" "L_Thumb_03_Jnt_parentConstraint1.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt|L_Thumb_02_Jnt.ro" "L_Thumb_02_Jnt_parentConstraint2.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt|L_Thumb_02_Jnt.pim" "L_Thumb_02_Jnt_parentConstraint2.cpim"
@@ -25898,6 +26267,7 @@ connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_J
 		;
 connectAttr "L_Thumb_02_Jnt_parentConstraint2.w0" "L_Thumb_02_Jnt_parentConstraint2.tg[0].tw"
 		;
+connectAttr "RKSkeletonGrp.di" "L_Thumb_02_Jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt.ro" "L_Thumb_01_Jnt_parentConstraint2.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt.pim" "L_Thumb_01_Jnt_parentConstraint2.cpim"
@@ -25930,6 +26300,7 @@ connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_J
 		;
 connectAttr "L_Thumb_01_Jnt_parentConstraint2.w0" "L_Thumb_01_Jnt_parentConstraint2.tg[0].tw"
 		;
+connectAttr "RKSkeletonGrp.di" "L_Thumb_01_Jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt.is"
 		;
 connectAttr "L_Fingers_02_Jnt_parentConstraint4.ctx" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt.tx"
@@ -25943,6 +26314,8 @@ connectAttr "L_Fingers_02_Jnt_parentConstraint4.crx" "|VikingHero|Transform|RK_S
 connectAttr "L_Fingers_02_Jnt_parentConstraint4.cry" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt.ry"
 		;
 connectAttr "L_Fingers_02_Jnt_parentConstraint4.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt.rz"
+		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt.is"
 		;
@@ -25958,6 +26331,8 @@ connectAttr "L_Fingers_02_Jnt_parentConstraint5.cry" "|VikingHero|Transform|RK_S
 		;
 connectAttr "L_Fingers_02_Jnt_parentConstraint5.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt.rz"
 		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt.is"
 		;
 connectAttr "L_Fingers_02_Jnt_parentConstraint6.ctx" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt.tx"
@@ -25971,6 +26346,8 @@ connectAttr "L_Fingers_02_Jnt_parentConstraint6.crx" "|VikingHero|Transform|RK_S
 connectAttr "L_Fingers_02_Jnt_parentConstraint6.cry" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt.ry"
 		;
 connectAttr "L_Fingers_02_Jnt_parentConstraint6.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt.rz"
+		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt.ro" "L_Fingers_02_Jnt_parentConstraint6.cro"
 		;
@@ -26004,6 +26381,7 @@ connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_J
 		;
 connectAttr "L_Fingers_02_Jnt_parentConstraint6.w0" "L_Fingers_02_Jnt_parentConstraint6.tg[0].tw"
 		;
+connectAttr "RKSkeletonGrp.di" "L_Fingers_02_Jnt_parentConstraint6.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt.ro" "L_Fingers_02_Jnt_parentConstraint5.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt.pim" "L_Fingers_02_Jnt_parentConstraint5.cpim"
@@ -26036,6 +26414,7 @@ connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_J
 		;
 connectAttr "L_Fingers_02_Jnt_parentConstraint5.w0" "L_Fingers_02_Jnt_parentConstraint5.tg[0].tw"
 		;
+connectAttr "RKSkeletonGrp.di" "L_Fingers_02_Jnt_parentConstraint5.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt.ro" "L_Fingers_02_Jnt_parentConstraint4.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt.pim" "L_Fingers_02_Jnt_parentConstraint4.cpim"
@@ -26068,6 +26447,7 @@ connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_J
 		;
 connectAttr "L_Fingers_02_Jnt_parentConstraint4.w0" "L_Fingers_02_Jnt_parentConstraint4.tg[0].tw"
 		;
+connectAttr "RKSkeletonGrp.di" "L_Fingers_02_Jnt_parentConstraint4.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt.ro" "L_Hand_Jnt_parentConstraint2.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt.pim" "L_Hand_Jnt_parentConstraint2.cpim"
@@ -26100,6 +26480,7 @@ connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_J
 		;
 connectAttr "L_Hand_Jnt_parentConstraint2.w0" "L_Hand_Jnt_parentConstraint2.tg[0].tw"
 		;
+connectAttr "RKSkeletonGrp.di" "L_Hand_Jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt.ro" "L_Wrist_Jnt_parentConstraint2.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt.pim" "L_Wrist_Jnt_parentConstraint2.cpim"
@@ -26154,6 +26535,11 @@ connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_J
 		;
 connectAttr "L_Wrist_Jnt_parentConstraint2.w1" "L_Wrist_Jnt_parentConstraint2.tg[1].tw"
 		;
+connectAttr "L_Wrist_Jnt_parentConstraint2_L_Wrist_JntW0.o" "L_Wrist_Jnt_parentConstraint2.w0"
+		;
+connectAttr "L_Wrist_Jnt_parentConstraint2_L_Wrist_JntW1.o" "L_Wrist_Jnt_parentConstraint2.w1"
+		;
+connectAttr "RKSkeletonGrp.di" "L_Wrist_Jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt.ro" "L_elbow_Jnt_parentConstraint2.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt.pim" "L_elbow_Jnt_parentConstraint2.cpim"
@@ -26208,6 +26594,11 @@ connectAttr "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt|L_elbow_Jnt.is" "L
 		;
 connectAttr "L_elbow_Jnt_parentConstraint2.w1" "L_elbow_Jnt_parentConstraint2.tg[1].tw"
 		;
+connectAttr "L_elbow_Jnt_parentConstraint2_L_elbow_JntW0.o" "L_elbow_Jnt_parentConstraint2.w0"
+		;
+connectAttr "L_elbow_Jnt_parentConstraint2_L_elbow_JntW1.o" "L_elbow_Jnt_parentConstraint2.w1"
+		;
+connectAttr "RKSkeletonGrp.di" "L_elbow_Jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt.ro" "L_Shoulder_Jnt_parentConstraint3.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt.pim" "L_Shoulder_Jnt_parentConstraint3.cpim"
@@ -26262,6 +26653,11 @@ connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_J
 		;
 connectAttr "L_Shoulder_Jnt_parentConstraint3.w1" "L_Shoulder_Jnt_parentConstraint3.tg[1].tw"
 		;
+connectAttr "L_Shoulder_Jnt_parentConstraint3_L_Shoulder_JntW0.o" "L_Shoulder_Jnt_parentConstraint3.w0"
+		;
+connectAttr "L_Shoulder_Jnt_parentConstraint3_L_Shoulder_JntW1.o" "L_Shoulder_Jnt_parentConstraint3.w1"
+		;
+connectAttr "RKSkeletonGrp.di" "L_Shoulder_Jnt_parentConstraint3.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt.ro" "L_Clavicle_Jnt_parentConstraint2.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt.pim" "L_Clavicle_Jnt_parentConstraint2.cpim"
@@ -26294,6 +26690,7 @@ connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_J
 		;
 connectAttr "L_Clavicle_Jnt_parentConstraint2.w0" "L_Clavicle_Jnt_parentConstraint2.tg[0].tw"
 		;
+connectAttr "RKSkeletonGrp.di" "L_Clavicle_Jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt.ro" "Spine_03_Jnt_parentConstraint2.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt.pim" "Spine_03_Jnt_parentConstraint2.cpim"
@@ -26326,6 +26723,7 @@ connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_J
 		;
 connectAttr "Spine_03_Jnt_parentConstraint2.w0" "Spine_03_Jnt_parentConstraint2.tg[0].tw"
 		;
+connectAttr "RKSkeletonGrp.di" "Spine_03_Jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt.ro" "Spine_02_Jnt_parentConstraint2.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt.pim" "Spine_02_Jnt_parentConstraint2.cpim"
@@ -26358,6 +26756,7 @@ connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_J
 		;
 connectAttr "Spine_02_Jnt_parentConstraint2.w0" "Spine_02_Jnt_parentConstraint2.tg[0].tw"
 		;
+connectAttr "RKSkeletonGrp.di" "Spine_02_Jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt.ro" "Spine_01_Jnt_parentConstraint2.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt.pim" "Spine_01_Jnt_parentConstraint2.cpim"
@@ -26390,6 +26789,7 @@ connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_J
 		;
 connectAttr "Spine_01_Jnt_parentConstraint2.w0" "Spine_01_Jnt_parentConstraint2.tg[0].tw"
 		;
+connectAttr "RKSkeletonGrp.di" "Spine_01_Jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt.ro" "Upper_Body_jnt_parentConstraint2.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt.pim" "Upper_Body_jnt_parentConstraint2.cpim"
@@ -26422,6 +26822,7 @@ connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt.is" "Upper
 		;
 connectAttr "Upper_Body_jnt_parentConstraint2.w0" "Upper_Body_jnt_parentConstraint2.tg[0].tw"
 		;
+connectAttr "RKSkeletonGrp.di" "Upper_Body_jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt.is"
 		;
 connectAttr "Lower_Body_Jnt_parentConstraint2.ctx" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt.tx"
@@ -26435,6 +26836,8 @@ connectAttr "Lower_Body_Jnt_parentConstraint2.crx" "|VikingHero|Transform|RK_Ske
 connectAttr "Lower_Body_Jnt_parentConstraint2.cry" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt.ry"
 		;
 connectAttr "Lower_Body_Jnt_parentConstraint2.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt.rz"
+		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt.is"
 		;
@@ -26450,6 +26853,8 @@ connectAttr "R_Hip_Jnt_parentConstraint3.cry" "|VikingHero|Transform|RK_Skeleton
 		;
 connectAttr "R_Hip_Jnt_parentConstraint3.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt.rz"
 		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt.is"
 		;
 connectAttr "R_knee_Jnt_parentConstraint2.ctx" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt.tx"
@@ -26463,6 +26868,8 @@ connectAttr "R_knee_Jnt_parentConstraint2.crx" "|VikingHero|Transform|RK_Skeleto
 connectAttr "R_knee_Jnt_parentConstraint2.cry" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt.ry"
 		;
 connectAttr "R_knee_Jnt_parentConstraint2.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt.rz"
+		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt.is"
 		;
@@ -26478,6 +26885,8 @@ connectAttr "R_Ankle_Jnt_parentConstraint2.cry" "|VikingHero|Transform|RK_Skelet
 		;
 connectAttr "R_Ankle_Jnt_parentConstraint2.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt.rz"
 		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt.is"
 		;
 connectAttr "R_Foot_Jnt_parentConstraint2.ctx" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt.tx"
@@ -26491,6 +26900,8 @@ connectAttr "R_Foot_Jnt_parentConstraint2.crx" "|VikingHero|Transform|RK_Skeleto
 connectAttr "R_Foot_Jnt_parentConstraint2.cry" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt.ry"
 		;
 connectAttr "R_Foot_Jnt_parentConstraint2.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt.rz"
+		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt|R_Foot_Ball_Jnt.is"
 		;
@@ -26506,6 +26917,8 @@ connectAttr "R_Foot_Ball_Jnt_parentConstraint2.cry" "|VikingHero|Transform|RK_Sk
 		;
 connectAttr "R_Foot_Ball_Jnt_parentConstraint2.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt|R_Foot_Ball_Jnt.rz"
 		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt|R_Foot_Ball_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt|R_Foot_Ball_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt|R_Foot_Ball_Jnt|R_Foot_Toe_Jnt.is"
 		;
 connectAttr "R_Foot_Toe_Jnt_parentConstraint2.ctx" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt|R_Foot_Ball_Jnt|R_Foot_Toe_Jnt.tx"
@@ -26519,6 +26932,8 @@ connectAttr "R_Foot_Toe_Jnt_parentConstraint2.crx" "|VikingHero|Transform|RK_Ske
 connectAttr "R_Foot_Toe_Jnt_parentConstraint2.cry" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt|R_Foot_Ball_Jnt|R_Foot_Toe_Jnt.ry"
 		;
 connectAttr "R_Foot_Toe_Jnt_parentConstraint2.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt|R_Foot_Ball_Jnt|R_Foot_Toe_Jnt.rz"
+		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt|R_Foot_Ball_Jnt|R_Foot_Toe_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt|R_Foot_Ball_Jnt|R_Foot_Toe_Jnt.ro" "R_Foot_Toe_Jnt_parentConstraint2.cro"
 		;
@@ -26574,6 +26989,11 @@ connectAttr "|VikingHero|Transform|IK_Skeleton|R_Ankle_Jnt1|R_Ball_Jnt|R_Toe_Jnt
 		;
 connectAttr "R_Foot_Toe_Jnt_parentConstraint2.w1" "R_Foot_Toe_Jnt_parentConstraint2.tg[1].tw"
 		;
+connectAttr "R_Foot_Toe_Jnt_parentConstraint2_R_Foot_Toe_JntW0.o" "R_Foot_Toe_Jnt_parentConstraint2.w0"
+		;
+connectAttr "R_Foot_Toe_Jnt_parentConstraint2_R_Toe_JntW1.o" "R_Foot_Toe_Jnt_parentConstraint2.w1"
+		;
+connectAttr "RKSkeletonGrp.di" "R_Foot_Toe_Jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt|R_Foot_Ball_Jnt.ro" "R_Foot_Ball_Jnt_parentConstraint2.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt|R_Foot_Ball_Jnt.pim" "R_Foot_Ball_Jnt_parentConstraint2.cpim"
@@ -26618,6 +27038,11 @@ connectAttr "R_Ball_Jnt.ssc" "R_Foot_Ball_Jnt_parentConstraint2.tg[1].tsc";
 connectAttr "R_Ball_Jnt.is" "R_Foot_Ball_Jnt_parentConstraint2.tg[1].tis";
 connectAttr "R_Foot_Ball_Jnt_parentConstraint2.w1" "R_Foot_Ball_Jnt_parentConstraint2.tg[1].tw"
 		;
+connectAttr "R_Foot_Ball_Jnt_parentConstraint2_R_Foot_Ball_JntW0.o" "R_Foot_Ball_Jnt_parentConstraint2.w0"
+		;
+connectAttr "R_Foot_Ball_Jnt_parentConstraint2_R_Ball_JntW1.o" "R_Foot_Ball_Jnt_parentConstraint2.w1"
+		;
+connectAttr "RKSkeletonGrp.di" "R_Foot_Ball_Jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt.ro" "R_Foot_Jnt_parentConstraint2.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt.pim" "R_Foot_Jnt_parentConstraint2.cpim"
@@ -26662,6 +27087,11 @@ connectAttr "R_Ankle_Jnt1.ssc" "R_Foot_Jnt_parentConstraint2.tg[1].tsc";
 connectAttr "R_Ankle_Jnt1.is" "R_Foot_Jnt_parentConstraint2.tg[1].tis";
 connectAttr "R_Foot_Jnt_parentConstraint2.w1" "R_Foot_Jnt_parentConstraint2.tg[1].tw"
 		;
+connectAttr "R_Foot_Jnt_parentConstraint2_R_Foot_JntW0.o" "R_Foot_Jnt_parentConstraint2.w0"
+		;
+connectAttr "R_Foot_Jnt_parentConstraint2_R_Ankle_Jnt1W1.o" "R_Foot_Jnt_parentConstraint2.w1"
+		;
+connectAttr "RKSkeletonGrp.di" "R_Foot_Jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt.ro" "R_Ankle_Jnt_parentConstraint2.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt.pim" "R_Ankle_Jnt_parentConstraint2.cpim"
@@ -26716,6 +27146,11 @@ connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|
 		;
 connectAttr "R_Ankle_Jnt_parentConstraint2.w1" "R_Ankle_Jnt_parentConstraint2.tg[1].tw"
 		;
+connectAttr "R_Ankle_Jnt_parentConstraint2_R_Ankle_JntW0.o" "R_Ankle_Jnt_parentConstraint2.w0"
+		;
+connectAttr "R_Ankle_Jnt_parentConstraint2_R_Ankle_JntW1.o" "R_Ankle_Jnt_parentConstraint2.w1"
+		;
+connectAttr "RKSkeletonGrp.di" "R_Ankle_Jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt.ro" "R_knee_Jnt_parentConstraint2.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt.pim" "R_knee_Jnt_parentConstraint2.cpim"
@@ -26770,6 +27205,11 @@ connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|
 		;
 connectAttr "R_knee_Jnt_parentConstraint2.w1" "R_knee_Jnt_parentConstraint2.tg[1].tw"
 		;
+connectAttr "R_knee_Jnt_parentConstraint2_R_knee_JntW0.o" "R_knee_Jnt_parentConstraint2.w0"
+		;
+connectAttr "R_knee_Jnt_parentConstraint2_R_knee_JntW1.o" "R_knee_Jnt_parentConstraint2.w1"
+		;
+connectAttr "RKSkeletonGrp.di" "R_knee_Jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt.ro" "R_Hip_Jnt_parentConstraint3.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt.pim" "R_Hip_Jnt_parentConstraint3.cpim"
@@ -26824,6 +27264,11 @@ connectAttr "|VikingHero|Transform|IK_Skeleton|R_Hip_Jnt.is" "R_Hip_Jnt_parentCo
 		;
 connectAttr "R_Hip_Jnt_parentConstraint3.w1" "R_Hip_Jnt_parentConstraint3.tg[1].tw"
 		;
+connectAttr "R_Hip_Jnt_parentConstraint3_R_Hip_JntW0.o" "R_Hip_Jnt_parentConstraint3.w0"
+		;
+connectAttr "R_Hip_Jnt_parentConstraint3_R_Hip_JntW1.o" "R_Hip_Jnt_parentConstraint3.w1"
+		;
+connectAttr "RKSkeletonGrp.di" "R_Hip_Jnt_parentConstraint3.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt.is"
 		;
 connectAttr "L_Hip_Jnt_parentConstraint2.ctx" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt.tx"
@@ -26837,6 +27282,8 @@ connectAttr "L_Hip_Jnt_parentConstraint2.crx" "|VikingHero|Transform|RK_Skeleton
 connectAttr "L_Hip_Jnt_parentConstraint2.cry" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt.ry"
 		;
 connectAttr "L_Hip_Jnt_parentConstraint2.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt.rz"
+		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt.is"
 		;
@@ -26852,6 +27299,8 @@ connectAttr "L_knee_Jnt_parentConstraint2.cry" "|VikingHero|Transform|RK_Skeleto
 		;
 connectAttr "L_knee_Jnt_parentConstraint2.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt.rz"
 		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt.is"
 		;
 connectAttr "L_Ankle_Jnt_parentConstraint2.ctx" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt.tx"
@@ -26865,6 +27314,8 @@ connectAttr "L_Ankle_Jnt_parentConstraint2.crx" "|VikingHero|Transform|RK_Skelet
 connectAttr "L_Ankle_Jnt_parentConstraint2.cry" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt.ry"
 		;
 connectAttr "L_Ankle_Jnt_parentConstraint2.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt.rz"
+		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt.is"
 		;
@@ -26880,6 +27331,8 @@ connectAttr "L_Foot_Jnt_parentConstraint2.cry" "|VikingHero|Transform|RK_Skeleto
 		;
 connectAttr "L_Foot_Jnt_parentConstraint2.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt.rz"
 		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt|L_Foot_Ball_Jnt.is"
 		;
 connectAttr "L_Foot_Ball_Jnt_parentConstraint2.ctx" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt|L_Foot_Ball_Jnt.tx"
@@ -26894,6 +27347,8 @@ connectAttr "L_Foot_Ball_Jnt_parentConstraint2.cry" "|VikingHero|Transform|RK_Sk
 		;
 connectAttr "L_Foot_Ball_Jnt_parentConstraint2.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt|L_Foot_Ball_Jnt.rz"
 		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt|L_Foot_Ball_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt|L_Foot_Ball_Jnt.s" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt|L_Foot_Ball_Jnt|L_Foot_Toe_Jnt.is"
 		;
 connectAttr "L_Foot_Toe_Jnt_parentConstraint2.ctx" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt|L_Foot_Ball_Jnt|L_Foot_Toe_Jnt.tx"
@@ -26907,6 +27362,8 @@ connectAttr "L_Foot_Toe_Jnt_parentConstraint2.crx" "|VikingHero|Transform|RK_Ske
 connectAttr "L_Foot_Toe_Jnt_parentConstraint2.cry" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt|L_Foot_Ball_Jnt|L_Foot_Toe_Jnt.ry"
 		;
 connectAttr "L_Foot_Toe_Jnt_parentConstraint2.crz" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt|L_Foot_Ball_Jnt|L_Foot_Toe_Jnt.rz"
+		;
+connectAttr "RKSkeletonGrp.di" "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt|L_Foot_Ball_Jnt|L_Foot_Toe_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt|L_Foot_Ball_Jnt|L_Foot_Toe_Jnt.ro" "L_Foot_Toe_Jnt_parentConstraint2.cro"
 		;
@@ -26962,6 +27419,11 @@ connectAttr "|VikingHero|Transform|IK_Skeleton|L_Ankle_Jnt2|L_Ball_Jnt|L_Toe_Jnt
 		;
 connectAttr "L_Foot_Toe_Jnt_parentConstraint2.w1" "L_Foot_Toe_Jnt_parentConstraint2.tg[1].tw"
 		;
+connectAttr "L_Foot_Toe_Jnt_parentConstraint2_L_Foot_Toe_JntW0.o" "L_Foot_Toe_Jnt_parentConstraint2.w0"
+		;
+connectAttr "L_Foot_Toe_Jnt_parentConstraint2_L_Toe_JntW1.o" "L_Foot_Toe_Jnt_parentConstraint2.w1"
+		;
+connectAttr "RKSkeletonGrp.di" "L_Foot_Toe_Jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt|L_Foot_Ball_Jnt.ro" "L_Foot_Ball_Jnt_parentConstraint2.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt|L_Foot_Ball_Jnt.pim" "L_Foot_Ball_Jnt_parentConstraint2.cpim"
@@ -27006,6 +27468,11 @@ connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|
 		;
 connectAttr "L_Foot_Ball_Jnt_parentConstraint2.w1" "L_Foot_Ball_Jnt_parentConstraint2.tg[1].tw"
 		;
+connectAttr "L_Foot_Ball_Jnt_parentConstraint2_L_Ball_JntW0.o" "L_Foot_Ball_Jnt_parentConstraint2.w0"
+		;
+connectAttr "L_Foot_Ball_Jnt_parentConstraint2_L_Foot_Ball_JntW1.o" "L_Foot_Ball_Jnt_parentConstraint2.w1"
+		;
+connectAttr "RKSkeletonGrp.di" "L_Foot_Ball_Jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt.ro" "L_Foot_Jnt_parentConstraint2.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt.pim" "L_Foot_Jnt_parentConstraint2.cpim"
@@ -27050,6 +27517,11 @@ connectAttr "L_Ankle_Jnt2.ssc" "L_Foot_Jnt_parentConstraint2.tg[1].tsc";
 connectAttr "L_Ankle_Jnt2.is" "L_Foot_Jnt_parentConstraint2.tg[1].tis";
 connectAttr "L_Foot_Jnt_parentConstraint2.w1" "L_Foot_Jnt_parentConstraint2.tg[1].tw"
 		;
+connectAttr "L_Foot_Jnt_parentConstraint2_L_Foot_JntW0.o" "L_Foot_Jnt_parentConstraint2.w0"
+		;
+connectAttr "L_Foot_Jnt_parentConstraint2_L_Ankle_Jnt2W1.o" "L_Foot_Jnt_parentConstraint2.w1"
+		;
+connectAttr "RKSkeletonGrp.di" "L_Foot_Jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt.ro" "L_Ankle_Jnt_parentConstraint2.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt.pim" "L_Ankle_Jnt_parentConstraint2.cpim"
@@ -27104,6 +27576,11 @@ connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|
 		;
 connectAttr "L_Ankle_Jnt_parentConstraint2.w1" "L_Ankle_Jnt_parentConstraint2.tg[1].tw"
 		;
+connectAttr "L_Ankle_Jnt_parentConstraint2_L_Ankle_JntW0.o" "L_Ankle_Jnt_parentConstraint2.w0"
+		;
+connectAttr "L_Ankle_Jnt_parentConstraint2_L_Ankle_JntW1.o" "L_Ankle_Jnt_parentConstraint2.w1"
+		;
+connectAttr "RKSkeletonGrp.di" "L_Ankle_Jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt.ro" "L_knee_Jnt_parentConstraint2.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt.pim" "L_knee_Jnt_parentConstraint2.cpim"
@@ -27158,6 +27635,11 @@ connectAttr "|VikingHero|Transform|IK_Skeleton|L_Hip_Jnt|L_knee_Jnt.is" "L_knee_
 		;
 connectAttr "L_knee_Jnt_parentConstraint2.w1" "L_knee_Jnt_parentConstraint2.tg[1].tw"
 		;
+connectAttr "L_knee_Jnt_parentConstraint2_L_knee_JntW0.o" "L_knee_Jnt_parentConstraint2.w0"
+		;
+connectAttr "L_knee_Jnt_parentConstraint2_L_knee_JntW1.o" "L_knee_Jnt_parentConstraint2.w1"
+		;
+connectAttr "RKSkeletonGrp.di" "L_knee_Jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt.ro" "L_Hip_Jnt_parentConstraint2.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt.pim" "L_Hip_Jnt_parentConstraint2.cpim"
@@ -27212,6 +27694,11 @@ connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt.
 		;
 connectAttr "L_Hip_Jnt_parentConstraint2.w1" "L_Hip_Jnt_parentConstraint2.tg[1].tw"
 		;
+connectAttr "L_Hip_Jnt_parentConstraint2_L_Hip_JntW0.o" "L_Hip_Jnt_parentConstraint2.w0"
+		;
+connectAttr "L_Hip_Jnt_parentConstraint2_L_Hip_JntW1.o" "L_Hip_Jnt_parentConstraint2.w1"
+		;
+connectAttr "RKSkeletonGrp.di" "L_Hip_Jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt.ro" "Lower_Body_Jnt_parentConstraint2.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Lower_Body_Jnt.pim" "Lower_Body_Jnt_parentConstraint2.cpim"
@@ -27244,6 +27731,7 @@ connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt.is" "Lower
 		;
 connectAttr "Lower_Body_Jnt_parentConstraint2.w0" "Lower_Body_Jnt_parentConstraint2.tg[0].tw"
 		;
+connectAttr "RKSkeletonGrp.di" "Lower_Body_Jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt.ro" "Cog_Jnt_parentConstraint2.cro"
 		;
 connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt.pim" "Cog_Jnt_parentConstraint2.cpim"
@@ -27275,6 +27763,8 @@ connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt.ssc" "Cog_Jnt_parentConst
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt.is" "Cog_Jnt_parentConstraint2.tg[0].tis"
 		;
 connectAttr "Cog_Jnt_parentConstraint2.w0" "Cog_Jnt_parentConstraint2.tg[0].tw";
+connectAttr "RKSkeletonGrp.di" "Cog_Jnt_parentConstraint2.do";
+connectAttr "IKSkeletonGroup.di" "IK_Skeleton.do";
 connectAttr "L_Shoulder_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt.tx"
 		;
 connectAttr "L_Shoulder_Jnt_parentConstraint1.cty" "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt.ty"
@@ -27287,23 +27777,43 @@ connectAttr "L_Shoulder_Jnt_parentConstraint1.cry" "|VikingHero|Transform|IK_Ske
 		;
 connectAttr "L_Shoulder_Jnt_parentConstraint1.crz" "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt.rz"
 		;
+connectAttr "IKSkeletonGroup.di" "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt.s" "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt|L_elbow_Jnt.is"
+		;
+connectAttr "IKSkeletonGroup.di" "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt|L_elbow_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt|L_elbow_Jnt.s" "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt.is"
 		;
+connectAttr "IKSkeletonGroup.di" "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt.s" "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt.is"
+		;
+connectAttr "IKSkeletonGroup.di" "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt.s" "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt.is"
 		;
+connectAttr "IKSkeletonGroup.di" "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt.s" "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt|L_Thumb_02_Jnt.is"
+		;
+connectAttr "IKSkeletonGroup.di" "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt|L_Thumb_02_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt|L_Thumb_02_Jnt.s" "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt|L_Thumb_02_Jnt|L_Thumb_03_Jnt.is"
 		;
+connectAttr "IKSkeletonGroup.di" "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt|L_Thumb_02_Jnt|L_Thumb_03_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt.s" "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt.is"
+		;
+connectAttr "IKSkeletonGroup.di" "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt.s" "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt.is"
 		;
+connectAttr "IKSkeletonGroup.di" "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt.s" "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt.is"
+		;
+connectAttr "IKSkeletonGroup.di" "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt.tx" "effector2.tx"
 		;
@@ -27311,6 +27821,7 @@ connectAttr "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt|L_elbow_Jnt|L_Wris
 		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt.tz" "effector2.tz"
 		;
+connectAttr "IKSkeletonGroup.di" "effector2.do";
 connectAttr "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt.ro" "L_Shoulder_Jnt_parentConstraint1.cro"
 		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt.pim" "L_Shoulder_Jnt_parentConstraint1.cpim"
@@ -27334,6 +27845,7 @@ connectAttr "L_IK_Shoulder_Ctrl.pm" "L_Shoulder_Jnt_parentConstraint1.tg[0].tpm"
 		;
 connectAttr "L_Shoulder_Jnt_parentConstraint1.w0" "L_Shoulder_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "IKSkeletonGroup.di" "L_Shoulder_Jnt_parentConstraint1.do";
 connectAttr "R_Shoulder_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt.tx"
 		;
 connectAttr "R_Shoulder_Jnt_parentConstraint1.cty" "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt.ty"
@@ -27346,23 +27858,43 @@ connectAttr "R_Shoulder_Jnt_parentConstraint1.cry" "|VikingHero|Transform|IK_Ske
 		;
 connectAttr "R_Shoulder_Jnt_parentConstraint1.crz" "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt.rz"
 		;
+connectAttr "IKSkeletonGroup.di" "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt.s" "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt|R_elbow_Jnt.is"
+		;
+connectAttr "IKSkeletonGroup.di" "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt|R_elbow_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt|R_elbow_Jnt.s" "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt.is"
 		;
+connectAttr "IKSkeletonGroup.di" "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt.s" "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt.is"
+		;
+connectAttr "IKSkeletonGroup.di" "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt.s" "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt.is"
 		;
+connectAttr "IKSkeletonGroup.di" "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt.s" "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt|R_Thumb_02_Jnt.is"
+		;
+connectAttr "IKSkeletonGroup.di" "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt|R_Thumb_02_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt|R_Thumb_02_Jnt.s" "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt|R_Thumb_02_Jnt|R_Thumb_03_Jnt.is"
 		;
+connectAttr "IKSkeletonGroup.di" "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt|R_Thumb_02_Jnt|R_Thumb_03_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt.s" "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt.is"
+		;
+connectAttr "IKSkeletonGroup.di" "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt.s" "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt.is"
 		;
+connectAttr "IKSkeletonGroup.di" "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt.s" "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt.is"
+		;
+connectAttr "IKSkeletonGroup.di" "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt.tx" "effector1.tx"
 		;
@@ -27370,6 +27902,7 @@ connectAttr "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt|R_elbow_Jnt|R_Wris
 		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt.tz" "effector1.tz"
 		;
+connectAttr "IKSkeletonGroup.di" "effector1.do";
 connectAttr "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt.ro" "R_Shoulder_Jnt_parentConstraint1.cro"
 		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt.pim" "R_Shoulder_Jnt_parentConstraint1.cpim"
@@ -27393,15 +27926,54 @@ connectAttr "R_IK_Shoulder_Ctrl.pm" "R_Shoulder_Jnt_parentConstraint1.tg[0].tpm"
 		;
 connectAttr "R_Shoulder_Jnt_parentConstraint1.w0" "R_Shoulder_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "IKSkeletonGroup.di" "R_Shoulder_Jnt_parentConstraint1.do";
+connectAttr "L_Hip_Jnt_parentConstraint3.ctx" "|VikingHero|Transform|IK_Skeleton|L_Hip_Jnt.tx"
+		;
+connectAttr "L_Hip_Jnt_parentConstraint3.cty" "|VikingHero|Transform|IK_Skeleton|L_Hip_Jnt.ty"
+		;
+connectAttr "L_Hip_Jnt_parentConstraint3.ctz" "|VikingHero|Transform|IK_Skeleton|L_Hip_Jnt.tz"
+		;
+connectAttr "L_Hip_Jnt_parentConstraint3.crx" "|VikingHero|Transform|IK_Skeleton|L_Hip_Jnt.rx"
+		;
+connectAttr "L_Hip_Jnt_parentConstraint3.cry" "|VikingHero|Transform|IK_Skeleton|L_Hip_Jnt.ry"
+		;
+connectAttr "L_Hip_Jnt_parentConstraint3.crz" "|VikingHero|Transform|IK_Skeleton|L_Hip_Jnt.rz"
+		;
+connectAttr "IKSkeletonGroup.di" "|VikingHero|Transform|IK_Skeleton|L_Hip_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|L_Hip_Jnt.s" "|VikingHero|Transform|IK_Skeleton|L_Hip_Jnt|L_knee_Jnt.is"
 		;
+connectAttr "IKSkeletonGroup.di" "|VikingHero|Transform|IK_Skeleton|L_Hip_Jnt|L_knee_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|L_Hip_Jnt|L_knee_Jnt.s" "|VikingHero|Transform|IK_Skeleton|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt.is"
+		;
+connectAttr "IKSkeletonGroup.di" "|VikingHero|Transform|IK_Skeleton|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt.tx" "effector4.tx"
 		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt.ty" "effector4.ty"
 		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt.tz" "effector4.tz"
+		;
+connectAttr "IKSkeletonGroup.di" "effector4.do";
+connectAttr "|VikingHero|Transform|IK_Skeleton|L_Hip_Jnt.ro" "L_Hip_Jnt_parentConstraint3.cro"
+		;
+connectAttr "|VikingHero|Transform|IK_Skeleton|L_Hip_Jnt.pim" "L_Hip_Jnt_parentConstraint3.cpim"
+		;
+connectAttr "|VikingHero|Transform|IK_Skeleton|L_Hip_Jnt.rp" "L_Hip_Jnt_parentConstraint3.crp"
+		;
+connectAttr "|VikingHero|Transform|IK_Skeleton|L_Hip_Jnt.rpt" "L_Hip_Jnt_parentConstraint3.crt"
+		;
+connectAttr "|VikingHero|Transform|IK_Skeleton|L_Hip_Jnt.jo" "L_Hip_Jnt_parentConstraint3.cjo"
+		;
+connectAttr "L_IK_Hip_Ctrl.t" "L_Hip_Jnt_parentConstraint3.tg[0].tt";
+connectAttr "L_IK_Hip_Ctrl.rp" "L_Hip_Jnt_parentConstraint3.tg[0].trp";
+connectAttr "L_IK_Hip_Ctrl.rpt" "L_Hip_Jnt_parentConstraint3.tg[0].trt";
+connectAttr "L_IK_Hip_Ctrl.r" "L_Hip_Jnt_parentConstraint3.tg[0].tr";
+connectAttr "L_IK_Hip_Ctrl.ro" "L_Hip_Jnt_parentConstraint3.tg[0].tro";
+connectAttr "L_IK_Hip_Ctrl.s" "L_Hip_Jnt_parentConstraint3.tg[0].ts";
+connectAttr "L_IK_Hip_Ctrl.pm" "L_Hip_Jnt_parentConstraint3.tg[0].tpm";
+connectAttr "L_Hip_Jnt_parentConstraint3.w0" "L_Hip_Jnt_parentConstraint3.tg[0].tw"
 		;
 connectAttr "R_Hip_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|IK_Skeleton|R_Hip_Jnt.tx"
 		;
@@ -27415,9 +27987,15 @@ connectAttr "R_Hip_Jnt_parentConstraint1.cry" "|VikingHero|Transform|IK_Skeleton
 		;
 connectAttr "R_Hip_Jnt_parentConstraint1.crz" "|VikingHero|Transform|IK_Skeleton|R_Hip_Jnt.rz"
 		;
+connectAttr "IKSkeletonGroup.di" "|VikingHero|Transform|IK_Skeleton|R_Hip_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|R_Hip_Jnt.s" "|VikingHero|Transform|IK_Skeleton|R_Hip_Jnt|R_knee_Jnt.is"
 		;
+connectAttr "IKSkeletonGroup.di" "|VikingHero|Transform|IK_Skeleton|R_Hip_Jnt|R_knee_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|R_Hip_Jnt|R_knee_Jnt.s" "|VikingHero|Transform|IK_Skeleton|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt.is"
+		;
+connectAttr "IKSkeletonGroup.di" "|VikingHero|Transform|IK_Skeleton|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt.tx" "effector3.tx"
 		;
@@ -27425,6 +28003,7 @@ connectAttr "|VikingHero|Transform|IK_Skeleton|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt.
 		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt.tz" "effector3.tz"
 		;
+connectAttr "IKSkeletonGroup.di" "effector3.do";
 connectAttr "|VikingHero|Transform|IK_Skeleton|R_Hip_Jnt.ro" "R_Hip_Jnt_parentConstraint1.cro"
 		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|R_Hip_Jnt.pim" "R_Hip_Jnt_parentConstraint1.cpim"
@@ -27444,12 +28023,14 @@ connectAttr "R_IK_Hip_Ctrl.s" "R_Hip_Jnt_parentConstraint1.tg[0].ts";
 connectAttr "R_IK_Hip_Ctrl.pm" "R_Hip_Jnt_parentConstraint1.tg[0].tpm";
 connectAttr "R_Hip_Jnt_parentConstraint1.w0" "R_Hip_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "IKSkeletonGroup.di" "R_Hip_Jnt_parentConstraint1.do";
 connectAttr "R_Heel_Jnt_parentConstraint1.ctx" "R_Heel_Jnt.tx";
 connectAttr "R_Heel_Jnt_parentConstraint1.cty" "R_Heel_Jnt.ty";
 connectAttr "R_Heel_Jnt_parentConstraint1.ctz" "R_Heel_Jnt.tz";
 connectAttr "R_Heel_Jnt_parentConstraint1.crx" "R_Heel_Jnt.rx";
 connectAttr "R_Heel_Jnt_parentConstraint1.cry" "R_Heel_Jnt.ry";
 connectAttr "R_Heel_Jnt_parentConstraint1.crz" "R_Heel_Jnt.rz";
+connectAttr "IKSkeletonGroup.di" "R_Heel_Jnt.do";
 connectAttr "R_Heel_Jnt.s" "|VikingHero|Transform|IK_Skeleton|R_Heel_Jnt|R_Toe_Jnt.is"
 		;
 connectAttr "R_Toe_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|IK_Skeleton|R_Heel_Jnt|R_Toe_Jnt.tx"
@@ -27464,6 +28045,8 @@ connectAttr "R_Toe_Jnt_parentConstraint1.cry" "|VikingHero|Transform|IK_Skeleton
 		;
 connectAttr "R_Toe_Jnt_parentConstraint1.crz" "|VikingHero|Transform|IK_Skeleton|R_Heel_Jnt|R_Toe_Jnt.rz"
 		;
+connectAttr "IKSkeletonGroup.di" "|VikingHero|Transform|IK_Skeleton|R_Heel_Jnt|R_Toe_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|R_Heel_Jnt|R_Toe_Jnt.s" "R_Heel_Lifter.is"
 		;
 connectAttr "R_Heel_Lifter_parentConstraint1.ctx" "R_Heel_Lifter.tx";
@@ -27472,7 +28055,9 @@ connectAttr "R_Heel_Lifter_parentConstraint1.ctz" "R_Heel_Lifter.tz";
 connectAttr "R_Heel_Lifter_parentConstraint1.crx" "R_Heel_Lifter.rx";
 connectAttr "R_Heel_Lifter_parentConstraint1.cry" "R_Heel_Lifter.ry";
 connectAttr "R_Heel_Lifter_parentConstraint1.crz" "R_Heel_Lifter.rz";
+connectAttr "IKSkeletonGroup.di" "R_Heel_Lifter.do";
 connectAttr "R_Heel_Lifter.s" "R_Ankle.is";
+connectAttr "IKSkeletonGroup.di" "R_Ankle.do";
 connectAttr "|VikingHero|Transform|IK_Skeleton|R_Hip_Jnt.msg" "R_Leg_ikHandle.hsj"
 		;
 connectAttr "effector3.hp" "R_Leg_ikHandle.hee";
@@ -27480,6 +28065,7 @@ connectAttr "ikRPsolver.msg" "R_Leg_ikHandle.hsv";
 connectAttr "ikHandle3_poleVectorConstraint1.ctx" "R_Leg_ikHandle.pvx";
 connectAttr "ikHandle3_poleVectorConstraint1.cty" "R_Leg_ikHandle.pvy";
 connectAttr "ikHandle3_poleVectorConstraint1.ctz" "R_Leg_ikHandle.pvz";
+connectAttr "IKSkeletonGroup.di" "R_Leg_ikHandle.do";
 connectAttr "R_Leg_ikHandle.pim" "ikHandle3_poleVectorConstraint1.cpim";
 connectAttr "|VikingHero|Transform|IK_Skeleton|R_Hip_Jnt.pm" "ikHandle3_poleVectorConstraint1.ps"
 		;
@@ -27495,9 +28081,11 @@ connectAttr "R_Leg_Point_Orient_Ctrl.pm" "ikHandle3_poleVectorConstraint1.tg[0].
 		;
 connectAttr "ikHandle3_poleVectorConstraint1.w0" "ikHandle3_poleVectorConstraint1.tg[0].tw"
 		;
+connectAttr "IKSkeletonGroup.di" "ikHandle3_poleVectorConstraint1.do";
 connectAttr "R_Ankle_Jnt1.msg" "R_IK_Foot_Handle_1.hsj";
 connectAttr "effector5.hp" "R_IK_Foot_Handle_1.hee";
 connectAttr "ikSCsolver.msg" "R_IK_Foot_Handle_1.hsv";
+connectAttr "IKSkeletonGroup.di" "R_IK_Foot_Handle_1.do";
 connectAttr "R_Heel_Lifter.ro" "R_Heel_Lifter_parentConstraint1.cro";
 connectAttr "R_Heel_Lifter.pim" "R_Heel_Lifter_parentConstraint1.cpim";
 connectAttr "R_Heel_Lifter.rp" "R_Heel_Lifter_parentConstraint1.crp";
@@ -27519,6 +28107,7 @@ connectAttr "|VikingHero|Transform|Controls|IK_Ctrls|IK_R_Ankle_Ctrl_Grp1|R_IK_A
 		;
 connectAttr "R_Heel_Lifter_parentConstraint1.w0" "R_Heel_Lifter_parentConstraint1.tg[0].tw"
 		;
+connectAttr "IKSkeletonGroup.di" "R_Heel_Lifter_parentConstraint1.do";
 connectAttr "|VikingHero|Transform|IK_Skeleton|R_Heel_Jnt|R_Toe_Jnt.s" "R_Toe_Lifter.is"
 		;
 connectAttr "R_Toe_Lifter_parentConstraint1.ctx" "R_Toe_Lifter.tx";
@@ -27527,9 +28116,11 @@ connectAttr "R_Toe_Lifter_parentConstraint1.ctz" "R_Toe_Lifter.tz";
 connectAttr "R_Toe_Lifter_parentConstraint1.crx" "R_Toe_Lifter.rx";
 connectAttr "R_Toe_Lifter_parentConstraint1.cry" "R_Toe_Lifter.ry";
 connectAttr "R_Toe_Lifter_parentConstraint1.crz" "R_Toe_Lifter.rz";
+connectAttr "IKSkeletonGroup.di" "R_Toe_Lifter.do";
 connectAttr "R_Ball_Jnt.msg" "R_Ik_Foot_Handle_2.hsj";
 connectAttr "effector6.hp" "R_Ik_Foot_Handle_2.hee";
 connectAttr "ikSCsolver.msg" "R_Ik_Foot_Handle_2.hsv";
+connectAttr "IKSkeletonGroup.di" "R_Ik_Foot_Handle_2.do";
 connectAttr "R_Toe_Lifter.ro" "R_Toe_Lifter_parentConstraint1.cro";
 connectAttr "R_Toe_Lifter.pim" "R_Toe_Lifter_parentConstraint1.cpim";
 connectAttr "R_Toe_Lifter.rp" "R_Toe_Lifter_parentConstraint1.crp";
@@ -27548,6 +28139,7 @@ connectAttr "R_Toe_Lifter_IK_Ctrl.pm" "R_Toe_Lifter_parentConstraint1.tg[0].tpm"
 		;
 connectAttr "R_Toe_Lifter_parentConstraint1.w0" "R_Toe_Lifter_parentConstraint1.tg[0].tw"
 		;
+connectAttr "IKSkeletonGroup.di" "R_Toe_Lifter_parentConstraint1.do";
 connectAttr "|VikingHero|Transform|IK_Skeleton|R_Heel_Jnt|R_Toe_Jnt.ro" "R_Toe_Jnt_parentConstraint1.cro"
 		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|R_Heel_Jnt|R_Toe_Jnt.pim" "R_Toe_Jnt_parentConstraint1.cpim"
@@ -27567,6 +28159,7 @@ connectAttr "R_Toe_IK_Ctrl.s" "R_Toe_Jnt_parentConstraint1.tg[0].ts";
 connectAttr "R_Toe_IK_Ctrl.pm" "R_Toe_Jnt_parentConstraint1.tg[0].tpm";
 connectAttr "R_Toe_Jnt_parentConstraint1.w0" "R_Toe_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "IKSkeletonGroup.di" "R_Toe_Jnt_parentConstraint1.do";
 connectAttr "R_Heel_Jnt.ro" "R_Heel_Jnt_parentConstraint1.cro";
 connectAttr "R_Heel_Jnt.pim" "R_Heel_Jnt_parentConstraint1.cpim";
 connectAttr "R_Heel_Jnt.rp" "R_Heel_Jnt_parentConstraint1.crp";
@@ -27581,14 +28174,19 @@ connectAttr "R_Heel_IK_Ctrl.s" "R_Heel_Jnt_parentConstraint1.tg[0].ts";
 connectAttr "R_Heel_IK_Ctrl.pm" "R_Heel_Jnt_parentConstraint1.tg[0].tpm";
 connectAttr "R_Heel_Jnt_parentConstraint1.w0" "R_Heel_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "IKSkeletonGroup.di" "R_Heel_Jnt_parentConstraint1.do";
 connectAttr "R_Ankle_Jnt1_parentConstraint1.ctx" "R_Ankle_Jnt1.tx";
 connectAttr "R_Ankle_Jnt1_parentConstraint1.cty" "R_Ankle_Jnt1.ty";
 connectAttr "R_Ankle_Jnt1_parentConstraint1.ctz" "R_Ankle_Jnt1.tz";
 connectAttr "R_Ankle_Jnt1_parentConstraint1.crx" "R_Ankle_Jnt1.rx";
 connectAttr "R_Ankle_Jnt1_parentConstraint1.cry" "R_Ankle_Jnt1.ry";
 connectAttr "R_Ankle_Jnt1_parentConstraint1.crz" "R_Ankle_Jnt1.rz";
+connectAttr "IKSkeletonGroup.di" "R_Ankle_Jnt1.do";
 connectAttr "R_Ankle_Jnt1.s" "R_Ball_Jnt.is";
+connectAttr "IKSkeletonGroup.di" "R_Ball_Jnt.do";
 connectAttr "R_Ball_Jnt.s" "|VikingHero|Transform|IK_Skeleton|R_Ankle_Jnt1|R_Ball_Jnt|R_Toe_Jnt.is"
+		;
+connectAttr "IKSkeletonGroup.di" "|VikingHero|Transform|IK_Skeleton|R_Ankle_Jnt1|R_Ball_Jnt|R_Toe_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|R_Ankle_Jnt1|R_Ball_Jnt|R_Toe_Jnt.tx" "effector6.tx"
 		;
@@ -27596,9 +28194,11 @@ connectAttr "|VikingHero|Transform|IK_Skeleton|R_Ankle_Jnt1|R_Ball_Jnt|R_Toe_Jnt
 		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|R_Ankle_Jnt1|R_Ball_Jnt|R_Toe_Jnt.tz" "effector6.tz"
 		;
+connectAttr "IKSkeletonGroup.di" "effector6.do";
 connectAttr "R_Ball_Jnt.tx" "effector5.tx";
 connectAttr "R_Ball_Jnt.ty" "effector5.ty";
 connectAttr "R_Ball_Jnt.tz" "effector5.tz";
+connectAttr "IKSkeletonGroup.di" "effector5.do";
 connectAttr "R_Ankle_Jnt1.ro" "R_Ankle_Jnt1_parentConstraint1.cro";
 connectAttr "R_Ankle_Jnt1.pim" "R_Ankle_Jnt1_parentConstraint1.cpim";
 connectAttr "R_Ankle_Jnt1.rp" "R_Ankle_Jnt1_parentConstraint1.crp";
@@ -27626,12 +28226,14 @@ connectAttr "|VikingHero|Transform|IK_Skeleton|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt.
 		;
 connectAttr "R_Ankle_Jnt1_parentConstraint1.w0" "R_Ankle_Jnt1_parentConstraint1.tg[0].tw"
 		;
+connectAttr "IKSkeletonGroup.di" "R_Ankle_Jnt1_parentConstraint1.do";
 connectAttr "L_Heel_Jnt1_parentConstraint1.ctx" "L_Heel_Jnt1.tx";
 connectAttr "L_Heel_Jnt1_parentConstraint1.cty" "L_Heel_Jnt1.ty";
 connectAttr "L_Heel_Jnt1_parentConstraint1.ctz" "L_Heel_Jnt1.tz";
 connectAttr "L_Heel_Jnt1_parentConstraint1.crx" "L_Heel_Jnt1.rx";
 connectAttr "L_Heel_Jnt1_parentConstraint1.cry" "L_Heel_Jnt1.ry";
 connectAttr "L_Heel_Jnt1_parentConstraint1.crz" "L_Heel_Jnt1.rz";
+connectAttr "IKSkeletonGroup.di" "L_Heel_Jnt1.do";
 connectAttr "L_Heel_Jnt1.s" "|VikingHero|Transform|IK_Skeleton|L_Heel_Jnt1|L_Toe_Jnt.is"
 		;
 connectAttr "L_Toe_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|IK_Skeleton|L_Heel_Jnt1|L_Toe_Jnt.tx"
@@ -27646,6 +28248,8 @@ connectAttr "L_Toe_Jnt_parentConstraint1.cry" "|VikingHero|Transform|IK_Skeleton
 		;
 connectAttr "L_Toe_Jnt_parentConstraint1.crz" "|VikingHero|Transform|IK_Skeleton|L_Heel_Jnt1|L_Toe_Jnt.rz"
 		;
+connectAttr "IKSkeletonGroup.di" "|VikingHero|Transform|IK_Skeleton|L_Heel_Jnt1|L_Toe_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|L_Heel_Jnt1|L_Toe_Jnt.s" "L_Heel_Lifter.is"
 		;
 connectAttr "L_Heel_Lifter_parentConstraint1.ctx" "L_Heel_Lifter.tx";
@@ -27654,7 +28258,9 @@ connectAttr "L_Heel_Lifter_parentConstraint1.ctz" "L_Heel_Lifter.tz";
 connectAttr "L_Heel_Lifter_parentConstraint1.crx" "L_Heel_Lifter.rx";
 connectAttr "L_Heel_Lifter_parentConstraint1.cry" "L_Heel_Lifter.ry";
 connectAttr "L_Heel_Lifter_parentConstraint1.crz" "L_Heel_Lifter.rz";
+connectAttr "IKSkeletonGroup.di" "L_Heel_Lifter.do";
 connectAttr "L_Heel_Lifter.s" "L_Ankle.is";
+connectAttr "IKSkeletonGroup.di" "L_Ankle.do";
 connectAttr "|VikingHero|Transform|IK_Skeleton|L_Hip_Jnt.msg" "L_Leg_ikHandle.hsj"
 		;
 connectAttr "effector4.hp" "L_Leg_ikHandle.hee";
@@ -27662,6 +28268,7 @@ connectAttr "ikRPsolver.msg" "L_Leg_ikHandle.hsv";
 connectAttr "ikHandle4_poleVectorConstraint1.ctx" "L_Leg_ikHandle.pvx";
 connectAttr "ikHandle4_poleVectorConstraint1.cty" "L_Leg_ikHandle.pvy";
 connectAttr "ikHandle4_poleVectorConstraint1.ctz" "L_Leg_ikHandle.pvz";
+connectAttr "IKSkeletonGroup.di" "L_Leg_ikHandle.do";
 connectAttr "L_Leg_ikHandle.pim" "ikHandle4_poleVectorConstraint1.cpim";
 connectAttr "|VikingHero|Transform|IK_Skeleton|L_Hip_Jnt.pm" "ikHandle4_poleVectorConstraint1.ps"
 		;
@@ -27677,9 +28284,11 @@ connectAttr "L_Leg_Point_Orient_Ctrl.pm" "ikHandle4_poleVectorConstraint1.tg[0].
 		;
 connectAttr "ikHandle4_poleVectorConstraint1.w0" "ikHandle4_poleVectorConstraint1.tg[0].tw"
 		;
+connectAttr "IKSkeletonGroup.di" "ikHandle4_poleVectorConstraint1.do";
 connectAttr "L_Ankle_Jnt2.msg" "L_Foot_IKHandle1.hsj";
 connectAttr "effector7.hp" "L_Foot_IKHandle1.hee";
 connectAttr "ikSCsolver.msg" "L_Foot_IKHandle1.hsv";
+connectAttr "IKSkeletonGroup.di" "L_Foot_IKHandle1.do";
 connectAttr "L_Heel_Lifter.ro" "L_Heel_Lifter_parentConstraint1.cro";
 connectAttr "L_Heel_Lifter.pim" "L_Heel_Lifter_parentConstraint1.cpim";
 connectAttr "L_Heel_Lifter.rp" "L_Heel_Lifter_parentConstraint1.crp";
@@ -27701,6 +28310,7 @@ connectAttr "|VikingHero|Transform|Controls|IK_Ctrls|IK_L_Ankle_Ctrl_Grp|L_IK_An
 		;
 connectAttr "L_Heel_Lifter_parentConstraint1.w0" "L_Heel_Lifter_parentConstraint1.tg[0].tw"
 		;
+connectAttr "IKSkeletonGroup.di" "L_Heel_Lifter_parentConstraint1.do";
 connectAttr "|VikingHero|Transform|IK_Skeleton|L_Heel_Jnt1|L_Toe_Jnt.s" "L_Toe_Lifter.is"
 		;
 connectAttr "L_Toe_Lifter_parentConstraint1.ctx" "L_Toe_Lifter.tx";
@@ -27709,9 +28319,11 @@ connectAttr "L_Toe_Lifter_parentConstraint1.ctz" "L_Toe_Lifter.tz";
 connectAttr "L_Toe_Lifter_parentConstraint1.crx" "L_Toe_Lifter.rx";
 connectAttr "L_Toe_Lifter_parentConstraint1.cry" "L_Toe_Lifter.ry";
 connectAttr "L_Toe_Lifter_parentConstraint1.crz" "L_Toe_Lifter.rz";
+connectAttr "IKSkeletonGroup.di" "L_Toe_Lifter.do";
 connectAttr "L_Ball_Jnt.msg" "L_Foot_IKHandle2.hsj";
 connectAttr "effector8.hp" "L_Foot_IKHandle2.hee";
 connectAttr "ikSCsolver.msg" "L_Foot_IKHandle2.hsv";
+connectAttr "IKSkeletonGroup.di" "L_Foot_IKHandle2.do";
 connectAttr "L_Toe_Lifter.ro" "L_Toe_Lifter_parentConstraint1.cro";
 connectAttr "L_Toe_Lifter.pim" "L_Toe_Lifter_parentConstraint1.cpim";
 connectAttr "L_Toe_Lifter.rp" "L_Toe_Lifter_parentConstraint1.crp";
@@ -27730,6 +28342,7 @@ connectAttr "L_Toe_Lifter_IK_Ctrl.pm" "L_Toe_Lifter_parentConstraint1.tg[0].tpm"
 		;
 connectAttr "L_Toe_Lifter_parentConstraint1.w0" "L_Toe_Lifter_parentConstraint1.tg[0].tw"
 		;
+connectAttr "IKSkeletonGroup.di" "L_Toe_Lifter_parentConstraint1.do";
 connectAttr "|VikingHero|Transform|IK_Skeleton|L_Heel_Jnt1|L_Toe_Jnt.ro" "L_Toe_Jnt_parentConstraint1.cro"
 		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|L_Heel_Jnt1|L_Toe_Jnt.pim" "L_Toe_Jnt_parentConstraint1.cpim"
@@ -27749,6 +28362,7 @@ connectAttr "L_Toe_IK_Ctrl.s" "L_Toe_Jnt_parentConstraint1.tg[0].ts";
 connectAttr "L_Toe_IK_Ctrl.pm" "L_Toe_Jnt_parentConstraint1.tg[0].tpm";
 connectAttr "L_Toe_Jnt_parentConstraint1.w0" "L_Toe_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "IKSkeletonGroup.di" "L_Toe_Jnt_parentConstraint1.do";
 connectAttr "L_Heel_Jnt1.ro" "L_Heel_Jnt1_parentConstraint1.cro";
 connectAttr "L_Heel_Jnt1.pim" "L_Heel_Jnt1_parentConstraint1.cpim";
 connectAttr "L_Heel_Jnt1.rp" "L_Heel_Jnt1_parentConstraint1.crp";
@@ -27763,14 +28377,19 @@ connectAttr "L_Heel_IK_Ctrl.s" "L_Heel_Jnt1_parentConstraint1.tg[0].ts";
 connectAttr "L_Heel_IK_Ctrl.pm" "L_Heel_Jnt1_parentConstraint1.tg[0].tpm";
 connectAttr "L_Heel_Jnt1_parentConstraint1.w0" "L_Heel_Jnt1_parentConstraint1.tg[0].tw"
 		;
+connectAttr "IKSkeletonGroup.di" "L_Heel_Jnt1_parentConstraint1.do";
 connectAttr "L_Ankle_Jnt2_parentConstraint1.ctx" "L_Ankle_Jnt2.tx";
 connectAttr "L_Ankle_Jnt2_parentConstraint1.cty" "L_Ankle_Jnt2.ty";
 connectAttr "L_Ankle_Jnt2_parentConstraint1.ctz" "L_Ankle_Jnt2.tz";
 connectAttr "L_Ankle_Jnt2_parentConstraint1.crx" "L_Ankle_Jnt2.rx";
 connectAttr "L_Ankle_Jnt2_parentConstraint1.cry" "L_Ankle_Jnt2.ry";
 connectAttr "L_Ankle_Jnt2_parentConstraint1.crz" "L_Ankle_Jnt2.rz";
+connectAttr "IKSkeletonGroup.di" "L_Ankle_Jnt2.do";
 connectAttr "L_Ankle_Jnt2.s" "L_Ball_Jnt.is";
+connectAttr "IKSkeletonGroup.di" "L_Ball_Jnt.do";
 connectAttr "L_Ball_Jnt.s" "|VikingHero|Transform|IK_Skeleton|L_Ankle_Jnt2|L_Ball_Jnt|L_Toe_Jnt.is"
+		;
+connectAttr "IKSkeletonGroup.di" "|VikingHero|Transform|IK_Skeleton|L_Ankle_Jnt2|L_Ball_Jnt|L_Toe_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|L_Ankle_Jnt2|L_Ball_Jnt|L_Toe_Jnt.tx" "effector8.tx"
 		;
@@ -27778,9 +28397,11 @@ connectAttr "|VikingHero|Transform|IK_Skeleton|L_Ankle_Jnt2|L_Ball_Jnt|L_Toe_Jnt
 		;
 connectAttr "|VikingHero|Transform|IK_Skeleton|L_Ankle_Jnt2|L_Ball_Jnt|L_Toe_Jnt.tz" "effector8.tz"
 		;
+connectAttr "IKSkeletonGroup.di" "effector8.do";
 connectAttr "L_Ball_Jnt.tx" "effector7.tx";
 connectAttr "L_Ball_Jnt.ty" "effector7.ty";
 connectAttr "L_Ball_Jnt.tz" "effector7.tz";
+connectAttr "IKSkeletonGroup.di" "effector7.do";
 connectAttr "L_Ankle_Jnt2.ro" "L_Ankle_Jnt2_parentConstraint1.cro";
 connectAttr "L_Ankle_Jnt2.pim" "L_Ankle_Jnt2_parentConstraint1.cpim";
 connectAttr "L_Ankle_Jnt2.rp" "L_Ankle_Jnt2_parentConstraint1.crp";
@@ -27808,6 +28429,8 @@ connectAttr "|VikingHero|Transform|IK_Skeleton|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt.
 		;
 connectAttr "L_Ankle_Jnt2_parentConstraint1.w0" "L_Ankle_Jnt2_parentConstraint1.tg[0].tw"
 		;
+connectAttr "IKSkeletonGroup.di" "L_Ankle_Jnt2_parentConstraint1.do";
+connectAttr "FKSkeletonGroup.di" "FK_Skeleton.do";
 connectAttr "Cog_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt.tx"
 		;
 connectAttr "Cog_Jnt_parentConstraint1.cty" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt.ty"
@@ -27820,8 +28443,7 @@ connectAttr "Cog_Jnt_parentConstraint1.cry" "|VikingHero|Transform|FK_Skeleton|C
 		;
 connectAttr "Cog_Jnt_parentConstraint1.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt.rz"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt.is"
-		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt.do";
 connectAttr "Upper_Body_jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt.tx"
 		;
 connectAttr "Upper_Body_jnt_parentConstraint1.cty" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt.ty"
@@ -27834,7 +28456,9 @@ connectAttr "Upper_Body_jnt_parentConstraint1.cry" "|VikingHero|Transform|FK_Ske
 		;
 connectAttr "Upper_Body_jnt_parentConstraint1.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt.rz"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt.is"
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt.do"
 		;
 connectAttr "Spine_01_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt.tx"
 		;
@@ -27848,7 +28472,9 @@ connectAttr "Spine_01_Jnt_parentConstraint1.cry" "|VikingHero|Transform|FK_Skele
 		;
 connectAttr "Spine_01_Jnt_parentConstraint1.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt.rz"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt.is"
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt.do"
 		;
 connectAttr "Spine_02_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt.tx"
 		;
@@ -27862,7 +28488,9 @@ connectAttr "Spine_02_Jnt_parentConstraint1.cry" "|VikingHero|Transform|FK_Skele
 		;
 connectAttr "Spine_02_Jnt_parentConstraint1.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt.rz"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt.is"
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt.do"
 		;
 connectAttr "Spine_03_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt.tx"
 		;
@@ -27876,7 +28504,9 @@ connectAttr "Spine_03_Jnt_parentConstraint1.cry" "|VikingHero|Transform|FK_Skele
 		;
 connectAttr "Spine_03_Jnt_parentConstraint1.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt.rz"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt.is"
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt.do"
 		;
 connectAttr "R_Clavicle_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt.tx"
 		;
@@ -27890,7 +28520,9 @@ connectAttr "R_Clavicle_Jnt_parentConstraint1.cry" "|VikingHero|Transform|FK_Ske
 		;
 connectAttr "R_Clavicle_Jnt_parentConstraint1.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt.rz"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt.is"
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt.do"
 		;
 connectAttr "R_Shoulder_Jnt_parentConstraint2.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt.tx"
 		;
@@ -27904,7 +28536,9 @@ connectAttr "R_Shoulder_Jnt_parentConstraint2.cry" "|VikingHero|Transform|FK_Ske
 		;
 connectAttr "R_Shoulder_Jnt_parentConstraint2.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt.rz"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt.is"
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt.do"
 		;
 connectAttr "R_elbow_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt.tx"
 		;
@@ -27918,7 +28552,9 @@ connectAttr "R_elbow_Jnt_parentConstraint1.cry" "|VikingHero|Transform|FK_Skelet
 		;
 connectAttr "R_elbow_Jnt_parentConstraint1.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt.rz"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt.is"
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt.do"
 		;
 connectAttr "R_Wrist_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt.tx"
 		;
@@ -27932,7 +28568,9 @@ connectAttr "R_Wrist_Jnt_parentConstraint1.cry" "|VikingHero|Transform|FK_Skelet
 		;
 connectAttr "R_Wrist_Jnt_parentConstraint1.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt.rz"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt.is"
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt.do"
 		;
 connectAttr "R_Hand_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt.tx"
 		;
@@ -27946,7 +28584,9 @@ connectAttr "R_Hand_Jnt_parentConstraint1.cry" "|VikingHero|Transform|FK_Skeleto
 		;
 connectAttr "R_Hand_Jnt_parentConstraint1.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt.rz"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt.is"
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt.do"
 		;
 connectAttr "R_Thumb_01_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt.tx"
 		;
@@ -27960,7 +28600,9 @@ connectAttr "R_Thumb_01_Jnt_parentConstraint1.cry" "|VikingHero|Transform|FK_Ske
 		;
 connectAttr "R_Thumb_01_Jnt_parentConstraint1.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt.rz"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt|R_Thumb_02_Jnt.is"
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt.do"
 		;
 connectAttr "R_Thumb_02_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt|R_Thumb_02_Jnt.tx"
 		;
@@ -27974,7 +28616,13 @@ connectAttr "R_Thumb_02_Jnt_parentConstraint1.cry" "|VikingHero|Transform|FK_Ske
 		;
 connectAttr "R_Thumb_02_Jnt_parentConstraint1.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt|R_Thumb_02_Jnt.rz"
 		;
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt|R_Thumb_02_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt|R_Thumb_02_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt|R_Thumb_02_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt|R_Thumb_02_Jnt|R_Thumb_03_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt|R_Thumb_02_Jnt|R_Thumb_03_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt|R_Thumb_02_Jnt.ro" "R_Thumb_02_Jnt_parentConstraint1.cro"
 		;
@@ -28002,6 +28650,7 @@ connectAttr "R_Finger_01_FK_02_Ctrl.pm" "R_Thumb_02_Jnt_parentConstraint1.tg[0].
 		;
 connectAttr "R_Thumb_02_Jnt_parentConstraint1.w0" "R_Thumb_02_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "FKSkeletonGroup.di" "R_Thumb_02_Jnt_parentConstraint1.do";
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt.ro" "R_Thumb_01_Jnt_parentConstraint1.cro"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Thumb_01_Jnt.pim" "R_Thumb_01_Jnt_parentConstraint1.cpim"
@@ -28028,8 +28677,7 @@ connectAttr "R_Finger_01_FK_01_Ctrl.pm" "R_Thumb_01_Jnt_parentConstraint1.tg[0].
 		;
 connectAttr "R_Thumb_01_Jnt_parentConstraint1.w0" "R_Thumb_01_Jnt_parentConstraint1.tg[0].tw"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt.is"
-		;
+connectAttr "FKSkeletonGroup.di" "R_Thumb_01_Jnt_parentConstraint1.do";
 connectAttr "R_Fingers_02_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt.tx"
 		;
 connectAttr "R_Fingers_02_Jnt_parentConstraint1.cty" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt.ty"
@@ -28042,7 +28690,9 @@ connectAttr "R_Fingers_02_Jnt_parentConstraint1.cry" "|VikingHero|Transform|FK_S
 		;
 connectAttr "R_Fingers_02_Jnt_parentConstraint1.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt.rz"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt.is"
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt.do"
 		;
 connectAttr "R_Fingers_02_Jnt_parentConstraint2.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt.tx"
 		;
@@ -28056,7 +28706,9 @@ connectAttr "R_Fingers_02_Jnt_parentConstraint2.cry" "|VikingHero|Transform|FK_S
 		;
 connectAttr "R_Fingers_02_Jnt_parentConstraint2.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt.rz"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt.is"
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt.do"
 		;
 connectAttr "R_Fingers_02_Jnt_parentConstraint3.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt.tx"
 		;
@@ -28069,6 +28721,10 @@ connectAttr "R_Fingers_02_Jnt_parentConstraint3.crx" "|VikingHero|Transform|FK_S
 connectAttr "R_Fingers_02_Jnt_parentConstraint3.cry" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt.ry"
 		;
 connectAttr "R_Fingers_02_Jnt_parentConstraint3.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt.rz"
+		;
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt.ro" "R_Fingers_02_Jnt_parentConstraint3.cro"
 		;
@@ -28096,6 +28752,7 @@ connectAttr "R_Finger_02_FK_03_Ctrl.pm" "R_Fingers_02_Jnt_parentConstraint3.tg[0
 		;
 connectAttr "R_Fingers_02_Jnt_parentConstraint3.w0" "R_Fingers_02_Jnt_parentConstraint3.tg[0].tw"
 		;
+connectAttr "FKSkeletonGroup.di" "R_Fingers_02_Jnt_parentConstraint3.do";
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt.ro" "R_Fingers_02_Jnt_parentConstraint2.cro"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt|R_Fingers_02_Jnt.pim" "R_Fingers_02_Jnt_parentConstraint2.cpim"
@@ -28122,6 +28779,7 @@ connectAttr "R_Finger_02_FK_02_Ctrl.pm" "R_Fingers_02_Jnt_parentConstraint2.tg[0
 		;
 connectAttr "R_Fingers_02_Jnt_parentConstraint2.w0" "R_Fingers_02_Jnt_parentConstraint2.tg[0].tw"
 		;
+connectAttr "FKSkeletonGroup.di" "R_Fingers_02_Jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt.ro" "R_Fingers_02_Jnt_parentConstraint1.cro"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt|R_Fingers_02_Jnt.pim" "R_Fingers_02_Jnt_parentConstraint1.cpim"
@@ -28148,6 +28806,7 @@ connectAttr "R_Finger_02_FK_01_Ctrl.pm" "R_Fingers_02_Jnt_parentConstraint1.tg[0
 		;
 connectAttr "R_Fingers_02_Jnt_parentConstraint1.w0" "R_Fingers_02_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "FKSkeletonGroup.di" "R_Fingers_02_Jnt_parentConstraint1.do";
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt.ro" "R_Hand_Jnt_parentConstraint1.cro"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt|R_Hand_Jnt.pim" "R_Hand_Jnt_parentConstraint1.cpim"
@@ -28167,6 +28826,7 @@ connectAttr "R_Hand_Ctrl.s" "R_Hand_Jnt_parentConstraint1.tg[0].ts";
 connectAttr "R_Hand_Ctrl.pm" "R_Hand_Jnt_parentConstraint1.tg[0].tpm";
 connectAttr "R_Hand_Jnt_parentConstraint1.w0" "R_Hand_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "FKSkeletonGroup.di" "R_Hand_Jnt_parentConstraint1.do";
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt.ro" "R_Wrist_Jnt_parentConstraint1.cro"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt.pim" "R_Wrist_Jnt_parentConstraint1.cpim"
@@ -28186,6 +28846,7 @@ connectAttr "R_Wrist_Ctrl.s" "R_Wrist_Jnt_parentConstraint1.tg[0].ts";
 connectAttr "R_Wrist_Ctrl.pm" "R_Wrist_Jnt_parentConstraint1.tg[0].tpm";
 connectAttr "R_Wrist_Jnt_parentConstraint1.w0" "R_Wrist_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "FKSkeletonGroup.di" "R_Wrist_Jnt_parentConstraint1.do";
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt.ro" "R_elbow_Jnt_parentConstraint1.cro"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt.pim" "R_elbow_Jnt_parentConstraint1.cpim"
@@ -28205,6 +28866,7 @@ connectAttr "R_Elbow_Ctrl.s" "R_elbow_Jnt_parentConstraint1.tg[0].ts";
 connectAttr "R_Elbow_Ctrl.pm" "R_elbow_Jnt_parentConstraint1.tg[0].tpm";
 connectAttr "R_elbow_Jnt_parentConstraint1.w0" "R_elbow_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "FKSkeletonGroup.di" "R_elbow_Jnt_parentConstraint1.do";
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt.ro" "R_Shoulder_Jnt_parentConstraint2.cro"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt.pim" "R_Shoulder_Jnt_parentConstraint2.cpim"
@@ -28224,6 +28886,7 @@ connectAttr "R_Shoulder_Ctrl.s" "R_Shoulder_Jnt_parentConstraint2.tg[0].ts";
 connectAttr "R_Shoulder_Ctrl.pm" "R_Shoulder_Jnt_parentConstraint2.tg[0].tpm";
 connectAttr "R_Shoulder_Jnt_parentConstraint2.w0" "R_Shoulder_Jnt_parentConstraint2.tg[0].tw"
 		;
+connectAttr "FKSkeletonGroup.di" "R_Shoulder_Jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt.ro" "R_Clavicle_Jnt_parentConstraint1.cro"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt.pim" "R_Clavicle_Jnt_parentConstraint1.cpim"
@@ -28243,8 +28906,7 @@ connectAttr "R_Clavicle_Ctrl.s" "R_Clavicle_Jnt_parentConstraint1.tg[0].ts";
 connectAttr "R_Clavicle_Ctrl.pm" "R_Clavicle_Jnt_parentConstraint1.tg[0].tpm";
 connectAttr "R_Clavicle_Jnt_parentConstraint1.w0" "R_Clavicle_Jnt_parentConstraint1.tg[0].tw"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|Neck_Jnt.is"
-		;
+connectAttr "FKSkeletonGroup.di" "R_Clavicle_Jnt_parentConstraint1.do";
 connectAttr "Neck_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|Neck_Jnt.tx"
 		;
 connectAttr "Neck_Jnt_parentConstraint1.cty" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|Neck_Jnt.ty"
@@ -28257,7 +28919,9 @@ connectAttr "Neck_Jnt_parentConstraint1.cry" "|VikingHero|Transform|FK_Skeleton|
 		;
 connectAttr "Neck_Jnt_parentConstraint1.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|Neck_Jnt.rz"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|Neck_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|Neck_Jnt|Head_Jnt.is"
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|Neck_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|Neck_Jnt.do"
 		;
 connectAttr "Head_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|Neck_Jnt|Head_Jnt.tx"
 		;
@@ -28270,6 +28934,10 @@ connectAttr "Head_Jnt_parentConstraint1.crx" "|VikingHero|Transform|FK_Skeleton|
 connectAttr "Head_Jnt_parentConstraint1.cry" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|Neck_Jnt|Head_Jnt.ry"
 		;
 connectAttr "Head_Jnt_parentConstraint1.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|Neck_Jnt|Head_Jnt.rz"
+		;
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|Neck_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|Neck_Jnt|Head_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|Neck_Jnt|Head_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|Neck_Jnt|Head_Jnt.ro" "Head_Jnt_parentConstraint1.cro"
 		;
@@ -28290,6 +28958,7 @@ connectAttr "Head_Ctrl.s" "Head_Jnt_parentConstraint1.tg[0].ts";
 connectAttr "Head_Ctrl.pm" "Head_Jnt_parentConstraint1.tg[0].tpm";
 connectAttr "Head_Jnt_parentConstraint1.w0" "Head_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "FKSkeletonGroup.di" "Head_Jnt_parentConstraint1.do";
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|Neck_Jnt.ro" "Neck_Jnt_parentConstraint1.cro"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|Neck_Jnt.pim" "Neck_Jnt_parentConstraint1.cpim"
@@ -28309,8 +28978,7 @@ connectAttr "Neck_Ctrl.s" "Neck_Jnt_parentConstraint1.tg[0].ts";
 connectAttr "Neck_Ctrl.pm" "Neck_Jnt_parentConstraint1.tg[0].tpm";
 connectAttr "Neck_Jnt_parentConstraint1.w0" "Neck_Jnt_parentConstraint1.tg[0].tw"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt.is"
-		;
+connectAttr "FKSkeletonGroup.di" "Neck_Jnt_parentConstraint1.do";
 connectAttr "L_Clavicle_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt.tx"
 		;
 connectAttr "L_Clavicle_Jnt_parentConstraint1.cty" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt.ty"
@@ -28323,7 +28991,9 @@ connectAttr "L_Clavicle_Jnt_parentConstraint1.cry" "|VikingHero|Transform|FK_Ske
 		;
 connectAttr "L_Clavicle_Jnt_parentConstraint1.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt.rz"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt.is"
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt.do"
 		;
 connectAttr "L_Shoulder_Jnt_parentConstraint2.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt.tx"
 		;
@@ -28337,7 +29007,9 @@ connectAttr "L_Shoulder_Jnt_parentConstraint2.cry" "|VikingHero|Transform|FK_Ske
 		;
 connectAttr "L_Shoulder_Jnt_parentConstraint2.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt.rz"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt.is"
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt.do"
 		;
 connectAttr "L_elbow_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt.tx"
 		;
@@ -28351,7 +29023,9 @@ connectAttr "L_elbow_Jnt_parentConstraint1.cry" "|VikingHero|Transform|FK_Skelet
 		;
 connectAttr "L_elbow_Jnt_parentConstraint1.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt.rz"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt.is"
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt.do"
 		;
 connectAttr "L_Wrist_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt.tx"
 		;
@@ -28365,13 +29039,9 @@ connectAttr "L_Wrist_Jnt_parentConstraint1.cry" "|VikingHero|Transform|FK_Skelet
 		;
 connectAttr "L_Wrist_Jnt_parentConstraint1.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt.rz"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt.is"
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt.is"
 		;
-connectAttr "L_Hand_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt.tx"
-		;
-connectAttr "L_Hand_Jnt_parentConstraint1.cty" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt.ty"
-		;
-connectAttr "L_Hand_Jnt_parentConstraint1.ctz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt.tz"
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt.do"
 		;
 connectAttr "L_Hand_Jnt_parentConstraint1.crx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt.rx"
 		;
@@ -28379,7 +29049,15 @@ connectAttr "L_Hand_Jnt_parentConstraint1.cry" "|VikingHero|Transform|FK_Skeleto
 		;
 connectAttr "L_Hand_Jnt_parentConstraint1.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt.rz"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt.is"
+connectAttr "L_Hand_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt.tx"
+		;
+connectAttr "L_Hand_Jnt_parentConstraint1.cty" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt.ty"
+		;
+connectAttr "L_Hand_Jnt_parentConstraint1.ctz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt.tz"
+		;
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt.do"
 		;
 connectAttr "L_Thumb_01_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt.tx"
 		;
@@ -28393,7 +29071,9 @@ connectAttr "L_Thumb_01_Jnt_parentConstraint1.cry" "|VikingHero|Transform|FK_Ske
 		;
 connectAttr "L_Thumb_01_Jnt_parentConstraint1.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt.rz"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt|L_Thumb_02_Jnt.is"
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt.do"
 		;
 connectAttr "L_Thumb_02_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt|L_Thumb_02_Jnt.tx"
 		;
@@ -28407,7 +29087,13 @@ connectAttr "L_Thumb_02_Jnt_parentConstraint1.cry" "|VikingHero|Transform|FK_Ske
 		;
 connectAttr "L_Thumb_02_Jnt_parentConstraint1.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt|L_Thumb_02_Jnt.rz"
 		;
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt|L_Thumb_02_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt|L_Thumb_02_Jnt.do"
+		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt|L_Thumb_02_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt|L_Thumb_02_Jnt|L_Thumb_03_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt|L_Thumb_02_Jnt|L_Thumb_03_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt|L_Thumb_02_Jnt.ro" "L_Thumb_02_Jnt_parentConstraint1.cro"
 		;
@@ -28435,6 +29121,7 @@ connectAttr "L_Finger_01_FK_02_Ctrl.pm" "L_Thumb_02_Jnt_parentConstraint1.tg[0].
 		;
 connectAttr "L_Thumb_02_Jnt_parentConstraint1.w0" "L_Thumb_02_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "FKSkeletonGroup.di" "L_Thumb_02_Jnt_parentConstraint1.do";
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt.ro" "L_Thumb_01_Jnt_parentConstraint1.cro"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Thumb_01_Jnt.pim" "L_Thumb_01_Jnt_parentConstraint1.cpim"
@@ -28461,8 +29148,7 @@ connectAttr "L_Finger_01_FK_01_Ctrl.pm" "L_Thumb_01_Jnt_parentConstraint1.tg[0].
 		;
 connectAttr "L_Thumb_01_Jnt_parentConstraint1.w0" "L_Thumb_01_Jnt_parentConstraint1.tg[0].tw"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt.is"
-		;
+connectAttr "FKSkeletonGroup.di" "L_Thumb_01_Jnt_parentConstraint1.do";
 connectAttr "L_Fingers_02_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt.tx"
 		;
 connectAttr "L_Fingers_02_Jnt_parentConstraint1.cty" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt.ty"
@@ -28475,7 +29161,9 @@ connectAttr "L_Fingers_02_Jnt_parentConstraint1.cry" "|VikingHero|Transform|FK_S
 		;
 connectAttr "L_Fingers_02_Jnt_parentConstraint1.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt.rz"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt.is"
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt.do"
 		;
 connectAttr "L_Fingers_02_Jnt_parentConstraint2.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt.tx"
 		;
@@ -28489,7 +29177,9 @@ connectAttr "L_Fingers_02_Jnt_parentConstraint2.cry" "|VikingHero|Transform|FK_S
 		;
 connectAttr "L_Fingers_02_Jnt_parentConstraint2.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt.rz"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt.is"
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt.do"
 		;
 connectAttr "L_Fingers_02_Jnt_parentConstraint3.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt.tx"
 		;
@@ -28502,6 +29192,10 @@ connectAttr "L_Fingers_02_Jnt_parentConstraint3.crx" "|VikingHero|Transform|FK_S
 connectAttr "L_Fingers_02_Jnt_parentConstraint3.cry" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt.ry"
 		;
 connectAttr "L_Fingers_02_Jnt_parentConstraint3.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt.rz"
+		;
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt.ro" "L_Fingers_02_Jnt_parentConstraint3.cro"
 		;
@@ -28529,6 +29223,7 @@ connectAttr "L_Finger_02_FK_03_Ctrl.pm" "L_Fingers_02_Jnt_parentConstraint3.tg[0
 		;
 connectAttr "L_Fingers_02_Jnt_parentConstraint3.w0" "L_Fingers_02_Jnt_parentConstraint3.tg[0].tw"
 		;
+connectAttr "FKSkeletonGroup.di" "L_Fingers_02_Jnt_parentConstraint3.do";
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt.ro" "L_Fingers_02_Jnt_parentConstraint2.cro"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt|L_Fingers_02_Jnt.pim" "L_Fingers_02_Jnt_parentConstraint2.cpim"
@@ -28555,6 +29250,7 @@ connectAttr "L_Finger_02_FK_02_Ctrl.pm" "L_Fingers_02_Jnt_parentConstraint2.tg[0
 		;
 connectAttr "L_Fingers_02_Jnt_parentConstraint2.w0" "L_Fingers_02_Jnt_parentConstraint2.tg[0].tw"
 		;
+connectAttr "FKSkeletonGroup.di" "L_Fingers_02_Jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt.ro" "L_Fingers_02_Jnt_parentConstraint1.cro"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt|L_Fingers_02_Jnt.pim" "L_Fingers_02_Jnt_parentConstraint1.cpim"
@@ -28581,6 +29277,7 @@ connectAttr "L_Finger_02_FK_01_Ctrl.pm" "L_Fingers_02_Jnt_parentConstraint1.tg[0
 		;
 connectAttr "L_Fingers_02_Jnt_parentConstraint1.w0" "L_Fingers_02_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "FKSkeletonGroup.di" "L_Fingers_02_Jnt_parentConstraint1.do";
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt.ro" "L_Hand_Jnt_parentConstraint1.cro"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt|L_Hand_Jnt.pim" "L_Hand_Jnt_parentConstraint1.cpim"
@@ -28600,6 +29297,7 @@ connectAttr "L_Hand_Ctrl.s" "L_Hand_Jnt_parentConstraint1.tg[0].ts";
 connectAttr "L_Hand_Ctrl.pm" "L_Hand_Jnt_parentConstraint1.tg[0].tpm";
 connectAttr "L_Hand_Jnt_parentConstraint1.w0" "L_Hand_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "FKSkeletonGroup.di" "L_Hand_Jnt_parentConstraint1.do";
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt.ro" "L_Wrist_Jnt_parentConstraint1.cro"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt.pim" "L_Wrist_Jnt_parentConstraint1.cpim"
@@ -28619,6 +29317,7 @@ connectAttr "L_Wrist_Ctrl.s" "L_Wrist_Jnt_parentConstraint1.tg[0].ts";
 connectAttr "L_Wrist_Ctrl.pm" "L_Wrist_Jnt_parentConstraint1.tg[0].tpm";
 connectAttr "L_Wrist_Jnt_parentConstraint1.w0" "L_Wrist_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "FKSkeletonGroup.di" "L_Wrist_Jnt_parentConstraint1.do";
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt.ro" "L_elbow_Jnt_parentConstraint1.cro"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt.pim" "L_elbow_Jnt_parentConstraint1.cpim"
@@ -28638,6 +29337,7 @@ connectAttr "L_Elbow_Ctrl.s" "L_elbow_Jnt_parentConstraint1.tg[0].ts";
 connectAttr "L_Elbow_Ctrl.pm" "L_elbow_Jnt_parentConstraint1.tg[0].tpm";
 connectAttr "L_elbow_Jnt_parentConstraint1.w0" "L_elbow_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "FKSkeletonGroup.di" "L_elbow_Jnt_parentConstraint1.do";
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt.ro" "L_Shoulder_Jnt_parentConstraint2.cro"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt.pim" "L_Shoulder_Jnt_parentConstraint2.cpim"
@@ -28657,6 +29357,7 @@ connectAttr "L_Shoulder_Ctrl.s" "L_Shoulder_Jnt_parentConstraint2.tg[0].ts";
 connectAttr "L_Shoulder_Ctrl.pm" "L_Shoulder_Jnt_parentConstraint2.tg[0].tpm";
 connectAttr "L_Shoulder_Jnt_parentConstraint2.w0" "L_Shoulder_Jnt_parentConstraint2.tg[0].tw"
 		;
+connectAttr "FKSkeletonGroup.di" "L_Shoulder_Jnt_parentConstraint2.do";
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt.ro" "L_Clavicle_Jnt_parentConstraint1.cro"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt.pim" "L_Clavicle_Jnt_parentConstraint1.cpim"
@@ -28676,6 +29377,7 @@ connectAttr "L_Clavicle_Ctrl.s" "L_Clavicle_Jnt_parentConstraint1.tg[0].ts";
 connectAttr "L_Clavicle_Ctrl.pm" "L_Clavicle_Jnt_parentConstraint1.tg[0].tpm";
 connectAttr "L_Clavicle_Jnt_parentConstraint1.w0" "L_Clavicle_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "FKSkeletonGroup.di" "L_Clavicle_Jnt_parentConstraint1.do";
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt.ro" "Spine_03_Jnt_parentConstraint1.cro"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt.pim" "Spine_03_Jnt_parentConstraint1.cpim"
@@ -28695,6 +29397,7 @@ connectAttr "Spine_03_Ctrl.s" "Spine_03_Jnt_parentConstraint1.tg[0].ts";
 connectAttr "Spine_03_Ctrl.pm" "Spine_03_Jnt_parentConstraint1.tg[0].tpm";
 connectAttr "Spine_03_Jnt_parentConstraint1.w0" "Spine_03_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "FKSkeletonGroup.di" "Spine_03_Jnt_parentConstraint1.do";
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt.ro" "Spine_02_Jnt_parentConstraint1.cro"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt.pim" "Spine_02_Jnt_parentConstraint1.cpim"
@@ -28714,6 +29417,7 @@ connectAttr "Spine_02_Ctrl.s" "Spine_02_Jnt_parentConstraint1.tg[0].ts";
 connectAttr "Spine_02_Ctrl.pm" "Spine_02_Jnt_parentConstraint1.tg[0].tpm";
 connectAttr "Spine_02_Jnt_parentConstraint1.w0" "Spine_02_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "FKSkeletonGroup.di" "Spine_02_Jnt_parentConstraint1.do";
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt.ro" "Spine_01_Jnt_parentConstraint1.cro"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt.pim" "Spine_01_Jnt_parentConstraint1.cpim"
@@ -28733,6 +29437,7 @@ connectAttr "Spine_Ctrl.s" "Spine_01_Jnt_parentConstraint1.tg[0].ts";
 connectAttr "Spine_Ctrl.pm" "Spine_01_Jnt_parentConstraint1.tg[0].tpm";
 connectAttr "Spine_01_Jnt_parentConstraint1.w0" "Spine_01_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "FKSkeletonGroup.di" "Spine_01_Jnt_parentConstraint1.do";
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt.ro" "Upper_Body_jnt_parentConstraint1.cro"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Upper_Body_jnt.pim" "Upper_Body_jnt_parentConstraint1.cpim"
@@ -28752,8 +29457,7 @@ connectAttr "Upper_Body_Ctrl.s" "Upper_Body_jnt_parentConstraint1.tg[0].ts";
 connectAttr "Upper_Body_Ctrl.pm" "Upper_Body_jnt_parentConstraint1.tg[0].tpm";
 connectAttr "Upper_Body_jnt_parentConstraint1.w0" "Upper_Body_jnt_parentConstraint1.tg[0].tw"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt.is"
-		;
+connectAttr "FKSkeletonGroup.di" "Upper_Body_jnt_parentConstraint1.do";
 connectAttr "Lower_Body_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt.tx"
 		;
 connectAttr "Lower_Body_Jnt_parentConstraint1.cty" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt.ty"
@@ -28766,7 +29470,9 @@ connectAttr "Lower_Body_Jnt_parentConstraint1.cry" "|VikingHero|Transform|FK_Ske
 		;
 connectAttr "Lower_Body_Jnt_parentConstraint1.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt.rz"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt.is"
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt.do"
 		;
 connectAttr "R_Hip_Jnt_parentConstraint2.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt.tx"
 		;
@@ -28780,7 +29486,9 @@ connectAttr "R_Hip_Jnt_parentConstraint2.cry" "|VikingHero|Transform|FK_Skeleton
 		;
 connectAttr "R_Hip_Jnt_parentConstraint2.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt.rz"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt.is"
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt.do"
 		;
 connectAttr "R_knee_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt.tx"
 		;
@@ -28794,7 +29502,9 @@ connectAttr "R_knee_Jnt_parentConstraint1.cry" "|VikingHero|Transform|FK_Skeleto
 		;
 connectAttr "R_knee_Jnt_parentConstraint1.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt.rz"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt.is"
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt.do"
 		;
 connectAttr "R_Ankle_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt.tx"
 		;
@@ -28808,7 +29518,9 @@ connectAttr "R_Ankle_Jnt_parentConstraint1.cry" "|VikingHero|Transform|FK_Skelet
 		;
 connectAttr "R_Ankle_Jnt_parentConstraint1.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt.rz"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt.is"
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt.do"
 		;
 connectAttr "R_Foot_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt.tx"
 		;
@@ -28822,7 +29534,9 @@ connectAttr "R_Foot_Jnt_parentConstraint1.cry" "|VikingHero|Transform|FK_Skeleto
 		;
 connectAttr "R_Foot_Jnt_parentConstraint1.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt.rz"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt|R_Foot_Ball_Jnt.is"
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt.do"
 		;
 connectAttr "R_Foot_Ball_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt|R_Foot_Ball_Jnt.tx"
 		;
@@ -28836,7 +29550,9 @@ connectAttr "R_Foot_Ball_Jnt_parentConstraint1.cry" "|VikingHero|Transform|FK_Sk
 		;
 connectAttr "R_Foot_Ball_Jnt_parentConstraint1.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt|R_Foot_Ball_Jnt.rz"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt|R_Foot_Ball_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt|R_Foot_Ball_Jnt|R_Foot_Toe_Jnt.is"
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt|R_Foot_Ball_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt|R_Foot_Ball_Jnt.do"
 		;
 connectAttr "R_Foot_Toe_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt|R_Foot_Ball_Jnt|R_Foot_Toe_Jnt.tx"
 		;
@@ -28849,6 +29565,10 @@ connectAttr "R_Foot_Toe_Jnt_parentConstraint1.crx" "|VikingHero|Transform|FK_Ske
 connectAttr "R_Foot_Toe_Jnt_parentConstraint1.cry" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt|R_Foot_Ball_Jnt|R_Foot_Toe_Jnt.ry"
 		;
 connectAttr "R_Foot_Toe_Jnt_parentConstraint1.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt|R_Foot_Ball_Jnt|R_Foot_Toe_Jnt.rz"
+		;
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt|R_Foot_Ball_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt|R_Foot_Ball_Jnt|R_Foot_Toe_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt|R_Foot_Ball_Jnt|R_Foot_Toe_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt|R_Foot_Ball_Jnt|R_Foot_Toe_Jnt.ro" "R_Foot_Toe_Jnt_parentConstraint1.cro"
 		;
@@ -28870,6 +29590,7 @@ connectAttr "R_FK_Foot_02_Ctrl.s" "R_Foot_Toe_Jnt_parentConstraint1.tg[0].ts";
 connectAttr "R_FK_Foot_02_Ctrl.pm" "R_Foot_Toe_Jnt_parentConstraint1.tg[0].tpm";
 connectAttr "R_Foot_Toe_Jnt_parentConstraint1.w0" "R_Foot_Toe_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "FKSkeletonGroup.di" "R_Foot_Toe_Jnt_parentConstraint1.do";
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt|R_Foot_Ball_Jnt.ro" "R_Foot_Ball_Jnt_parentConstraint1.cro"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt|R_Foot_Ball_Jnt.pim" "R_Foot_Ball_Jnt_parentConstraint1.cpim"
@@ -28893,6 +29614,7 @@ connectAttr "R_FK_Foot_01_Ctrl.pm" "R_Foot_Ball_Jnt_parentConstraint1.tg[0].tpm"
 		;
 connectAttr "R_Foot_Ball_Jnt_parentConstraint1.w0" "R_Foot_Ball_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "FKSkeletonGroup.di" "R_Foot_Ball_Jnt_parentConstraint1.do";
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt.ro" "R_Foot_Jnt_parentConstraint1.cro"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt|R_Foot_Jnt.pim" "R_Foot_Jnt_parentConstraint1.cpim"
@@ -28912,6 +29634,7 @@ connectAttr "R_Foot_Ctrl.s" "R_Foot_Jnt_parentConstraint1.tg[0].ts";
 connectAttr "R_Foot_Ctrl.pm" "R_Foot_Jnt_parentConstraint1.tg[0].tpm";
 connectAttr "R_Foot_Jnt_parentConstraint1.w0" "R_Foot_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "FKSkeletonGroup.di" "R_Foot_Jnt_parentConstraint1.do";
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt.ro" "R_Ankle_Jnt_parentConstraint1.cro"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt|R_Ankle_Jnt.pim" "R_Ankle_Jnt_parentConstraint1.cpim"
@@ -28931,6 +29654,7 @@ connectAttr "R_Leg_03_Ctrl.s" "R_Ankle_Jnt_parentConstraint1.tg[0].ts";
 connectAttr "R_Leg_03_Ctrl.pm" "R_Ankle_Jnt_parentConstraint1.tg[0].tpm";
 connectAttr "R_Ankle_Jnt_parentConstraint1.w0" "R_Ankle_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "FKSkeletonGroup.di" "R_Ankle_Jnt_parentConstraint1.do";
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt.ro" "R_knee_Jnt_parentConstraint1.cro"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt|R_knee_Jnt.pim" "R_knee_Jnt_parentConstraint1.cpim"
@@ -28950,6 +29674,7 @@ connectAttr "R_Leg_02_Ctrl.s" "R_knee_Jnt_parentConstraint1.tg[0].ts";
 connectAttr "R_Leg_02_Ctrl.pm" "R_knee_Jnt_parentConstraint1.tg[0].tpm";
 connectAttr "R_knee_Jnt_parentConstraint1.w0" "R_knee_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "FKSkeletonGroup.di" "R_knee_Jnt_parentConstraint1.do";
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt.ro" "R_Hip_Jnt_parentConstraint2.cro"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|R_Hip_Jnt.pim" "R_Hip_Jnt_parentConstraint2.cpim"
@@ -28969,8 +29694,7 @@ connectAttr "R_Leg_01_Ctrl.s" "R_Hip_Jnt_parentConstraint2.tg[0].ts";
 connectAttr "R_Leg_01_Ctrl.pm" "R_Hip_Jnt_parentConstraint2.tg[0].tpm";
 connectAttr "R_Hip_Jnt_parentConstraint2.w0" "R_Hip_Jnt_parentConstraint2.tg[0].tw"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt.is"
-		;
+connectAttr "FKSkeletonGroup.di" "R_Hip_Jnt_parentConstraint2.do";
 connectAttr "L_Hip_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt.tx"
 		;
 connectAttr "L_Hip_Jnt_parentConstraint1.cty" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt.ty"
@@ -28983,7 +29707,9 @@ connectAttr "L_Hip_Jnt_parentConstraint1.cry" "|VikingHero|Transform|FK_Skeleton
 		;
 connectAttr "L_Hip_Jnt_parentConstraint1.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt.rz"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt.is"
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt.do"
 		;
 connectAttr "L_knee_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt.tx"
 		;
@@ -28997,7 +29723,9 @@ connectAttr "L_knee_Jnt_parentConstraint1.cry" "|VikingHero|Transform|FK_Skeleto
 		;
 connectAttr "L_knee_Jnt_parentConstraint1.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt.rz"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt.is"
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt.do"
 		;
 connectAttr "L_Ankle_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt.tx"
 		;
@@ -29011,7 +29739,9 @@ connectAttr "L_Ankle_Jnt_parentConstraint1.cry" "|VikingHero|Transform|FK_Skelet
 		;
 connectAttr "L_Ankle_Jnt_parentConstraint1.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt.rz"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt.is"
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt.do"
 		;
 connectAttr "L_Foot_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt.tx"
 		;
@@ -29025,7 +29755,9 @@ connectAttr "L_Foot_Jnt_parentConstraint1.cry" "|VikingHero|Transform|FK_Skeleto
 		;
 connectAttr "L_Foot_Jnt_parentConstraint1.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt.rz"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt|L_Foot_Ball_Jnt.is"
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt.do"
 		;
 connectAttr "L_Foot_Ball_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt|L_Foot_Ball_Jnt.tx"
 		;
@@ -29039,7 +29771,9 @@ connectAttr "L_Foot_Ball_Jnt_parentConstraint1.cry" "|VikingHero|Transform|FK_Sk
 		;
 connectAttr "L_Foot_Ball_Jnt_parentConstraint1.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt|L_Foot_Ball_Jnt.rz"
 		;
-connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt|L_Foot_Ball_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt|L_Foot_Ball_Jnt|L_Foot_Toe_Jnt.is"
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt|L_Foot_Ball_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt|L_Foot_Ball_Jnt.do"
 		;
 connectAttr "L_Foot_Toe_Jnt_parentConstraint1.ctx" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt|L_Foot_Ball_Jnt|L_Foot_Toe_Jnt.tx"
 		;
@@ -29052,6 +29786,10 @@ connectAttr "L_Foot_Toe_Jnt_parentConstraint1.crx" "|VikingHero|Transform|FK_Ske
 connectAttr "L_Foot_Toe_Jnt_parentConstraint1.cry" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt|L_Foot_Ball_Jnt|L_Foot_Toe_Jnt.ry"
 		;
 connectAttr "L_Foot_Toe_Jnt_parentConstraint1.crz" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt|L_Foot_Ball_Jnt|L_Foot_Toe_Jnt.rz"
+		;
+connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt|L_Foot_Ball_Jnt.s" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt|L_Foot_Ball_Jnt|L_Foot_Toe_Jnt.is"
+		;
+connectAttr "FKSkeletonGroup.di" "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt|L_Foot_Ball_Jnt|L_Foot_Toe_Jnt.do"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt|L_Foot_Ball_Jnt|L_Foot_Toe_Jnt.ro" "L_Foot_Toe_Jnt_parentConstraint1.cro"
 		;
@@ -29073,6 +29811,7 @@ connectAttr "L_FK_Foot_02_Ctrl.s" "L_Foot_Toe_Jnt_parentConstraint1.tg[0].ts";
 connectAttr "L_FK_Foot_02_Ctrl.pm" "L_Foot_Toe_Jnt_parentConstraint1.tg[0].tpm";
 connectAttr "L_Foot_Toe_Jnt_parentConstraint1.w0" "L_Foot_Toe_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "FKSkeletonGroup.di" "L_Foot_Toe_Jnt_parentConstraint1.do";
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt|L_Foot_Ball_Jnt.ro" "L_Foot_Ball_Jnt_parentConstraint1.cro"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt|L_Foot_Ball_Jnt.pim" "L_Foot_Ball_Jnt_parentConstraint1.cpim"
@@ -29096,6 +29835,7 @@ connectAttr "L_FK_Foot_01_Ctrl.pm" "L_Foot_Ball_Jnt_parentConstraint1.tg[0].tpm"
 		;
 connectAttr "L_Foot_Ball_Jnt_parentConstraint1.w0" "L_Foot_Ball_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "FKSkeletonGroup.di" "L_Foot_Ball_Jnt_parentConstraint1.do";
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt.ro" "L_Foot_Jnt_parentConstraint1.cro"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt|L_Foot_Jnt.pim" "L_Foot_Jnt_parentConstraint1.cpim"
@@ -29115,6 +29855,7 @@ connectAttr "L_Foot_Ctrl.s" "L_Foot_Jnt_parentConstraint1.tg[0].ts";
 connectAttr "L_Foot_Ctrl.pm" "L_Foot_Jnt_parentConstraint1.tg[0].tpm";
 connectAttr "L_Foot_Jnt_parentConstraint1.w0" "L_Foot_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "FKSkeletonGroup.di" "L_Foot_Jnt_parentConstraint1.do";
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt.ro" "L_Ankle_Jnt_parentConstraint1.cro"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt|L_Ankle_Jnt.pim" "L_Ankle_Jnt_parentConstraint1.cpim"
@@ -29134,6 +29875,7 @@ connectAttr "L_Leg_03_Ctrl.s" "L_Ankle_Jnt_parentConstraint1.tg[0].ts";
 connectAttr "L_Leg_03_Ctrl.pm" "L_Ankle_Jnt_parentConstraint1.tg[0].tpm";
 connectAttr "L_Ankle_Jnt_parentConstraint1.w0" "L_Ankle_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "FKSkeletonGroup.di" "L_Ankle_Jnt_parentConstraint1.do";
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt.ro" "L_knee_Jnt_parentConstraint1.cro"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt|L_knee_Jnt.pim" "L_knee_Jnt_parentConstraint1.cpim"
@@ -29153,6 +29895,7 @@ connectAttr "L_Leg_02_Ctrl.s" "L_knee_Jnt_parentConstraint1.tg[0].ts";
 connectAttr "L_Leg_02_Ctrl.pm" "L_knee_Jnt_parentConstraint1.tg[0].tpm";
 connectAttr "L_knee_Jnt_parentConstraint1.w0" "L_knee_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "FKSkeletonGroup.di" "L_knee_Jnt_parentConstraint1.do";
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt.ro" "L_Hip_Jnt_parentConstraint1.cro"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt|L_Hip_Jnt.pim" "L_Hip_Jnt_parentConstraint1.cpim"
@@ -29172,6 +29915,7 @@ connectAttr "L_Leg_01_Ctrl.s" "L_Hip_Jnt_parentConstraint1.tg[0].ts";
 connectAttr "L_Leg_01_Ctrl.pm" "L_Hip_Jnt_parentConstraint1.tg[0].tpm";
 connectAttr "L_Hip_Jnt_parentConstraint1.w0" "L_Hip_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "FKSkeletonGroup.di" "L_Hip_Jnt_parentConstraint1.do";
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt.ro" "Lower_Body_Jnt_parentConstraint1.cro"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt|Lower_Body_Jnt.pim" "Lower_Body_Jnt_parentConstraint1.cpim"
@@ -29191,6 +29935,7 @@ connectAttr "Hips_Ctrl.s" "Lower_Body_Jnt_parentConstraint1.tg[0].ts";
 connectAttr "Hips_Ctrl.pm" "Lower_Body_Jnt_parentConstraint1.tg[0].tpm";
 connectAttr "Lower_Body_Jnt_parentConstraint1.w0" "Lower_Body_Jnt_parentConstraint1.tg[0].tw"
 		;
+connectAttr "FKSkeletonGroup.di" "Lower_Body_Jnt_parentConstraint1.do";
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt.ro" "Cog_Jnt_parentConstraint1.cro"
 		;
 connectAttr "|VikingHero|Transform|FK_Skeleton|Cog_Jnt.pim" "Cog_Jnt_parentConstraint1.cpim"
@@ -29209,6 +29954,136 @@ connectAttr "Cog_Ctrl.ro" "Cog_Jnt_parentConstraint1.tg[0].tro";
 connectAttr "Cog_Ctrl.s" "Cog_Jnt_parentConstraint1.tg[0].ts";
 connectAttr "Cog_Ctrl.pm" "Cog_Jnt_parentConstraint1.tg[0].tpm";
 connectAttr "Cog_Jnt_parentConstraint1.w0" "Cog_Jnt_parentConstraint1.tg[0].tw";
+connectAttr "FKSkeletonGroup.di" "Cog_Jnt_parentConstraint1.do";
+connectAttr "ControlsGroup.di" "Controls.do";
+connectAttr "ControlsGroup.di" "IK_FK_Switch_Legs.do";
+connectAttr "ControlsGroup.di" "IK_FK_Switch_Arms.do";
+connectAttr "ControlsGroup.di" "FK_Cog_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "Cog_Ctrl.do";
+connectAttr "ControlsGroup.di" "Hips_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "Hips_Ctrl.do";
+connectAttr "ControlsGroup.di" "L_Leg_01_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "L_Leg_01_Ctrl.do";
+connectAttr "L_Leg_01_Ctrl_visibility.o" "L_Leg_01_Ctrl.v";
+connectAttr "ControlsGroup.di" "L_Leg_02_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "L_Leg_02_Ctrl.do";
+connectAttr "ControlsGroup.di" "L_Leg_03_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "L_Leg_03_Ctrl.do";
+connectAttr "ControlsGroup.di" "L_Foot_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "L_Foot_Ctrl.do";
+connectAttr "ControlsGroup.di" "L_FK_Foot_01_Ctrl_Grp1.do";
+connectAttr "ControlsGroup.di" "L_FK_Foot_01_Ctrl.do";
+connectAttr "ControlsGroup.di" "L_FK_Foot_02_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "L_FK_Foot_02_Ctrl.do";
+connectAttr "ControlsGroup.di" "R_Leg_01_Ctrl_Grp1.do";
+connectAttr "ControlsGroup.di" "R_Leg_01_Ctrl.do";
+connectAttr "R_Leg_01_Ctrl_visibility.o" "R_Leg_01_Ctrl.v";
+connectAttr "ControlsGroup.di" "R_Leg_02_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "R_Leg_02_Ctrl.do";
+connectAttr "ControlsGroup.di" "R_Leg_03_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "R_Leg_03_Ctrl.do";
+connectAttr "ControlsGroup.di" "R_Foot_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "R_Foot_Ctrl.do";
+connectAttr "ControlsGroup.di" "R_FK_Foot_01_Ctrl_Grp1.do";
+connectAttr "ControlsGroup.di" "R_FK_Foot_01_Ctrl.do";
+connectAttr "ControlsGroup.di" "R_FK_Foot_02_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "R_FK_Foot_02_Ctrl.do";
+connectAttr "ControlsGroup.di" "Upper_Body_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "Upper_Body_Ctrl.do";
+connectAttr "ControlsGroup.di" "Spine_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "Spine_Ctrl.do";
+connectAttr "ControlsGroup.di" "Spine_02_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "Spine_02_Ctrl.do";
+connectAttr "ControlsGroup.di" "Spine_03_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "Spine_03_Ctrl.do";
+connectAttr "ControlsGroup.di" "Neck_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "Neck_Ctrl.do";
+connectAttr "ControlsGroup.di" "Head_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "Head_Ctrl.do";
+connectAttr "ControlsGroup.di" "L_Clavicle_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "L_Clavicle_Ctrl.do";
+connectAttr "ControlsGroup.di" "L_Shoulder_Ctrl_Grp1.do";
+connectAttr "ControlsGroup.di" "L_Shoulder_Ctrl.do";
+connectAttr "L_Shoulder_Ctrl_visibility.o" "L_Shoulder_Ctrl.v";
+connectAttr "ControlsGroup.di" "L_Elbow_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "L_Elbow_Ctrl.do";
+connectAttr "ControlsGroup.di" "L_Wrist_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "L_Wrist_Ctrl.do";
+connectAttr "ControlsGroup.di" "R_Clavicle_Ctrl_Grp1.do";
+connectAttr "ControlsGroup.di" "R_Clavicle_Ctrl.do";
+connectAttr "ControlsGroup.di" "R_Shoulder_Ctrl_Grp1.do";
+connectAttr "ControlsGroup.di" "R_Shoulder_Ctrl.do";
+connectAttr "R_Shoulder_Ctrl_visibility.o" "R_Shoulder_Ctrl.v";
+connectAttr "ControlsGroup.di" "R_Elbow_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "R_Elbow_Ctrl.do";
+connectAttr "ControlsGroup.di" "R_Wrist_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "R_Wrist_Ctrl.do";
+connectAttr "ControlsGroup.di" "L_Hand_Ctrl_Grp1.do";
+connectAttr "L_Hand_Ctrl_Grp1_pointConstraint1.ctx" "L_Hand_Ctrl_Grp1.tx";
+connectAttr "L_Hand_Ctrl_Grp1_pointConstraint1.cty" "L_Hand_Ctrl_Grp1.ty";
+connectAttr "L_Hand_Ctrl_Grp1_pointConstraint1.ctz" "L_Hand_Ctrl_Grp1.tz";
+connectAttr "ControlsGroup.di" "L_Hand_Ctrl.do";
+connectAttr "ControlsGroup.di" "L_Finger_02_FK_01_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "L_Finger_02_FK_01_Ctrl.do";
+connectAttr "ControlsGroup.di" "L_Finger_02_FK_02_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "L_Finger_02_FK_02_Ctrl.do";
+connectAttr "ControlsGroup.di" "L_Finger_02_FK_03_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "L_Finger_02_FK_03_Ctrl.do";
+connectAttr "ControlsGroup.di" "L_Finger_01_FK_01_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "L_Finger_01_FK_01_Ctrl.do";
+connectAttr "ControlsGroup.di" "L_Finger_01_FK_02_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "L_Finger_01_FK_02_Ctrl.do";
+connectAttr "L_Hand_Ctrl_Grp1.pim" "L_Hand_Ctrl_Grp1_pointConstraint1.cpim";
+connectAttr "L_Hand_Ctrl_Grp1.rp" "L_Hand_Ctrl_Grp1_pointConstraint1.crp";
+connectAttr "L_Hand_Ctrl_Grp1.rpt" "L_Hand_Ctrl_Grp1_pointConstraint1.crt";
+connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt.t" "L_Hand_Ctrl_Grp1_pointConstraint1.tg[0].tt"
+		;
+connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt.rp" "L_Hand_Ctrl_Grp1_pointConstraint1.tg[0].trp"
+		;
+connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt.rpt" "L_Hand_Ctrl_Grp1_pointConstraint1.tg[0].trt"
+		;
+connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_elbow_Jnt|L_Wrist_Jnt.pm" "L_Hand_Ctrl_Grp1_pointConstraint1.tg[0].tpm"
+		;
+connectAttr "L_Hand_Ctrl_Grp1_pointConstraint1.w0" "L_Hand_Ctrl_Grp1_pointConstraint1.tg[0].tw"
+		;
+connectAttr "ControlsGroup.di" "R_Hand_Ctrl_Grp1.do";
+connectAttr "R_Hand_Ctrl_Grp1_pointConstraint1.ctx" "R_Hand_Ctrl_Grp1.tx";
+connectAttr "R_Hand_Ctrl_Grp1_pointConstraint1.cty" "R_Hand_Ctrl_Grp1.ty";
+connectAttr "R_Hand_Ctrl_Grp1_pointConstraint1.ctz" "R_Hand_Ctrl_Grp1.tz";
+connectAttr "ControlsGroup.di" "R_Hand_Ctrl.do";
+connectAttr "ControlsGroup.di" "R_Finger_02_FK_01_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "R_Finger_02_FK_01_Ctrl.do";
+connectAttr "ControlsGroup.di" "R_Finger_02_FK_02_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "R_Finger_02_FK_02_Ctrl.do";
+connectAttr "ControlsGroup.di" "R_Finger_02_FK_03_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "R_Finger_02_FK_03_Ctrl.do";
+connectAttr "ControlsGroup.di" "R_Finger_01_FK_01_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "R_Finger_01_FK_01_Ctrl.do";
+connectAttr "ControlsGroup.di" "R_Finger_01_FK_02_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "R_Finger_01_FK_02_Ctrl.do";
+connectAttr "R_Hand_Ctrl_Grp1.pim" "R_Hand_Ctrl_Grp1_pointConstraint1.cpim";
+connectAttr "R_Hand_Ctrl_Grp1.rp" "R_Hand_Ctrl_Grp1_pointConstraint1.crp";
+connectAttr "R_Hand_Ctrl_Grp1.rpt" "R_Hand_Ctrl_Grp1_pointConstraint1.crt";
+connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt.t" "R_Hand_Ctrl_Grp1_pointConstraint1.tg[0].tt"
+		;
+connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt.rp" "R_Hand_Ctrl_Grp1_pointConstraint1.tg[0].trp"
+		;
+connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt.rpt" "R_Hand_Ctrl_Grp1_pointConstraint1.tg[0].trt"
+		;
+connectAttr "|VikingHero|Transform|RK_Skeleton|Cog_Jnt|Upper_Body_jnt|Spine_01_Jnt|Spine_02_Jnt|Spine_03_Jnt|R_Clavicle_Jnt|R_Shoulder_Jnt|R_elbow_Jnt|R_Wrist_Jnt.pm" "R_Hand_Ctrl_Grp1_pointConstraint1.tg[0].tpm"
+		;
+connectAttr "R_Hand_Ctrl_Grp1_pointConstraint1.w0" "R_Hand_Ctrl_Grp1_pointConstraint1.tg[0].tw"
+		;
+connectAttr "ControlsGroup.di" "IK_Ctrls.do";
+connectAttr "ControlsGroup.di" "IK__R_Arm_Point_Orient_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "R_Arm_Point_Orient_Ctrl.do";
+connectAttr "R_Arm_Point_Orient_Ctrl_visibility.o" "R_Arm_Point_Orient_Ctrl.v";
+connectAttr "ControlsGroup.di" "IK__L_Arm_Point_Orient_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "L_Arm_Point_Orient_Ctrl.do";
+connectAttr "L_Arm_Point_Orient_Ctrl_visibility.o" "L_Arm_Point_Orient_Ctrl.v";
+connectAttr "ControlsGroup.di" "IK__R_Wrist_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "R_IK_Wrist_Ctrl.do";
+connectAttr "R_IK_Wrist_Ctrl_visibility.o" "R_IK_Wrist_Ctrl.v";
 connectAttr "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt.msg" "R_Arm_ikHandle.hsj"
 		;
 connectAttr "effector1.hp" "R_Arm_ikHandle.hee";
@@ -29216,6 +30091,7 @@ connectAttr "ikRPsolver.msg" "R_Arm_ikHandle.hsv";
 connectAttr "ikHandle1_poleVectorConstraint1.ctx" "R_Arm_ikHandle.pvx";
 connectAttr "ikHandle1_poleVectorConstraint1.cty" "R_Arm_ikHandle.pvy";
 connectAttr "ikHandle1_poleVectorConstraint1.ctz" "R_Arm_ikHandle.pvz";
+connectAttr "IKSkeletonGroup.di" "R_Arm_ikHandle.do";
 connectAttr "R_Arm_ikHandle.pim" "ikHandle1_poleVectorConstraint1.cpim";
 connectAttr "|VikingHero|Transform|IK_Skeleton|R_Shoulder_Jnt.pm" "ikHandle1_poleVectorConstraint1.ps"
 		;
@@ -29231,6 +30107,13 @@ connectAttr "R_Arm_Point_Orient_Ctrl.pm" "ikHandle1_poleVectorConstraint1.tg[0].
 		;
 connectAttr "ikHandle1_poleVectorConstraint1.w0" "ikHandle1_poleVectorConstraint1.tg[0].tw"
 		;
+connectAttr "ControlsGroup.di" "ikHandle1_poleVectorConstraint1.do";
+connectAttr "ControlsGroup.di" "IK__R_Shoulder_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "R_IK_Shoulder_Ctrl.do";
+connectAttr "R_IK_Shoulder_Ctrl_visibility.o" "R_IK_Shoulder_Ctrl.v";
+connectAttr "ControlsGroup.di" "IK__L_Wrist_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "L_IK_Wrist_Ctrl.do";
+connectAttr "L_IK_Wrist_Ctrl_visibility.o" "L_IK_Wrist_Ctrl.v";
 connectAttr "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt.msg" "L_Arm_ikHandle.hsj"
 		;
 connectAttr "effector2.hp" "L_Arm_ikHandle.hee";
@@ -29238,6 +30121,7 @@ connectAttr "ikRPsolver.msg" "L_Arm_ikHandle.hsv";
 connectAttr "ikHandle2_poleVectorConstraint1.ctx" "L_Arm_ikHandle.pvx";
 connectAttr "ikHandle2_poleVectorConstraint1.cty" "L_Arm_ikHandle.pvy";
 connectAttr "ikHandle2_poleVectorConstraint1.ctz" "L_Arm_ikHandle.pvz";
+connectAttr "IKSkeletonGroup.di" "L_Arm_ikHandle.do";
 connectAttr "L_Arm_ikHandle.pim" "ikHandle2_poleVectorConstraint1.cpim";
 connectAttr "|VikingHero|Transform|IK_Skeleton|L_Shoulder_Jnt.pm" "ikHandle2_poleVectorConstraint1.ps"
 		;
@@ -29252,6 +30136,52 @@ connectAttr "L_Arm_Point_Orient_Ctrl.rpt" "ikHandle2_poleVectorConstraint1.tg[0]
 connectAttr "L_Arm_Point_Orient_Ctrl.pm" "ikHandle2_poleVectorConstraint1.tg[0].tpm"
 		;
 connectAttr "ikHandle2_poleVectorConstraint1.w0" "ikHandle2_poleVectorConstraint1.tg[0].tw"
+		;
+connectAttr "ControlsGroup.di" "ikHandle2_poleVectorConstraint1.do";
+connectAttr "ControlsGroup.di" "IK__L_Shoulder_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "L_IK_Shoulder_Ctrl.do";
+connectAttr "L_IK_Shoulder_Ctrl_visibility.o" "L_IK_Shoulder_Ctrl.v";
+connectAttr "ControlsGroup.di" "IK__L_Leg_Point_Orient_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "L_Leg_Point_Orient_Ctrl.do";
+connectAttr "L_Leg_Point_Orient_Ctrl_visibility.o" "L_Leg_Point_Orient_Ctrl.v";
+connectAttr "ControlsGroup.di" "IK__R_Leg_Point_Orient_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "R_Leg_Point_Orient_Ctrl.do";
+connectAttr "R_Leg_Point_Orient_Ctrl_visibility.o" "R_Leg_Point_Orient_Ctrl.v";
+connectAttr "ControlsGroup.di" "IK__R_Hip_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "R_IK_Hip_Ctrl.do";
+connectAttr "R_IK_Hip_Ctrl_visibility.o" "R_IK_Hip_Ctrl.v";
+connectAttr "ControlsGroup.di" "IK_L_Ankle_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "L_IK_Ankle_Ctrl.do";
+connectAttr "L_IK_Ankle_Ctrl_visibility.o" "L_IK_Ankle_Ctrl.v";
+connectAttr "ControlsGroup.di" "L_Foot_IK_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "L_Foot_IK_Ctrl.do";
+connectAttr "ControlsGroup.di" "L_Heel_IK_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "L_Heel_IK_Ctrl.do";
+connectAttr "ControlsGroup.di" "L_Toe_IK_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "L_Toe_IK_Ctrl.do";
+connectAttr "ControlsGroup.di" "L_Toe_Lifter_IK_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "L_Toe_Lifter_IK_Ctrl.do";
+connectAttr "ControlsGroup.di" "|VikingHero|Transform|Controls|IK_Ctrls|IK_L_Ankle_Ctrl_Grp|L_IK_Ankle_Ctrl|L_Foot_IK_Ctrl_Grp|L_Foot_IK_Ctrl|L_Heel_IK_Ctrl_Grp|L_Heel_IK_Ctrl|L_Toe_IK_Ctrl_Grp|L_Toe_IK_Ctrl|L_Ball_Rotator_IK_Ctrl_Grp.do"
+		;
+connectAttr "ControlsGroup.di" "|VikingHero|Transform|Controls|IK_Ctrls|IK_L_Ankle_Ctrl_Grp|L_IK_Ankle_Ctrl|L_Foot_IK_Ctrl_Grp|L_Foot_IK_Ctrl|L_Heel_IK_Ctrl_Grp|L_Heel_IK_Ctrl|L_Toe_IK_Ctrl_Grp|L_Toe_IK_Ctrl|L_Ball_Rotator_IK_Ctrl_Grp|L_Ball_Rotator_IK_Ctrl_Grp.do"
+		;
+connectAttr "ControlsGroup.di" "IK_L_Hip_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "L_IK_Hip_Ctrl.do";
+connectAttr "L_IK_Hip_Ctrl_visibility.o" "L_IK_Hip_Ctrl.v";
+connectAttr "ControlsGroup.di" "IK_R_Ankle_Ctrl_Grp1.do";
+connectAttr "ControlsGroup.di" "R_IK_Ankle_Ctrl.do";
+connectAttr "R_IK_Ankle_Ctrl_visibility.o" "R_IK_Ankle_Ctrl.v";
+connectAttr "ControlsGroup.di" "R_Foot_IK_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "R_Foot_IK_Ctrl.do";
+connectAttr "ControlsGroup.di" "R_Heel_IK_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "R_Heel_IK_Ctrl.do";
+connectAttr "ControlsGroup.di" "R_Toe_IK_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "R_Toe_IK_Ctrl.do";
+connectAttr "ControlsGroup.di" "R_Toe_Lifter_IK_Ctrl_Grp.do";
+connectAttr "ControlsGroup.di" "R_Toe_Lifter_IK_Ctrl.do";
+connectAttr "ControlsGroup.di" "|VikingHero|Transform|Controls|IK_Ctrls|IK_R_Ankle_Ctrl_Grp1|R_IK_Ankle_Ctrl|R_Foot_IK_Ctrl_Grp|R_Foot_IK_Ctrl|R_Heel_IK_Ctrl_Grp|R_Heel_IK_Ctrl|R_Toe_IK_Ctrl_Grp|R_Toe_IK_Ctrl|R_Ball_Rotator_IK_Ctrl_Grp.do"
+		;
+connectAttr "ControlsGroup.di" "|VikingHero|Transform|Controls|IK_Ctrls|IK_R_Ankle_Ctrl_Grp1|R_IK_Ankle_Ctrl|R_Foot_IK_Ctrl_Grp|R_Foot_IK_Ctrl|R_Heel_IK_Ctrl_Grp|R_Heel_IK_Ctrl|R_Toe_IK_Ctrl_Grp|R_Toe_IK_Ctrl|R_Ball_Rotator_IK_Ctrl_Grp|R_Ball_Rotator_IK_Ctrl_Grp.do"
 		;
 connectAttr "lambert5SG.msg" "materialInfo4.sg";
 connectAttr "lambert5.msg" "materialInfo4.m";
@@ -29526,6 +30456,111 @@ connectAttr "groupId69.id" "groupParts15.gi";
 connectAttr "groupParts14.og" "polyTweakUV3.ip";
 connectAttr "groupParts13.og" "polyTweakUV4.ip";
 connectAttr "groupParts15.og" "polyTweakUV5.ip";
+connectAttr "layerManager.dli[1]" "ControlsGroup.id";
+connectAttr "layerManager.dli[2]" "FKSkeletonGroup.id";
+connectAttr "layerManager.dli[3]" "IKSkeletonGroup.id";
+connectAttr "layerManager.dli[4]" "RKSkeletonGrp.id";
+connectAttr "layerManager.dli[5]" "GeometryGroup.id";
+connectAttr "IK_FK_Switch_Arms.FK_IKControlSwitch" "L_Shoulder_Jnt_parentConstraint3_L_Shoulder_JntW0.i"
+		;
+connectAttr "IK_FK_Switch_Arms.FK_IKControlSwitch" "L_Shoulder_Jnt_parentConstraint3_L_Shoulder_JntW1.i"
+		;
+connectAttr "IK_FK_Switch_Arms.FK_IKControlSwitch" "L_elbow_Jnt_parentConstraint2_L_elbow_JntW0.i"
+		;
+connectAttr "IK_FK_Switch_Arms.FK_IKControlSwitch" "L_elbow_Jnt_parentConstraint2_L_elbow_JntW1.i"
+		;
+connectAttr "IK_FK_Switch_Arms.FK_IKControlSwitch" "L_Wrist_Jnt_parentConstraint2_L_Wrist_JntW0.i"
+		;
+connectAttr "IK_FK_Switch_Arms.FK_IKControlSwitch" "L_Wrist_Jnt_parentConstraint2_L_Wrist_JntW1.i"
+		;
+connectAttr "IK_FK_Switch_Arms.FK_IKControlSwitch" "R_Shoulder_Jnt_parentConstraint3_R_Shoulder_JntW0.i"
+		;
+connectAttr "IK_FK_Switch_Arms.FK_IKControlSwitch" "R_Shoulder_Jnt_parentConstraint3_R_Shoulder_JntW1.i"
+		;
+connectAttr "IK_FK_Switch_Arms.FK_IKControlSwitch" "R_elbow_Jnt_parentConstraint2_R_elbow_JntW0.i"
+		;
+connectAttr "IK_FK_Switch_Arms.FK_IKControlSwitch" "R_elbow_Jnt_parentConstraint2_R_elbow_JntW1.i"
+		;
+connectAttr "IK_FK_Switch_Arms.FK_IKControlSwitch" "R_Wrist_Jnt_parentConstraint2_R_Wrist_JntW0.i"
+		;
+connectAttr "IK_FK_Switch_Arms.FK_IKControlSwitch" "R_Wrist_Jnt_parentConstraint2_R_Wrist_JntW1.i"
+		;
+connectAttr "IK_FK_Switch_Arms.FK_IKControlSwitch" "L_Shoulder_Ctrl_visibility.i"
+		;
+connectAttr "IK_FK_Switch_Arms.FK_IKControlSwitch" "R_Shoulder_Ctrl_visibility.i"
+		;
+connectAttr "IK_FK_Switch_Arms.FK_IKControlSwitch" "R_Arm_Point_Orient_Ctrl_visibility.i"
+		;
+connectAttr "IK_FK_Switch_Arms.FK_IKControlSwitch" "L_Arm_Point_Orient_Ctrl_visibility.i"
+		;
+connectAttr "IK_FK_Switch_Arms.FK_IKControlSwitch" "R_IK_Wrist_Ctrl_visibility.i"
+		;
+connectAttr "IK_FK_Switch_Arms.FK_IKControlSwitch" "R_IK_Shoulder_Ctrl_visibility.i"
+		;
+connectAttr "IK_FK_Switch_Arms.FK_IKControlSwitch" "L_IK_Wrist_Ctrl_visibility.i"
+		;
+connectAttr "IK_FK_Switch_Arms.FK_IKControlSwitch" "L_IK_Shoulder_Ctrl_visibility.i"
+		;
+connectAttr "IK_FK_Switch_Legs.FK_IKControlSwitch" "R_Hip_Jnt_parentConstraint3_R_Hip_JntW0.i"
+		;
+connectAttr "IK_FK_Switch_Legs.FK_IKControlSwitch" "R_Hip_Jnt_parentConstraint3_R_Hip_JntW1.i"
+		;
+connectAttr "IK_FK_Switch_Legs.FK_IKControlSwitch" "R_knee_Jnt_parentConstraint2_R_knee_JntW0.i"
+		;
+connectAttr "IK_FK_Switch_Legs.FK_IKControlSwitch" "R_knee_Jnt_parentConstraint2_R_knee_JntW1.i"
+		;
+connectAttr "IK_FK_Switch_Legs.FK_IKControlSwitch" "R_Ankle_Jnt_parentConstraint2_R_Ankle_JntW0.i"
+		;
+connectAttr "IK_FK_Switch_Legs.FK_IKControlSwitch" "R_Ankle_Jnt_parentConstraint2_R_Ankle_JntW1.i"
+		;
+connectAttr "IK_FK_Switch_Legs.FK_IKControlSwitch" "R_Foot_Jnt_parentConstraint2_R_Foot_JntW0.i"
+		;
+connectAttr "IK_FK_Switch_Legs.FK_IKControlSwitch" "R_Foot_Jnt_parentConstraint2_R_Ankle_Jnt1W1.i"
+		;
+connectAttr "IK_FK_Switch_Legs.FK_IKControlSwitch" "R_Foot_Ball_Jnt_parentConstraint2_R_Foot_Ball_JntW0.i"
+		;
+connectAttr "IK_FK_Switch_Legs.FK_IKControlSwitch" "R_Foot_Ball_Jnt_parentConstraint2_R_Ball_JntW1.i"
+		;
+connectAttr "IK_FK_Switch_Legs.FK_IKControlSwitch" "R_Foot_Toe_Jnt_parentConstraint2_R_Foot_Toe_JntW0.i"
+		;
+connectAttr "IK_FK_Switch_Legs.FK_IKControlSwitch" "R_Foot_Toe_Jnt_parentConstraint2_R_Toe_JntW1.i"
+		;
+connectAttr "IK_FK_Switch_Legs.FK_IKControlSwitch" "L_Hip_Jnt_parentConstraint2_L_Hip_JntW0.i"
+		;
+connectAttr "IK_FK_Switch_Legs.FK_IKControlSwitch" "L_Hip_Jnt_parentConstraint2_L_Hip_JntW1.i"
+		;
+connectAttr "IK_FK_Switch_Legs.FK_IKControlSwitch" "L_knee_Jnt_parentConstraint2_L_knee_JntW0.i"
+		;
+connectAttr "IK_FK_Switch_Legs.FK_IKControlSwitch" "L_knee_Jnt_parentConstraint2_L_knee_JntW1.i"
+		;
+connectAttr "IK_FK_Switch_Legs.FK_IKControlSwitch" "L_Ankle_Jnt_parentConstraint2_L_Ankle_JntW0.i"
+		;
+connectAttr "IK_FK_Switch_Legs.FK_IKControlSwitch" "L_Ankle_Jnt_parentConstraint2_L_Ankle_JntW1.i"
+		;
+connectAttr "IK_FK_Switch_Legs.FK_IKControlSwitch" "L_Foot_Jnt_parentConstraint2_L_Foot_JntW0.i"
+		;
+connectAttr "IK_FK_Switch_Legs.FK_IKControlSwitch" "L_Foot_Jnt_parentConstraint2_L_Ankle_Jnt2W1.i"
+		;
+connectAttr "IK_FK_Switch_Legs.FK_IKControlSwitch" "L_Foot_Ball_Jnt_parentConstraint2_L_Ball_JntW0.i"
+		;
+connectAttr "IK_FK_Switch_Legs.FK_IKControlSwitch" "L_Foot_Ball_Jnt_parentConstraint2_L_Foot_Ball_JntW1.i"
+		;
+connectAttr "IK_FK_Switch_Legs.FK_IKControlSwitch" "L_Foot_Toe_Jnt_parentConstraint2_L_Foot_Toe_JntW0.i"
+		;
+connectAttr "IK_FK_Switch_Legs.FK_IKControlSwitch" "L_Foot_Toe_Jnt_parentConstraint2_L_Toe_JntW1.i"
+		;
+connectAttr "IK_FK_Switch_Legs.FK_IKControlSwitch" "L_Leg_01_Ctrl_visibility.i";
+connectAttr "IK_FK_Switch_Legs.FK_IKControlSwitch" "R_Leg_01_Ctrl_visibility.i";
+connectAttr "IK_FK_Switch_Legs.FK_IKControlSwitch" "L_Leg_Point_Orient_Ctrl_visibility.i"
+		;
+connectAttr "IK_FK_Switch_Legs.FK_IKControlSwitch" "R_Leg_Point_Orient_Ctrl_visibility.i"
+		;
+connectAttr "IK_FK_Switch_Legs.FK_IKControlSwitch" "R_IK_Hip_Ctrl_visibility.i";
+connectAttr "IK_FK_Switch_Legs.FK_IKControlSwitch" "L_IK_Ankle_Ctrl_visibility.i"
+		;
+connectAttr "IK_FK_Switch_Legs.FK_IKControlSwitch" "L_IK_Hip_Ctrl_visibility.i";
+connectAttr "IK_FK_Switch_Legs.FK_IKControlSwitch" "R_IK_Ankle_Ctrl_visibility.i"
+		;
 connectAttr "lambert4SG.pa" ":renderPartition.st" -na;
 connectAttr "lambert5SG.pa" ":renderPartition.st" -na;
 connectAttr "OrangeRobot_IKFK_final:uv_shaderSG.pa" ":renderPartition.st" -na;
