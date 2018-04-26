@@ -1470,7 +1470,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 209951983}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: -63, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -12518,9 +12518,11 @@ MonoBehaviour:
   m_Script: {fileID: 1227815207, guid: 0472bdc8d6d15384d98f22ee34302f9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: []
+  points:
+  - {x: 28.654634, y: 0, z: -21.883339}
+  - {x: 12.675648, y: 0, z: 119.75408}
   extrude: 0
-  polyEditMode: 1
+  polyEditMode: 0
   flipNormals: 0
   isOnGrid: 0
 --- !u!4 &315709458
@@ -12529,8 +12531,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 315709451}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: 114.35263, y: 1.5899761, z: -30.019005}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.6949272, y: 1.5899773, z: 11.341667}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -15901,7 +15903,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh10710
+  m_Name: pb_Mesh10952
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -28398,10 +28400,8 @@ MonoBehaviour:
   asset_guid: 
   dontDestroyMeshOnDelete: 0
   m_selectedFaces: 
-  m_SelectedEdges:
-  - x: 22
-    y: 23
-  m_selectedTriangles: 1600000017000000
+  m_SelectedEdges: []
+  m_selectedTriangles: 
 --- !u!33 &815358142
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -41857,7 +41857,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1002156517}
   m_LocalRotation: {x: -0, y: 0.7661831, z: -0, w: 0.6426224}
-  m_LocalPosition: {x: 0, y: 0, z: 6.6}
+  m_LocalPosition: {x: -63, y: 0, z: 6.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -43786,7 +43786,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh10664
+  m_Name: pb_Mesh10906
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
