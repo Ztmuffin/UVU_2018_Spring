@@ -1,5 +1,34 @@
-newmtl Default_Prototype
+newmtl Archway:Default_Prototype
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
 map_Kd GridBox_Default.png
-Kd 1 1 1
-d 1
-
+Ni 1.00
+newmtl ArchwayV02:Default_Prototype
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd GridBox_Default.png
+Ni 1.00
+newmtl Bridge:Default_Prototype
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd GridBox_Default.png
+Ni 1.00
+newmtl House_v03:Default_Prototype
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd GridBox_Default.png
+Ni 1.00
+newmtl initialShadingGroup
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
