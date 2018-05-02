@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff05 scene
 //Name: Viking HeroSkinn2Rig.ma
-//Last modified: Tue, May 01, 2018 10:46:45 PM
+//Last modified: Tue, May 01, 2018 11:31:56 PM
 //Codeset: 1252
 requires maya "2017ff05";
 requires "stereoCamera" "10.0";
@@ -15,13 +15,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "68F4226C-4EC4-410F-842F-518396167AF0";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -1.89772287367843 29.504780845917718 5.040296897357047 ;
-	setAttr ".r" -type "double3" 376.4616472242966 -3623.7999999994677 8.690423177135406e-016 ;
+	setAttr ".t" -type "double3" 2.2658183862250159 29.453161112226148 12.710458041967289 ;
+	setAttr ".r" -type "double3" 351.2616472243572 -3602.999999999307 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "2C5BA5D6-4AC9-0AC7-2C97-9BA2474A1F90";
 	setAttr -k off ".v";
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 6.311290109779927;
+	setAttr ".coi" 9.9261262790527116;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
