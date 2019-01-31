@@ -11,28 +11,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ENTERSTATE.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/ENTERSTATE.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-              <folding>
-                <marker date="1522026351452" expanded="false" signature="6:115" ph="..." />
-                <marker date="1522026351452" expanded="true" signature="165:1399" ph="{...}" />
-                <marker date="1522026351452" expanded="true" signature="433:459" ph="{...}" />
-                <marker date="1522026351452" expanded="true" signature="462:1020" ph="/* OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks ... */" />
-                <marker date="1522026351452" expanded="true" signature="1119:1146" ph="{...}" />
-                <marker date="1522026351452" expanded="true" signature="1149:1397" ph="/* OnStateIK is called right after Animator.OnAnimatorIK(). Code that sets up animation IK (inverse kinematics) s ... */" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="GameEventListener.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Code/Events/GameEventListener.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="435">
+              <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
               <folding>
                 <marker date="1520555202588" expanded="true" signature="0:264" ph="/* ---------------------------------------------------------------------------- ... */" />
                 <marker date="1520555202588" expanded="false" signature="272:310" ph="..." />
@@ -46,31 +29,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProjectileHit.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Effects/Scripts/ProjectileHit.cs">
+      <file leaf-file-name="TriggerTest.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../../../JrWorkAddis/Level Design/Rainforest Level/Assets/Code/TriggerTest.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="36" column="41" lean-forward="false" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+            <state relative-caret-position="240">
+              <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
               <folding>
-                <marker date="1522032816860" expanded="false" signature="6:150" ph="..." />
-                <marker date="1522032816860" expanded="true" signature="194:1017" ph="{...}" />
-                <marker date="1522032816860" expanded="true" signature="363:529" ph="{...}" />
-                <marker date="1522032816860" expanded="true" signature="400:483" ph="{...}" />
-                <marker date="1522032816860" expanded="true" signature="577:620" ph="{...}" />
-                <marker date="1522032816860" expanded="true" signature="649:771" ph="{...}" />
-                <marker date="1522032816860" expanded="true" signature="863:1015" ph="{...}" />
-                <marker date="1522032816860" expanded="true" signature="939:1007" ph="/* Dont know if i want this to stop or not ... */" />
+                <marker date="1548688262836" expanded="true" signature="6:115" ph="..." />
+                <marker date="1548688262836" expanded="true" signature="159:486" ph="{...}" />
+                <marker date="1548688262836" expanded="true" signature="298:483" ph="{...}" />
+                <marker date="1548688262836" expanded="true" signature="315:394" ph="{...}" />
+                <marker date="1548688262836" expanded="true" signature="401:477" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KeyPickUp.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../JrWorkAddis/Level Design/Rainforest Level/Assets/Code/KeyPickUp.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Events/Editor/EventEditor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../JrWorkAddis/Level Design/Rainforest Level/Assets/Code/KeyPickUp.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../JrWorkAddis/Level Design/Rainforest Level/Assets/Code/TriggerTest.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Elements/Elemental.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Effects/Scripts/ProjectileHit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ENTERSTATE.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Events/GameEventListener.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Effects/Scripts/ProjectileHit.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -82,6 +78,7 @@
         <option value="$PROJECT_DIR$/Assets/In This Scene/ProjectileHit.cs" />
         <option value="$PROJECT_DIR$/Assets/ENTERSTATE.cs" />
         <option value="$PROJECT_DIR$/Assets/Effects/Scripts/ProjectileHit.cs" />
+        <option value="$PROJECT_DIR$/../../../JrWorkAddis/Level Design/Rainforest Level/Assets/Code/TriggerTest.cs" />
       </list>
     </option>
   </component>
@@ -91,24 +88,18 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1874" />
-    <option name="y" value="-21" />
-    <option name="width" value="1934" />
-    <option name="height" value="1047" />
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
   </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-1088" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="SolutionExplorer" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -117,7 +108,7 @@
           <expand>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="Partical Fun (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Partical Fun (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
           </expand>
           <select />
@@ -126,9 +117,13 @@
         <option name="show-all-items" value="false" />
       </pane>
       <pane id="Scratches" />
+      <pane id="UnityExplorer">
+        <option name="show-hidden-items" value="false" />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RunDashboard">
@@ -144,10 +139,10 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" />
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -165,11 +160,14 @@
       <workItem from="1520994892754" duration="3548000" />
       <workItem from="1521179387178" duration="2659000" />
       <workItem from="1522026304819" duration="1251000" />
+      <workItem from="1548654161360" duration="149000" />
+      <workItem from="1548654377271" duration="21000" />
+      <workItem from="1548687453086" duration="1250000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15237000" />
+    <option name="totallyTimeSpent" value="16657000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -181,236 +179,68 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-1088" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Unit Tests" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="NuGet" order="7" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="NuGet" order="7" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Unit Tests" order="9" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/In This Scene/ProjectileHit.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="5" lean-forward="false" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/ENTERSTATE.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding>
-            <marker date="1522026351452" expanded="false" signature="6:115" ph="..." />
-            <marker date="1522026351452" expanded="true" signature="165:1399" ph="{...}" />
-            <marker date="1522026351452" expanded="true" signature="433:459" ph="{...}" />
-            <marker date="1522026351452" expanded="true" signature="462:1020" ph="/* OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks ... */" />
-            <marker date="1522026351452" expanded="true" signature="1119:1146" ph="{...}" />
-            <marker date="1522026351452" expanded="true" signature="1149:1397" ph="/* OnStateIK is called right after Animator.OnAnimatorIK(). Code that sets up animation IK (inverse kinematics) s ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/In This Scene/OnStateEnter.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/In This Scene/DeactivateOBJ.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Classmate's Prefabs/JoshVFXPack/Scripts/rotate.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/In This Scene/OnUpdateBehavior.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/In This Scene/ProjectileHit.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="36" column="28" lean-forward="false" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/In This Scene/OnUpdateBehavior.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/In This Scene/OnStateEnter.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/In This Scene/DeactivateOBJ.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Classmate's Prefabs/JoshVFXPack/Scripts/rotate.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/ENTERSTATE.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding>
-            <marker date="1522026351452" expanded="false" signature="6:115" ph="..." />
-            <marker date="1522026351452" expanded="true" signature="165:1399" ph="{...}" />
-            <marker date="1522026351452" expanded="true" signature="433:459" ph="{...}" />
-            <marker date="1522026351452" expanded="true" signature="462:1020" ph="/* OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks ... */" />
-            <marker date="1522026351452" expanded="true" signature="1119:1146" ph="{...}" />
-            <marker date="1522026351452" expanded="true" signature="1149:1397" ph="/* OnStateIK is called right after Animator.OnAnimatorIK(). Code that sets up animation IK (inverse kinematics) s ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/DeactivateOBJ.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/In This Scene/ProjectileHit.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="36" column="28" lean-forward="false" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Classmate's Prefabs/JoshVFXPack/Scripts/rotate.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/DeactivateOBJ.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/In This Scene/ProjectileHit.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="36" column="28" lean-forward="false" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/DeactivateOBJ.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/In This Scene/ProjectileHit.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/OnUpdateBehavior.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/ProjectileHit.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/DeactivateOBJ.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/ChargeAttack.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Classmate's Prefabs/JoshVFXPack/Scripts/rotate.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/OnStateEnter.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/In This Scene/DeactivateOBJ.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/In This Scene/OnStateEnter.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/In This Scene/ProjectileHit.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="5" lean-forward="false" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/In This Scene/OnUpdateBehavior.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/ENTERSTATE.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
-          <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
           <folding>
             <marker date="1522026351452" expanded="false" signature="6:115" ph="..." />
             <marker date="1522026351452" expanded="true" signature="165:1399" ph="{...}" />
@@ -424,8 +254,104 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Code/Events/GameEventListener.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state>
+          <folding>
+            <marker date="1520555202588" expanded="true" signature="0:264" ph="/* ---------------------------------------------------------------------------- ... */" />
+            <marker date="1520555202588" expanded="false" signature="272:310" ph="..." />
+            <marker date="1520555202588" expanded="true" signature="351:875" ph="{...}" />
+            <marker date="1520555202588" expanded="true" signature="404:873" ph="{...}" />
+            <marker date="1520555202588" expanded="true" signature="619:681" ph="{...}" />
+            <marker date="1520555202588" expanded="true" signature="715:779" ph="{...}" />
+            <marker date="1520555202588" expanded="true" signature="816:867" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Effects/Scripts/ProjectileHit.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" lean-forward="true" selection-end-line="50" />
+          <folding>
+            <marker date="1522032816860" expanded="true" signature="6:150" ph="..." />
+            <marker date="1522032816860" expanded="true" signature="194:1017" ph="{...}" />
+            <marker date="1522032816860" expanded="true" signature="363:529" ph="{...}" />
+            <marker date="1522032816860" expanded="true" signature="400:483" ph="{...}" />
+            <marker date="1522032816860" expanded="true" signature="577:620" ph="{...}" />
+            <marker date="1522032816860" expanded="true" signature="649:771" ph="{...}" />
+            <marker date="1522032816860" expanded="true" signature="863:1015" ph="{...}" />
+            <marker date="1522032816860" expanded="true" signature="939:1007" ph="/* Dont know if i want this to stop or not ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ENTERSTATE.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+          <folding>
+            <marker date="1522026351452" expanded="false" signature="6:115" ph="..." />
+            <marker date="1522026351452" expanded="true" signature="165:1399" ph="{...}" />
+            <marker date="1522026351452" expanded="true" signature="433:459" ph="{...}" />
+            <marker date="1522026351452" expanded="true" signature="462:1020" ph="/* OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks ... */" />
+            <marker date="1522026351452" expanded="true" signature="1119:1146" ph="{...}" />
+            <marker date="1522026351452" expanded="true" signature="1149:1397" ph="/* OnStateIK is called right after Animator.OnAnimatorIK(). Code that sets up animation IK (inverse kinematics) s ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Code/Events/GameEventListener.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1520555202588" expanded="true" signature="0:264" ph="/* ---------------------------------------------------------------------------- ... */" />
+            <marker date="1520555202588" expanded="false" signature="272:310" ph="..." />
+            <marker date="1520555202588" expanded="true" signature="351:875" ph="{...}" />
+            <marker date="1520555202588" expanded="true" signature="404:873" ph="{...}" />
+            <marker date="1520555202588" expanded="true" signature="619:681" ph="{...}" />
+            <marker date="1520555202588" expanded="true" signature="715:779" ph="{...}" />
+            <marker date="1520555202588" expanded="true" signature="816:867" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Code/Events/Editor/EventEditor.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Effects/Scripts/ProjectileHit.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="32" lean-forward="true" selection-end-line="50" />
+          <folding>
+            <marker date="1522032816860" expanded="true" signature="6:150" ph="..." />
+            <marker date="1522032816860" expanded="true" signature="194:1017" ph="{...}" />
+            <marker date="1522032816860" expanded="true" signature="363:529" ph="{...}" />
+            <marker date="1522032816860" expanded="true" signature="400:483" ph="{...}" />
+            <marker date="1522032816860" expanded="true" signature="577:620" ph="{...}" />
+            <marker date="1522032816860" expanded="true" signature="649:771" ph="{...}" />
+            <marker date="1522032816860" expanded="true" signature="863:1015" ph="{...}" />
+            <marker date="1522032816860" expanded="true" signature="939:1007" ph="/* Dont know if i want this to stop or not ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ENTERSTATE.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+          <folding>
+            <marker date="1522026351452" expanded="false" signature="6:115" ph="..." />
+            <marker date="1522026351452" expanded="true" signature="165:1399" ph="{...}" />
+            <marker date="1522026351452" expanded="true" signature="433:459" ph="{...}" />
+            <marker date="1522026351452" expanded="true" signature="462:1020" ph="/* OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks ... */" />
+            <marker date="1522026351452" expanded="true" signature="1119:1146" ph="{...}" />
+            <marker date="1522026351452" expanded="true" signature="1149:1397" ph="/* OnStateIK is called right after Animator.OnAnimatorIK(). Code that sets up animation IK (inverse kinematics) s ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Code/Events/GameEventListener.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
             <marker date="1520555202588" expanded="true" signature="0:264" ph="/* ---------------------------------------------------------------------------- ... */" />
             <marker date="1520555202588" expanded="false" signature="272:310" ph="..." />
@@ -441,9 +367,9 @@
     <entry file="file://$PROJECT_DIR$/Assets/Effects/Scripts/ProjectileHit.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
-          <caret line="36" column="41" lean-forward="false" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+          <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
           <folding>
-            <marker date="1522032816860" expanded="false" signature="6:150" ph="..." />
+            <marker date="1522032816860" expanded="true" signature="6:150" ph="..." />
             <marker date="1522032816860" expanded="true" signature="194:1017" ph="{...}" />
             <marker date="1522032816860" expanded="true" signature="363:529" ph="{...}" />
             <marker date="1522032816860" expanded="true" signature="400:483" ph="{...}" />
@@ -451,6 +377,151 @@
             <marker date="1522032816860" expanded="true" signature="649:771" ph="{...}" />
             <marker date="1522032816860" expanded="true" signature="863:1015" ph="{...}" />
             <marker date="1522032816860" expanded="true" signature="939:1007" ph="/* Dont know if i want this to stop or not ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/In This Scene/ProjectileHit.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/ENTERSTATE.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding>
+            <marker date="1522026351452" expanded="false" signature="6:115" ph="..." />
+            <marker date="1522026351452" expanded="true" signature="165:1399" ph="{...}" />
+            <marker date="1522026351452" expanded="true" signature="433:459" ph="{...}" />
+            <marker date="1522026351452" expanded="true" signature="462:1020" ph="/* OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks ... */" />
+            <marker date="1522026351452" expanded="true" signature="1119:1146" ph="{...}" />
+            <marker date="1522026351452" expanded="true" signature="1149:1397" ph="/* OnStateIK is called right after Animator.OnAnimatorIK(). Code that sets up animation IK (inverse kinematics) s ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/In This Scene/OnStateEnter.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/In This Scene/DeactivateOBJ.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Classmate's Prefabs/JoshVFXPack/Scripts/rotate.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/In This Scene/OnUpdateBehavior.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/In This Scene/ProjectileHit.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/In This Scene/OnUpdateBehavior.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/In This Scene/OnStateEnter.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/In This Scene/DeactivateOBJ.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Classmate's Prefabs/JoshVFXPack/Scripts/rotate.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/ENTERSTATE.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding>
+            <marker date="1522026351452" expanded="false" signature="6:115" ph="..." />
+            <marker date="1522026351452" expanded="true" signature="165:1399" ph="{...}" />
+            <marker date="1522026351452" expanded="true" signature="433:459" ph="{...}" />
+            <marker date="1522026351452" expanded="true" signature="462:1020" ph="/* OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks ... */" />
+            <marker date="1522026351452" expanded="true" signature="1119:1146" ph="{...}" />
+            <marker date="1522026351452" expanded="true" signature="1149:1397" ph="/* OnStateIK is called right after Animator.OnAnimatorIK(). Code that sets up animation IK (inverse kinematics) s ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/DeactivateOBJ.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/In This Scene/ProjectileHit.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Classmate's Prefabs/JoshVFXPack/Scripts/rotate.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/DeactivateOBJ.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/In This Scene/ProjectileHit.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/DeactivateOBJ.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/In This Scene/ProjectileHit.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/OnUpdateBehavior.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/ProjectileHit.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/DeactivateOBJ.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/ChargeAttack.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Classmate's Prefabs/JoshVFXPack/Scripts/rotate.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/OnStateEnter.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/In This Scene/DeactivateOBJ.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/In This Scene/OnStateEnter.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/In This Scene/ProjectileHit.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/In This Scene/OnUpdateBehavior.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Code/Events/Editor/EventEditor.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ENTERSTATE.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+          <folding>
+            <marker date="1522026351452" expanded="false" signature="6:115" ph="..." />
+            <marker date="1522026351452" expanded="true" signature="165:1399" ph="{...}" />
+            <marker date="1522026351452" expanded="true" signature="433:459" ph="{...}" />
+            <marker date="1522026351452" expanded="true" signature="462:1020" ph="/* OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks ... */" />
+            <marker date="1522026351452" expanded="true" signature="1119:1146" ph="{...}" />
+            <marker date="1522026351452" expanded="true" signature="1149:1397" ph="/* OnStateIK is called right after Animator.OnAnimatorIK(). Code that sets up animation IK (inverse kinematics) s ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Code/Events/GameEventListener.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+          <folding>
+            <marker date="1520555202588" expanded="true" signature="0:264" ph="/* ---------------------------------------------------------------------------- ... */" />
+            <marker date="1520555202588" expanded="false" signature="272:310" ph="..." />
+            <marker date="1520555202588" expanded="true" signature="351:875" ph="{...}" />
+            <marker date="1520555202588" expanded="true" signature="404:873" ph="{...}" />
+            <marker date="1520555202588" expanded="true" signature="619:681" ph="{...}" />
+            <marker date="1520555202588" expanded="true" signature="715:779" ph="{...}" />
+            <marker date="1520555202588" expanded="true" signature="816:867" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Code/Elements/Elemental.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="37" selection-start-line="3" selection-start-column="22" selection-end-line="15" selection-end-column="37" />
+          <folding>
+            <marker date="1520555202582" expanded="true" signature="0:264" ph="/* ---------------------------------------------------------------------------- ... */" />
+            <marker date="1520555202582" expanded="false" signature="272:306" ph="..." />
+            <marker date="1520555202582" expanded="true" signature="349:1025" ph="{...}" />
+            <marker date="1520555202582" expanded="true" signature="394:1023" ph="{...}" />
+            <marker date="1520555202582" expanded="true" signature="619:712" ph="{...}" />
+            <marker date="1520555202582" expanded="true" signature="765:1017" ph="{...}" />
+            <marker date="1520555202582" expanded="true" signature="872:1007" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Effects/Scripts/ProjectileHit.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="1" selection-start-line="8" selection-start-column="4" selection-end-line="49" selection-end-column="1" />
+          <folding>
+            <marker date="1522032816860" expanded="true" signature="6:150" ph="..." />
+            <marker date="1522032816860" expanded="true" signature="194:1017" ph="{...}" />
+            <marker date="1522032816860" expanded="true" signature="363:529" ph="{...}" />
+            <marker date="1522032816860" expanded="true" signature="400:483" ph="{...}" />
+            <marker date="1522032816860" expanded="true" signature="577:620" ph="{...}" />
+            <marker date="1522032816860" expanded="true" signature="649:771" ph="{...}" />
+            <marker date="1522032816860" expanded="true" signature="863:1015" ph="{...}" />
+            <marker date="1522032816860" expanded="true" signature="939:1007" ph="/* Dont know if i want this to stop or not ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../JrWorkAddis/Level Design/Rainforest Level/Assets/Code/KeyPickUp.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../JrWorkAddis/Level Design/Rainforest Level/Assets/Code/TriggerTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+          <folding>
+            <marker date="1548688262836" expanded="true" signature="6:115" ph="..." />
+            <marker date="1548688262836" expanded="true" signature="159:486" ph="{...}" />
+            <marker date="1548688262836" expanded="true" signature="298:483" ph="{...}" />
+            <marker date="1548688262836" expanded="true" signature="315:394" ph="{...}" />
+            <marker date="1548688262836" expanded="true" signature="401:477" ph="{...}" />
           </folding>
         </state>
       </provider>

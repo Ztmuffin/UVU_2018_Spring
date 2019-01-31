@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\addis\.Rider2017.3\system\resharper-host\local\Transient\ReSharperHost\v11\SolutionCaches\_Partical Fun.2112254814.00" t="ExcludeRecursive" />
-    <e p="F:\addis\Documents\UVU\UVU_2018_Spring\Unity Stuff\Partical Fun" t="IncludeRecursive">
-      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+    <e p="C:\Users\addis\.Rider2018.1\system\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_Partical Fun.1028604366.00" t="ExcludeRecursive" />
+    <e p="F:\addis\Documents\UVU\Repositories\UVU_2018_Spring\Unity Stuff\Partical Fun" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -48,7 +47,7 @@
           </e>
         </e>
         <e p="Effects" t="Include">
-          <e p="Classmate's Prefabs" t="Include">
+          <e p="Borrowed Prefabs" t="Include">
             <e p="JoshVFXPack" t="Include">
               <e p="Scripts" t="Include">
                 <e p="rotate.cs" t="Include" />
@@ -63,13 +62,6 @@
           </e>
         </e>
         <e p="ENTERSTATE.cs" t="Include" />
-        <e p="Plugins" t="Include">
-          <e p="Editor" t="Include">
-            <e p="JetBrains" t="Include">
-              <e p="Unity3DRider.cs" t="Include" />
-            </e>
-          </e>
-        </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />

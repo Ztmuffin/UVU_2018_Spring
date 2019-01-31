@@ -1,0 +1,178 @@
+fileFormatVersion: 2
+guid: 2d7d3feb8ea0e3f4aa49ca798954c0f6
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Brake_Light_bar_MainBody_Geometry
+    100004: Geometry_Spare_Tire_Wheel_Spare
+    100006: Geometry_Wheel_Spare_Spare_Hubcap
+    100008: MainBody_Geometry_Body
+    100010: MainBody_Geometry_Day_Lights
+    100012: MainBody_Geometry_Front_Gears
+    100014: MainBody_Geometry_Gears_Shaft_FtB
+    100016: MainBody_Geometry_Headlights
+    100018: MainBody_Geometry_L_Mirror_Small
+    100020: MainBody_Geometry_Left_Mirror
+    100022: MainBody_Geometry_R_Mirror_Small
+    100024: MainBody_Geometry_Rear_Gears
+    100026: MainBody_Geometry_Right_Mirror
+    100028: MainBody_Geometry_Tail_Lights
+    100030: MainBody_Geometry_Trailer_Hitch
+    400000: //RootNode
+    400002: Brake_Light_bar_MainBody_Geometry
+    400004: Geometry_Spare_Tire_Wheel_Spare
+    400006: Geometry_Wheel_Spare_Spare_Hubcap
+    400008: MainBody_Geometry_Body
+    400010: MainBody_Geometry_Day_Lights
+    400012: MainBody_Geometry_Front_Gears
+    400014: MainBody_Geometry_Gears_Shaft_FtB
+    400016: MainBody_Geometry_Headlights
+    400018: MainBody_Geometry_L_Mirror_Small
+    400020: MainBody_Geometry_Left_Mirror
+    400022: MainBody_Geometry_R_Mirror_Small
+    400024: MainBody_Geometry_Rear_Gears
+    400026: MainBody_Geometry_Right_Mirror
+    400028: MainBody_Geometry_Tail_Lights
+    400030: MainBody_Geometry_Trailer_Hitch
+    2100000: Brake_Light_bar_MainBody_GeometryMat
+    2100002: Geometry_Spare_Tire_Wheel_SpareMat
+    2100004: Geometry_Wheel_Spare_Spare_HubcapMat
+    2100006: MainBody_Geometry_BodyMat
+    2100008: MainBody_Geometry_Day_LightsMat
+    2100010: MainBody_Geometry_Front_GearsMat
+    2100012: MainBody_Geometry_Gears_Shaft_FtBMat
+    2100014: MainBody_Geometry_HeadlightsMat
+    2100016: MainBody_Geometry_L_Mirror_SmallMat
+    2100018: MainBody_Geometry_Left_MirrorMat
+    2100020: MainBody_Geometry_R_Mirror_SmallMat
+    2100022: MainBody_Geometry_Rear_GearsMat
+    2100024: MainBody_Geometry_Right_MirrorMat
+    2100026: MainBody_Geometry_Tail_LightsMat
+    2100028: MainBody_Geometry_Trailer_HitchMat
+    2300000: Brake_Light_bar_MainBody_Geometry
+    2300002: Geometry_Spare_Tire_Wheel_Spare
+    2300004: Geometry_Wheel_Spare_Spare_Hubcap
+    2300006: MainBody_Geometry_Body
+    2300008: MainBody_Geometry_Day_Lights
+    2300010: MainBody_Geometry_Front_Gears
+    2300012: MainBody_Geometry_Gears_Shaft_FtB
+    2300014: MainBody_Geometry_Headlights
+    2300016: MainBody_Geometry_L_Mirror_Small
+    2300018: MainBody_Geometry_Left_Mirror
+    2300020: MainBody_Geometry_R_Mirror_Small
+    2300022: MainBody_Geometry_Rear_Gears
+    2300024: MainBody_Geometry_Right_Mirror
+    2300026: MainBody_Geometry_Tail_Lights
+    2300028: MainBody_Geometry_Trailer_Hitch
+    3300000: Brake_Light_bar_MainBody_Geometry
+    3300002: Geometry_Spare_Tire_Wheel_Spare
+    3300004: Geometry_Wheel_Spare_Spare_Hubcap
+    3300006: MainBody_Geometry_Body
+    3300008: MainBody_Geometry_Day_Lights
+    3300010: MainBody_Geometry_Front_Gears
+    3300012: MainBody_Geometry_Gears_Shaft_FtB
+    3300014: MainBody_Geometry_Headlights
+    3300016: MainBody_Geometry_L_Mirror_Small
+    3300018: MainBody_Geometry_Left_Mirror
+    3300020: MainBody_Geometry_R_Mirror_Small
+    3300022: MainBody_Geometry_Rear_Gears
+    3300024: MainBody_Geometry_Right_Mirror
+    3300026: MainBody_Geometry_Tail_Lights
+    3300028: MainBody_Geometry_Trailer_Hitch
+    4300000: Brake_Light_bar_MainBody_Geometry
+    4300002: Geometry_Spare_Tire_Wheel_Spare
+    4300004: Geometry_Wheel_Spare_Spare_Hubcap
+    4300006: MainBody_Geometry_Body
+    4300008: MainBody_Geometry_Day_Lights
+    4300010: MainBody_Geometry_Front_Gears
+    4300012: MainBody_Geometry_Gears_Shaft_FtB
+    4300014: MainBody_Geometry_Headlights
+    4300016: MainBody_Geometry_L_Mirror_Small
+    4300018: MainBody_Geometry_Left_Mirror
+    4300020: MainBody_Geometry_R_Mirror_Small
+    4300022: MainBody_Geometry_Rear_Gears
+    4300024: MainBody_Geometry_Right_Mirror
+    4300026: MainBody_Geometry_Tail_Lights
+    4300028: MainBody_Geometry_Trailer_Hitch
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

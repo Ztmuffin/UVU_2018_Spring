@@ -1,0 +1,220 @@
+fileFormatVersion: 2
+guid: c982e016a50c2ba45ab92a4656e5803b
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Bars_MainBody_Geometry
+    100002: //RootNode
+    100004: Geometry_Spare_Tire_Wheel_Spare
+    100006: Geometry_Wheel_Spare_Spare_Hubcap
+    100008: MainBody_Geometry_Body
+    100010: MainBody_Geometry_Brake_Light_bar
+    100012: MainBody_Geometry_Dashboard
+    100014: MainBody_Geometry_Day_Lights
+    100016: MainBody_Geometry_Driver_Seat
+    100018: MainBody_Geometry_Front_Gears
+    100020: MainBody_Geometry_Gears_Shaft_FtB
+    100022: MainBody_Geometry_Headlights
+    100024: MainBody_Geometry_L_Mirror_Small
+    100026: MainBody_Geometry_Left_Mirror
+    100028: MainBody_Geometry_Passenger_Seat
+    100030: MainBody_Geometry_R_Mirror_Small
+    100032: MainBody_Geometry_Rear_Gears
+    100034: MainBody_Geometry_Rear_Seat
+    100036: MainBody_Geometry_Right_Mirror
+    100038: MainBody_Geometry_Steering_Wheel
+    100040: MainBody_Geometry_Tail_Lights
+    100042: MainBody_Geometry_Trailer_Hitch
+    100044: MainBody_Geometry_Trunk
+    400000: Bars_MainBody_Geometry
+    400002: //RootNode
+    400004: Geometry_Spare_Tire_Wheel_Spare
+    400006: Geometry_Wheel_Spare_Spare_Hubcap
+    400008: MainBody_Geometry_Body
+    400010: MainBody_Geometry_Brake_Light_bar
+    400012: MainBody_Geometry_Dashboard
+    400014: MainBody_Geometry_Day_Lights
+    400016: MainBody_Geometry_Driver_Seat
+    400018: MainBody_Geometry_Front_Gears
+    400020: MainBody_Geometry_Gears_Shaft_FtB
+    400022: MainBody_Geometry_Headlights
+    400024: MainBody_Geometry_L_Mirror_Small
+    400026: MainBody_Geometry_Left_Mirror
+    400028: MainBody_Geometry_Passenger_Seat
+    400030: MainBody_Geometry_R_Mirror_Small
+    400032: MainBody_Geometry_Rear_Gears
+    400034: MainBody_Geometry_Rear_Seat
+    400036: MainBody_Geometry_Right_Mirror
+    400038: MainBody_Geometry_Steering_Wheel
+    400040: MainBody_Geometry_Tail_Lights
+    400042: MainBody_Geometry_Trailer_Hitch
+    400044: MainBody_Geometry_Trunk
+    2100000: Bars_MainBody_GeometryMat
+    2100002: Geometry_Spare_Tire_Wheel_SpareMat
+    2100004: Geometry_Wheel_Spare_Spare_HubcapMat
+    2100006: MainBody_Geometry_BodyMat
+    2100008: MainBody_Geometry_Brake_Light_barMat
+    2100010: MainBody_Geometry_DashboardMat
+    2100012: MainBody_Geometry_Day_LightsMat
+    2100014: MainBody_Geometry_Driver_SeatMat
+    2100016: MainBody_Geometry_Front_GearsMat
+    2100018: MainBody_Geometry_Gears_Shaft_FtBMat
+    2100020: MainBody_Geometry_HeadlightsMat
+    2100022: MainBody_Geometry_L_Mirror_SmallMat
+    2100024: MainBody_Geometry_Left_MirrorMat
+    2100026: MainBody_Geometry_Passenger_SeatMat
+    2100028: MainBody_Geometry_R_Mirror_SmallMat
+    2100030: MainBody_Geometry_Rear_GearsMat
+    2100032: MainBody_Geometry_Rear_SeatMat
+    2100034: MainBody_Geometry_Right_MirrorMat
+    2100036: MainBody_Geometry_Steering_WheelMat
+    2100038: MainBody_Geometry_Tail_LightsMat
+    2100040: MainBody_Geometry_Trailer_HitchMat
+    2100042: MainBody_Geometry_TrunkMat
+    2300000: Bars_MainBody_Geometry
+    2300002: Geometry_Spare_Tire_Wheel_Spare
+    2300004: Geometry_Wheel_Spare_Spare_Hubcap
+    2300006: MainBody_Geometry_Body
+    2300008: MainBody_Geometry_Brake_Light_bar
+    2300010: MainBody_Geometry_Dashboard
+    2300012: MainBody_Geometry_Day_Lights
+    2300014: MainBody_Geometry_Driver_Seat
+    2300016: MainBody_Geometry_Front_Gears
+    2300018: MainBody_Geometry_Gears_Shaft_FtB
+    2300020: MainBody_Geometry_Headlights
+    2300022: MainBody_Geometry_L_Mirror_Small
+    2300024: MainBody_Geometry_Left_Mirror
+    2300026: MainBody_Geometry_Passenger_Seat
+    2300028: MainBody_Geometry_R_Mirror_Small
+    2300030: MainBody_Geometry_Rear_Gears
+    2300032: MainBody_Geometry_Rear_Seat
+    2300034: MainBody_Geometry_Right_Mirror
+    2300036: MainBody_Geometry_Steering_Wheel
+    2300038: MainBody_Geometry_Tail_Lights
+    2300040: MainBody_Geometry_Trailer_Hitch
+    2300042: MainBody_Geometry_Trunk
+    3300000: Bars_MainBody_Geometry
+    3300002: Geometry_Spare_Tire_Wheel_Spare
+    3300004: Geometry_Wheel_Spare_Spare_Hubcap
+    3300006: MainBody_Geometry_Body
+    3300008: MainBody_Geometry_Brake_Light_bar
+    3300010: MainBody_Geometry_Dashboard
+    3300012: MainBody_Geometry_Day_Lights
+    3300014: MainBody_Geometry_Driver_Seat
+    3300016: MainBody_Geometry_Front_Gears
+    3300018: MainBody_Geometry_Gears_Shaft_FtB
+    3300020: MainBody_Geometry_Headlights
+    3300022: MainBody_Geometry_L_Mirror_Small
+    3300024: MainBody_Geometry_Left_Mirror
+    3300026: MainBody_Geometry_Passenger_Seat
+    3300028: MainBody_Geometry_R_Mirror_Small
+    3300030: MainBody_Geometry_Rear_Gears
+    3300032: MainBody_Geometry_Rear_Seat
+    3300034: MainBody_Geometry_Right_Mirror
+    3300036: MainBody_Geometry_Steering_Wheel
+    3300038: MainBody_Geometry_Tail_Lights
+    3300040: MainBody_Geometry_Trailer_Hitch
+    3300042: MainBody_Geometry_Trunk
+    4300000: Bars_MainBody_Geometry
+    4300002: Geometry_Spare_Tire_Wheel_Spare
+    4300004: Geometry_Wheel_Spare_Spare_Hubcap
+    4300006: MainBody_Geometry_Body
+    4300008: MainBody_Geometry_Brake_Light_bar
+    4300010: MainBody_Geometry_Dashboard
+    4300012: MainBody_Geometry_Day_Lights
+    4300014: MainBody_Geometry_Driver_Seat
+    4300016: MainBody_Geometry_Front_Gears
+    4300018: MainBody_Geometry_Gears_Shaft_FtB
+    4300020: MainBody_Geometry_Headlights
+    4300022: MainBody_Geometry_L_Mirror_Small
+    4300024: MainBody_Geometry_Left_Mirror
+    4300026: MainBody_Geometry_Passenger_Seat
+    4300028: MainBody_Geometry_R_Mirror_Small
+    4300030: MainBody_Geometry_Rear_Gears
+    4300032: MainBody_Geometry_Rear_Seat
+    4300034: MainBody_Geometry_Right_Mirror
+    4300036: MainBody_Geometry_Steering_Wheel
+    4300038: MainBody_Geometry_Tail_Lights
+    4300040: MainBody_Geometry_Trailer_Hitch
+    4300042: MainBody_Geometry_Trunk
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
